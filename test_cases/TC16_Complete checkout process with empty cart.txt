@@ -1,0 +1,71 @@
+Test Case ID: TC16
+Priority: P1
+Date created: 31.05.2023
+Author: Velislav Marinov
+
+Title:__________________________________________________________________________________________________________________
+- Complete checkout process with empty cart
+
+Description:____________________________________________________________________________________________________________
+- Test will verify if user can complete order with empty cart in www.saucedemo.com
+
+Preconditions:__________________________________________________________________________________________________________
+1.Website is live and domain is accessible.
+2.User "standard_user" exist on the system.
+
+Input Data:_____________________________________________________________________________________________________________
+Username: standard_user
+Password: secret_sauce
+First Name: Ivan
+Last Name: Ivanov
+Zip/Postal Code: 1000
+
+Steps:__________________________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username
+3. Enter Password
+4. Click on "Login" button
+6. Click on Shopping cart button in header
+7. Click on "Checkout" button
+8. Enter First Name
+9. Enter Last Name
+10. Enter Zip/Postal Code
+11. Click on "Continue" button
+12. Click on "Finish" button
+13. Click on "Back Home" button
+
+Expected result:________________________________________________________________________________________________________
+1.1 Page is loaded
+1.2 Login form is shown
+2. Username successfully entered in field
+3. Password successfully entered in field
+4.1 User is navigated to Home page
+4.2 Product list are shown
+4.3 Menu is shown
+4.4 Cart is shown
+6.1 User is navigated to Shopping cart page
+6.2 Cart list is Empty
+6.4 Green "Checkout" button is shown
+6.5 "Continue Shopping" button is shown
+7.1 User is navigated to Checkout:User Information page
+7.2 User Information form is shown
+7.3 Green "Continue" button is shown
+7.4 "Cancel" button is shown
+8. First Name successfully entered in field
+9. Last Name successfully entered in field
+10. Zip/Postal Code successfully entered in field
+11.1 User is navigated to Checkout: Overview page
+11.2 User Cart list is Empty
+11.3 Summary info section is shown
+11.4 Green "Finish" button is shown
+11.5 "Cancel" button is shown
+11.6 Checkout product list is Empty
+11.7 Item total is $0.00
+11.8 Order Total is $0.00 ( Item total + Tax )
+12.1 User is navigated to Checkout: Complete page
+12.2 Image with check is shown
+12.3 Text "Thank you for your order!" is shown
+12.4 Text "Your order has been dispatched, and will arrive just as fast as the pony can get there!" is shown
+12.5 Green "Back Home" button is shown
+13.1 User is navigated to Home page
+13.2 Product list are shown

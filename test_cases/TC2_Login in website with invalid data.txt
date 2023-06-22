@@ -1,0 +1,31 @@
+Test Case ID: TC2
+Priority: P3
+Date created: 31.05.2023
+Author: Velislav Marinov
+
+Title:__________________________________________________________________________________________________________________
+- Login in website with invalid data
+
+Description:____________________________________________________________________________________________________________
+- Test will verify if user can log in successfully in www.saucedemo.com with invalid login data
+
+Preconditions:__________________________________________________________________________________________________________
+1.Website is live and domain is accessible.
+
+Input Data:_____________________________________________________________________________________________________________
+Username: test_my_user
+Password: test_pass
+
+Steps:__________________________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username
+3. Enter Password
+4. Click on "Login" button
+
+
+Expected result:________________________________________________________________________________________________________
+1.1 Page is loaded
+1.2 Login form is shown
+2. Username successfully entered in field
+3. Password successfully entered in field
+4. Error message "Epic sadface: Username and password do not match any user in this service" is shown

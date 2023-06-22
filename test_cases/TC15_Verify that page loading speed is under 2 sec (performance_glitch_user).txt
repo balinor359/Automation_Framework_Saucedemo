@@ -1,0 +1,43 @@
+Test Case ID: TC15
+Priority: P3
+Date created: 31.05.2023
+Author: Velislav Marinov
+
+Title:__________________________________________________________________________________________________________________
+- Verify that page loading speed is under 2 sec (performance_glitch_user)
+
+Description:____________________________________________________________________________________________________________
+- Test will verify if page loading speed is under 2 seconds
+
+Preconditions:__________________________________________________________________________________________________________
+1.Website is live and domain is accessible.
+2.User "performance_glitch_user" exist on the system.
+
+Input Data:_____________________________________________________________________________________________________________
+Username: performance_glitch_user
+Password: secret_sauce (this is the default password for all user accounts)
+
+Steps:__________________________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username
+3. Enter Password
+4. Click on "Login" button
+5. Click on product name of random product
+6. Click on "Back to products" button
+
+
+
+Expected result:________________________________________________________________________________________________________
+1.1 Page is loaded
+1.2 Login form is shown
+2. Username successfully entered in field
+3. Password successfully entered in field
+4.1 User is navigated to Home page - loading is under 2 seconds
+4.2 Product list are shown
+4.3 Menu is shown
+4.4 Cart is shown
+5.1 Product title  is shown
+5.2 Product price  is shown
+5.3 "Add to cart" button is shown
+5.4 "Back to products" button is shown
+6. User is navigated to Home page - loading is under 2 seconds

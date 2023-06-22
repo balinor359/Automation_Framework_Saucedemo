@@ -1,0 +1,54 @@
+Bug ID: B1
+Severity: S1
+Priority: P1
+Status: New
+Reproducibility: Every time
+Date found: 31.05.2023
+Assigned to: Developers Team Lead
+
+Name:___________________________________________________________________________________________________________________
+- JavaScript console error from one user remains when logging into another user
+
+Description:____________________________________________________________________________________________________________
+- After adding the product "Sauce Labs Fleece Jacket" from his product page, through a (problem_user) and go to the
+ shopping cart, a JavaScript console error appears, which is transferred to another user logged in through the same browser.
+
+Steps to reproduce:_____________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username (problem_user)
+3. Enter Password (secret_sauce)
+4. Click on "Login" button
+5. Click on "Sauce Labs Fleece Jacket" product name
+6. Click "Add to cart" button
+7. Click on Shopping cart button in header - https://prnt.sc/9TjZgiltUk7T
+8. Go to https://www.saucedemo.com/
+9. Enter Username (standard_user)
+10. Enter Password (secret_sauce)
+11. Click on "Login" button
+12. Click on Shopping cart button in header - https://prnt.sc/KfO3BjmzhZvF
+
+Actual result:__________________________________________________________________________________________________________
+- JavaScript console error stay in browser cookies, and can be accessed after login in another user.
+
+Expected result:________________________________________________________________________________________________________
+- JavaScript console error should be cleared from cookies after user logout.
+- JavaScript console error should be cleared from cookies when user is on login page.
+
+Attachments:____________________________________________________________________________________________________________
+- https://prnt.sc/9TjZgiltUk7T - on step 7
+- https://prnt.sc/m7s5d5t8CZVN - after step 11
+- https://prnt.sc/KfO3BjmzhZvF - on step 12
+
+Component:______________________________________________________________________________________________________________
+- Shopping Cart page
+
+Version / OS / Browser:_________________________________________________________________________________________________
+1.0 / Windows NT 10.0; Win64; x64 / Chrome/113.0.0.0
+
+User-Agent:_____________________________________________________________________________________________________________
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36
+
+Environment:____________________________________________________________________________________________________________
+- Production
+
+Comments:_______________________________________________________________________________________________________________

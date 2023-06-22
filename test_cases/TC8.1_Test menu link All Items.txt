@@ -1,0 +1,43 @@
+Test Case ID: TC8.1
+Priority: P2
+Date created: 31.05.2023
+Author: Velislav Marinov
+
+Title:__________________________________________________________________________________________________________________
+- Test menu link "All Items"
+
+Description:____________________________________________________________________________________________________________
+- Test will verify if menu link "All Items" redirect correctly.
+
+Preconditions:__________________________________________________________________________________________________________
+1.Website is live and domain is accessible.
+2.User "standard_user" exist on the system.
+
+Input Data:_____________________________________________________________________________________________________________
+Username: standard_user
+Password: secret_sauce (this is the default password for all user accounts)
+
+Steps:__________________________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username
+3. Enter Password
+4. Click on "Login" button
+5. Click on random product name
+6. Click on hamburger menu
+7. Click on "All Items" link
+
+
+
+Expected result:________________________________________________________________________________________________________
+1.1 Page is loaded
+1.2 Login form is shown
+2. Username successfully entered in field
+3. Password successfully entered in field
+4.1 User is navigated to Home page
+4.2 Product list are shown
+4.3 Menu is shown
+4.4 Cart is shown
+5. User is navigated to selected product page
+6. Links ( All Items / About / Logout / Reset App State ) are visible
+7.1 User is navigated to Home page
+7.2 Product list are shown

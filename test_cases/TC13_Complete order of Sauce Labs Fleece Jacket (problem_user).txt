@@ -1,0 +1,80 @@
+Test Case ID: TC13
+Priority: P1
+Date created: 31.05.2023
+Author: Velislav Marinov
+
+Title:__________________________________________________________________________________________________________________
+- Complete order of "Sauce Labs Fleece Jacket" (problem_user)
+
+Description:____________________________________________________________________________________________________________
+- Test will verify if user (problem_user) can complete order in www.saucedemo.com
+
+Preconditions:__________________________________________________________________________________________________________
+1.Website is live and domain is accessible.
+2.User "problem_user" exist on the system.
+
+Input Data:_____________________________________________________________________________________________________________
+Username: problem_user
+Password: secret_sauce
+First Name: Ivan
+Last Name: Ivanov
+Zip/Postal Code: 1000
+
+Steps:__________________________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username
+3. Enter Password
+4. Click on "Login" button
+5. Click on "Sauce Labs Fleece Jacket" product name
+6. Click "Add to cart" button
+7. Click on Shopping cart button in header
+8. Click on "Checkout" button
+9. Enter First Name
+10. Enter Last Name
+11. Enter Zip/Postal Code
+12. Click on "Continue" button
+13. Click on "Finish" button
+14. Click on "Back Home" button
+
+Expected result:________________________________________________________________________________________________________
+1.1 Page is loaded
+1.2 Login form is shown
+2. Username successfully entered in field
+3. Password successfully entered in field
+4.1 User is navigated to Home page
+4.2 Product list are shown
+4.3 Menu is shown
+4.4 Cart is shown
+5.1 User is navigated to "Sauce Labs Fleece Jacket" product page
+5.2 Product title "Sauce Labs Fleece Jacket" is shown
+5.3 Product price "$49.99" is shown
+5.4 "Add to cart" button is shown
+6.1 Red shopping cart badge with product amount "1" is shown
+6.2 Clicked "Add to cart" button become with: red border / red font color / with text "Remove"
+7.1 User is navigated to Shopping cart page
+7.2 Cart list with added products are shown
+7.3 "Remove" buttons are shown
+7.4 Green "Checkout" button is shown
+7.5 "Continue Shopping" button is shown
+8.1 User is navigated to Checkout:User Information page
+8.2 User Information form is shown
+8.3 Green "Continue" button is shown
+8.4 "Cancel" button is shown
+9. First Name successfully entered in field
+10. Last Name successfully entered in field
+11. Zip/Postal Code successfully entered in field
+12.1 User is navigated to Checkout: Overview page
+12.2 User Cart list is shown
+12.3 Summary info section is shown
+12.4 Green "Finish" button is shown
+12.5 "Cancel" button is shown
+12.6 Checkout product list with added products are shown
+12.7 Item total is correct
+12.8 Order Total is correct ( Item total + Tax )
+13.1 User is navigated to Checkout: Complete page
+13.2 Image with check is shown
+13.3 Text "Thank you for your order!" is shown
+13.4 Text "Your order has been dispatched, and will arrive just as fast as the pony can get there!" is shown
+13.5 Green "Back Home" button is shown
+14.1 User is navigated to Home page
+14.2 Product list are shown

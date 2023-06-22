@@ -1,0 +1,42 @@
+Test Case ID: TC10.3
+Priority: P1
+Date created: 31.05.2023
+Author: Velislav Marinov
+
+Title:__________________________________________________________________________________________________________________
+- Verify product price is the same on Home and Product pages (problem_user)
+
+Description:____________________________________________________________________________________________________________
+- Test will verify if product price on Home page are the same as product price on product page
+
+Preconditions:__________________________________________________________________________________________________________
+1.Website is live and domain is accessible.
+2.User "problem_user" exist on the system.
+
+Input Data:_____________________________________________________________________________________________________________
+Username: problem_user
+Password: secret_sauce (this is the default password for all user accounts)
+
+Steps:__________________________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username
+3. Enter Password
+4. Click on "Login" button
+5. Chose random product and see his: product price, then click on its name
+6. Compare product price from home and product pages
+
+
+
+
+Expected result:________________________________________________________________________________________________________
+1.1 Page is loaded
+1.2 Login form is shown
+2. Username successfully entered in field
+3. Password successfully entered in field
+4.1 User is navigated to Home page
+4.2 Product list are shown
+4.3 Menu is shown
+4.4 Cart is shown
+5.1 User is navigated to product page
+5.2 Product price is shown
+6. Compare product price from Home page and product page

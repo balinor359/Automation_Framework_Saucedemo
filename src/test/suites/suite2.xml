@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Saucedemo_Test_Suite" parallel="methods" thread-count="3" verbose="1">
+<!--    Единствения начин по който минават и са на различни тредове е с parallel="methods" , отделени в отделни тестове -->
+<!--    и в TestUtilities @BeforeMethod @AfterMethod-->
+    <test name="Test Case 1">
+        <classes>
+            <class name="com.saucedemo.tests.parallel_tests.ParallelTest1"/>
+<!--                <methods>-->
+<!--                    <include name="loginWithValidDataInput"/>-->
+<!--                </methods>-->
+<!--            </class> &lt;!&ndash; com.saucedemo.tests.login.TC1_Login_in_website_with_valid_data &ndash;&gt;-->
+
+<!--            <class name="com.saucedemo.tests.parallel_tests.ParallelTest1"/>-->
+
+<!--            <class name="com.saucedemo.tests.parallel_tests.ParallelTest2"/>-->
+
+<!--            <class name="com.saucedemo.tests.parallel_tests.ParallelTest3"/>-->
+
+
+        </classes>
+    </test> <!-- selenium-app -->
+    <test name="Test Case 2">
+        <classes>
+            <class name="com.saucedemo.tests.parallel_tests.ParallelTest2"/>
+<!--                <methods>-->
+<!--                    <include name="loginWithInvalidDataInput"/>-->
+<!--                </methods>-->
+<!--            </class> &lt;!&ndash; com.saucedemo.tests.login.TC2_Login_in_website_with_invalid_data &ndash;&gt;-->
+        </classes>
+    </test> <!-- selenium-app -->
+    <test name="Test Case 3">
+        <classes>
+            <class name="com.saucedemo.tests.parallel_tests.ParallelTest3"/>
+<!--                <methods>-->
+<!--                    <include name="loginWithLockedUser"/>-->
+<!--                </methods>-->
+<!--            </class> &lt;!&ndash; com.saucedemo.tests.login.TC3_Verify_locked_user_cant_login_in_website &ndash;&gt;-->
+        </classes>
+    </test> <!-- selenium-app -->
+</suite> <!-- Default Suite -->

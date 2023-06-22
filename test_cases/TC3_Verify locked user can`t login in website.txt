@@ -1,0 +1,32 @@
+Test Case ID: TC3
+Priority: P2
+Date created: 31.05.2023
+Author: Velislav Marinov
+
+Title:__________________________________________________________________________________________________________________
+- Verify locked user can`t login in website
+
+Description:____________________________________________________________________________________________________________
+- Test will verify if locked user can log in successfully in www.saucedemo.com
+
+Preconditions:__________________________________________________________________________________________________________
+1.Website is live and domain is accessible.
+2.User "locked_out_user" exist on the system.
+
+Input Data:_____________________________________________________________________________________________________________
+Username: locked_out_user
+Password: secret_sauce
+
+Steps:__________________________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username
+3. Enter Password
+4. Click on "Login" button
+
+
+Expected result:________________________________________________________________________________________________________
+1.1 Page is loaded
+1.2 Login form is shown
+2. Username successfully entered in field
+3. Password successfully entered in field
+4. Error message "Epic sadface: Sorry, this user has been locked out." is shown

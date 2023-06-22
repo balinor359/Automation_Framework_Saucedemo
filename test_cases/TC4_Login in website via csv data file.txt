@@ -1,0 +1,37 @@
+Test Case ID: TC4
+Priority: P1
+Date created: 31.05.2023
+Author: Velislav Marinov
+
+Title:__________________________________________________________________________________________________________________
+- Login in website via csv data file
+
+Description:____________________________________________________________________________________________________________
+- Test will verify if all users can log in successfully in www.saucedemo.com (csv data file)
+
+Preconditions:__________________________________________________________________________________________________________
+1.Website is live and domain is accessible.
+2.Csv data file is available.
+
+Input Data:_____________________________________________________________________________________________________________
+Username: (csv data file)
+Password: (csv data file)
+
+Steps:__________________________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username
+3. Enter Password
+4. Click on "Login" button
+
+
+Expected result:________________________________________________________________________________________________________
+1.1 Page is loaded
+1.2 Login form is shown
+2. Username successfully entered in field
+3. Password successfully entered in field
+4.1 User is navigated to Home page
+4.2 Product list are shown
+4.3 Menu is shown
+4.4 Cart is shown
+
+

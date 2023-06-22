@@ -1,0 +1,37 @@
+Test Case ID: TC9
+Priority: P2
+Date created: 31.05.2023
+Author: Velislav Marinov
+
+Title:__________________________________________________________________________________________________________________
+- Test is menu links are visible
+
+Description:____________________________________________________________________________________________________________
+- Test will verify if menu links are visible.
+
+Preconditions:__________________________________________________________________________________________________________
+1.Website is live and domain is accessible.
+2.User "standard_user" exist on the system.
+
+Input Data:_____________________________________________________________________________________________________________
+Username: standard_user
+Password: secret_sauce (this is the default password for all user accounts)
+
+Steps:__________________________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username
+3. Enter Password
+4. Click on "Login" button
+5. Click on hamburger menu
+
+
+Expected result:________________________________________________________________________________________________________
+1.1 Page is loaded
+1.2 Login form is shown
+2. Username successfully entered in field
+3. Password successfully entered in field
+4.1 User is navigated to Home page
+4.2 Product list are shown
+4.3 Menu is shown
+4.4 Cart is shown
+5. Links ( All Items / About / Logout / Reset App State ) are visible.

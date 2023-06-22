@@ -1,0 +1,69 @@
+Test Case ID: TC6
+Priority: P1
+Date created: 31.05.2023
+Author: Velislav Marinov
+
+Title:__________________________________________________________________________________________________________________
+- Test checkout user information fields validation
+
+Description:____________________________________________________________________________________________________________
+- Test will verify if user can complete order without entering any information data
+
+Preconditions:__________________________________________________________________________________________________________
+1.Website is live and domain is accessible.
+2.User "standard_user" exist on the system.
+
+Input Data:_____________________________________________________________________________________________________________
+Username: standard_user
+Password: secret_sauce
+First Name: Ivan
+Last Name: Ivanov
+Zip/Postal Code: 1000
+
+Steps:__________________________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username
+3. Enter Password
+4. Click on "Login" button
+5. Click "Add to cart" button on 2 products
+6. Click on Shopping cart button in header
+7. Click on "Checkout" button
+8. Click on "Continue" button
+9. Enter First Name
+10. Click on "Continue" button
+11. Enter Last Name
+12. Click on "Continue" button
+13. Enter Zip/Postal Code
+14. Click on "Continue" button
+
+Expected result:________________________________________________________________________________________________________
+1.1 Page is loaded
+1.2 Login form is shown
+2. Username successfully entered in field
+3. Password successfully entered in field
+4.1 User is navigated to Home page
+4.2 Product list are shown
+4.3 Menu is shown
+4.4 Cart is shown
+5.1 Red shopping cart badge with product amount "2" is shown
+5.2 Clicked "Add to cart" buttons become with: red border / red font color / with text "Remove"
+6.1 User is navigated to Shopping cart page
+6.2 Cart list with added products are shown
+6.3 "Remove" buttons are shown
+6.4 Green "Checkout" button is shown
+6.5 "Continue Shopping" button is shown
+7.1 User is navigated to Checkout:User Information page
+7.2 User Information form is shown
+7.3 Green "Continue" button is shown
+7.4 "Cancel" button is shown
+8. Error message "Error: First Name is required" is shown
+9. First Name successfully entered in field
+10. Error message "Error: Last Name is required" is shown
+11. Last Name successfully entered in field
+12. Error message "Error: Postal Code is required"is shown
+13. Zip/Postal Code successfully entered in field
+14.1 User is navigated to Checkout: Overview page
+14.2 User Cart list is shown
+14.3 Summary info section is shown
+14.4 Green "Finish" button is shown
+14.5 "Cancel" button is shown

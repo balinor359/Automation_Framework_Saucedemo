@@ -1,0 +1,40 @@
+Test Case ID: TC14
+Priority: P3
+Date created: 31.05.2023
+Author: Velislav Marinov
+
+Title:__________________________________________________________________________________________________________________
+- Verify products sorting work correctly
+
+Description:____________________________________________________________________________________________________________
+- Test will verify if product sorting work correctly
+
+Preconditions:__________________________________________________________________________________________________________
+1.Website is live and domain is accessible.
+2.User "standard_user" exist on the system.
+
+Input Data:_____________________________________________________________________________________________________________
+Username: standard_user
+Password: secret_sauce (this is the default password for all user accounts)
+
+Steps:__________________________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username
+3. Enter Password
+4. Click on "Login" button
+5. Click on product sorting dropdown and select sorting option
+
+
+
+Expected result:________________________________________________________________________________________________________
+1.1 Page is loaded
+1.2 Login form is shown
+2. Username successfully entered in field
+3. Password successfully entered in field
+4.1 User is navigated to Home page
+4.2 Product list are shown
+4.3 Menu is shown
+4.4 Cart is shown
+4.5 Product sorting select is shown
+5.1 Sorting select changes its text ( depends on selected option )
+5.2 Products are sorted correctly ( depends on selected option )

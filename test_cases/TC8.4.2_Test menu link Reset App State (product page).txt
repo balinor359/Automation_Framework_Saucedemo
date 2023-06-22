@@ -1,0 +1,46 @@
+Test Case ID: TC8.4.2
+Priority: P2
+Date created: 31.05.2023
+Author: Velislav Marinov
+
+Title:__________________________________________________________________________________________________________________
+- Test menu link "Reset App State" (product page)
+
+Description:____________________________________________________________________________________________________________
+- Test will verify if menu link "Reset App State" clear the cart correctly (from product page)
+
+Preconditions:__________________________________________________________________________________________________________
+1.Website is live and domain is accessible.
+2.User "standard_user" exist on the system.
+
+Input Data:_____________________________________________________________________________________________________________
+Username: standard_user
+Password: secret_sauce (this is the default password for all user accounts)
+
+Steps:__________________________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username
+3. Enter Password
+4. Click on "Login" button
+5. Click on random product name
+6. Click on "Add to cart" button
+7. Click on hamburger menu
+8. Click on "Reset App State" link
+
+
+Expected result:________________________________________________________________________________________________________
+1.1 Page is loaded
+1.2 Login form is shown
+2. Username successfully entered in field
+3. Password successfully entered in field
+4.1 User is navigated to Home page
+4.2 Product list are shown
+4.3 Menu is shown
+4.4 Cart is shown
+5.1 User is navigated to product page
+5.2 "Add to cart" button is shown
+6.1 Red shopping cart badge with product amount "1" is shown
+6.2 Clicked "Add to cart" button become with: red border / red font color / with text "Remove"
+7. Links ( All Items / About / Logout / Reset App State ) are visible
+8.1 Red shopping cart badge with product amount "1" disappear
+8.2 "Remove" button change its border and font color to normal state / its text become "Add to cart"

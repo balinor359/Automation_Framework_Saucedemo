@@ -1,0 +1,55 @@
+Bug ID: B2
+Severity: S1
+Priority: P1
+Status: New
+Reproducibility: Every time
+Date found: 31.05.2023
+Assigned to: Developers Team Lead
+
+Name:___________________________________________________________________________________________________________________
+- User can complete checkout process with empty cart
+
+Description:____________________________________________________________________________________________________________
+- After logging into a user account, the user can navigate through the cart/checkout/success pages without having added
+ a product to the shopping cart.
+
+Steps to reproduce:_____________________________________________________________________________________________________
+1. Go to https://www.saucedemo.com/
+2. Enter Username (standard_user)
+3. Enter Password (secret_sauce)
+4. Click on "Login" button
+5. (Home page) Click on "Shopping cart" icon in header - https://prnt.sc/MiIbeQyELSt7
+6. (Shopping cart page) Click on "Checkout" button - https://prnt.sc/aYYb7ndzzkD1
+7. (Checkout: Your Information page) Fill the form and click on "Continue" button - https://prnt.sc/MMraV34Bcktr
+8. (Checkout: Overview page) Click on "Finish" button - https://prnt.sc/-bOm4oqRrYzD
+
+Actual result:__________________________________________________________________________________________________________
+- Logged user can complete order without adding the products in his shopping cart
+
+Expected result:________________________________________________________________________________________________________
+- The user should not be able to access Checkout page with an empty cart
+- In Shopping cart page "Checkout" button must be disabled when cart is empty
+- Shopping cart page must contain some notification message for empty shopping cart
+
+Attachments:____________________________________________________________________________________________________________
+- https://prnt.sc/MiIbeQyELSt7 - on step 5
+- https://prnt.sc/aYYb7ndzzkD1 - on step 6
+- https://prnt.sc/MMraV34Bcktr - on step 7
+- https://prnt.sc/-bOm4oqRrYzD - on step 8
+- https://prnt.sc/XUafvGhYnIuK - after step 8
+
+Component:______________________________________________________________________________________________________________
+- Shopping Cart page
+- Checkout page
+- Success page
+
+Version / OS / Browser:_________________________________________________________________________________________________
+1.0 / Windows NT 10.0; Win64; x64 / Chrome/113.0.0.0
+
+User-Agent:_____________________________________________________________________________________________________________
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36
+
+Environment:____________________________________________________________________________________________________________
+- Production
+
+Comments:_______________________________________________________________________________________________________________
