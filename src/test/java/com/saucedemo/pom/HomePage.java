@@ -1,6 +1,7 @@
 package com.saucedemo.pom;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,8 +11,7 @@ import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.List;
 
 public class HomePage extends TestUtilities {
     protected WebDriver driver;
@@ -36,8 +36,16 @@ public class HomePage extends TestUtilities {
     private static final String RESET_APP_STATE_LINK_MISSING_MESSAGE = "'Reset App State' link is not displayed!";
     private static final String ALL_ITEMS_LINK_TEXT = "All Items";
     private static final String ABOUT_LINK_TEXT = "About";
+    private static final String ABOUT_LINK_URL = "https://saucelabs.com/";
+    private static final String ABOUT_LINK_URL_DIFFERENT_MESSAGE = "The URL is different.";
+    private static final String REDIRECT_IS_SUCCESSFUL = "Redirect is successful!";
+    private static final String REDIRECT_FAILED = "Redirect failed!";
     private static final String LOGOUT_LINK_TEXT = "Logout";
     private static final String RESET_APP_STATE_LINK_TEXT = "Reset App State";
+    public static String selectedProductName = "";
+    public static String selectedProductPrice = "";
+    public static String selectedProductImageSrc = "";
+//    public static ArrayList<Product> productList;
 
     @FindBy(className = "shopping_cart_link")
     private WebElement shoppingCartLink;
@@ -45,6 +53,12 @@ public class HomePage extends TestUtilities {
     private WebElement shoppingCartCounter;
     @FindBy(xpath = "//div[@class='inventory_list']")
     private WebElement productsList;
+    @FindBy(xpath = "//div[@class='inventory_item']")
+    private WebElement singleProduct;
+    @FindBy(xpath = "//div[@class='inventory_item_label']//a")
+    private WebElement singleProductName;
+    @FindBy(xpath = "//div[@class='inventory_item_label']//a[contains(@id,'title_link')]")
+    private WebElement singleProductNameLink;
     @FindBy(xpath = "//div[@id='shopping_cart_container']")
     private WebElement shoppingCart;
     @FindBy(xpath = "//a[contains(.,'Twitter')]")
@@ -71,10 +85,48 @@ public class HomePage extends TestUtilities {
         PageFactory.initElements(driver, this);
     }
 
+    public ProductPage openProductPage() {
+        return new ProductPage(driver);
+    }
+
     public void addItemToTheCart(String productName) {
         String xpathOfClickedElement = String.format(ADD_TO_CART_LOCATOR, productName);
         WebElement addToCartButton = driver.findElement(By.xpath(xpathOfClickedElement));
         addToCartButton.click();
+    }
+
+    /* method who navigate to product page and validate product items by submitted item name*/
+    public ProductPage selectProduct(String productName) {
+        /* get all products */
+        List<WebElement> products = driver.findElements(By.cssSelector("div[class='inventory_item']"));
+
+        /* go through all products */
+        for (WebElement product : products) {
+            /* get child element - Name */
+            WebElement childName = product.findElement(By.cssSelector("div[class='inventory_item_name']"));
+
+            /* get parent element - Name */
+            WebElement parent = childName.findElement(By.xpath(".."));
+
+            /* get child element - Price */
+            WebElement productPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
+
+            /* get child element - Image Src*/
+            WebElement productImageSrc = product.findElement(By.cssSelector("img[class='inventory_item_img']"));
+
+            /* Save values for Name/Price/Image src for comparison in other pages */
+            selectedProductName = childName.getText();
+            selectedProductPrice = productPrice.getText();
+            selectedProductImageSrc = productImageSrc.getAttribute("src");
+
+            /* locate submitted product and click his product name link */
+            if (selectedProductName.contains(productName)) {
+                parent.click();
+                return new ProductPage(driver);
+            }
+        }
+
+        return null;
     }
 
     public boolean removeItemFromTheCart(String productName) {
@@ -103,6 +155,10 @@ public class HomePage extends TestUtilities {
             return Integer.parseInt(shoppingCartCounter.getText());
         }
 
+    }
+
+    public void clickOnCartButton() {
+        shoppingCartLink.click();
     }
 
     public void homepageValidator() {
@@ -150,6 +206,7 @@ public class HomePage extends TestUtilities {
 
     }
 
+    /* method who validates existence and correctness of menu items */
     public void menuLinksValidator() {
         menuButton.click();
         waitClickable(driver, menuInventoryButton, 2);
@@ -168,4 +225,35 @@ public class HomePage extends TestUtilities {
         Assert.assertTrue(menuResetButton.isDisplayed(), RESET_APP_STATE_LINK_MISSING_MESSAGE);
         Assert.assertEquals(menuResetButton.getText(), RESET_APP_STATE_LINK_TEXT, DIFFERENT_TEXT);
     }
+
+    /* click method for Menu item - "All Items" */
+    public void clickMenuInventoryButton() {
+        menuInventoryButton.click();
+    }
+
+    /* click and check method for Menu item - "About" */
+    public void clickMenuAboutButton() {
+        menuAboutButton.click();
+        Assert.assertEquals(driver.getCurrentUrl(), ABOUT_LINK_URL, ABOUT_LINK_URL_DIFFERENT_MESSAGE);
+
+        if (driver.getCurrentUrl().equals(ABOUT_LINK_URL)) {
+            System.out.println(REDIRECT_IS_SUCCESSFUL);
+            MyFileWriter.writeToLog(REDIRECT_IS_SUCCESSFUL);
+        } else {
+            System.out.println(REDIRECT_FAILED);
+            MyFileWriter.writeToLog(REDIRECT_FAILED);
+        }
+    }
+
+    /* click method for Menu item - "Logout" */
+    public void clickMenuLogoutButton() {
+        menuLogoutButton.click();
+    }
+
+    /* click method for Menu item - "Reset App State" */
+    public void clickMenuResetButton() {
+        menuResetButton.click();
+    }
+
+
 }

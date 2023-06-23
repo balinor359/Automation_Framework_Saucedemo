@@ -22,6 +22,8 @@ public class LoginPage extends TestUtilities{
     private static final String LOGGIN_WRONG_USERNAME_MESSAGE = "Wrong username!";
     private static final String LOGGIN_WRONG_PASSWORD_MESSAGE = "Wrong password!";
     private static final String LOGGIN_SUCCESSFUL_MESSAGE = "Login is Successful!";
+    private static final String LOGOUT_FAILED_MESSAGE = "Logout Failed!";
+    private static final String LOGOUT_SUCCESSFUL_MESSAGE = "Logout is Successful!";
     private static final String DIFFERENT_MESSAGE = "The message is different!";
     private static final String WRONG_USER_AND_PASS_MESSAGE = "Epic sadface: Username and password do not match any user in this service";
     private static final String INVALID_USER_MESSAGE = "Epic sadface: Sorry, this user has been locked out.";
@@ -51,12 +53,22 @@ public class LoginPage extends TestUtilities{
     public void checkErrorMsgInvalidUser(){
         Assert.assertEquals(errorText.getText(),INVALID_USER_MESSAGE,DIFFERENT_MESSAGE);
     }
-
-    public HomePage login(String username, String password) {
+    public void loginPageValidator(){
         Assert.assertTrue(loginForm.isDisplayed(), LOGGIN_FORM_MISSING_MESSAGE);
         Assert.assertTrue(userNameField.isDisplayed(), String.format(MISSING_ELEMENT_MESSAGE, userNameField));
         Assert.assertTrue(userPasswordField.isDisplayed(), String.format(MISSING_ELEMENT_MESSAGE, userPasswordField));
         Assert.assertTrue(loginButton.isDisplayed(), String.format(MISSING_ELEMENT_MESSAGE, loginButton));
+    }
+    public void successfulLogout(){
+        if (driver.getCurrentUrl().equals(LOGGIN_PAGE_URL)) {
+            System.out.println(LOGOUT_SUCCESSFUL_MESSAGE);
+            MyFileWriter.writeToLog(LOGOUT_SUCCESSFUL_MESSAGE);
+        } else {
+            System.out.println(LOGOUT_FAILED_MESSAGE);
+            MyFileWriter.writeToLog(LOGOUT_FAILED_MESSAGE);
+        }
+    }
+    public HomePage login(String username, String password) {
 
         userNameField.clear();
         userNameField.click();
@@ -84,11 +96,6 @@ public class LoginPage extends TestUtilities{
     }
 
     public HomePage testUserLogin(TestUser testUser) {
-
-        Assert.assertTrue(loginForm.isDisplayed(), LOGGIN_FORM_MISSING_MESSAGE);
-        Assert.assertTrue(userNameField.isDisplayed(), String.format(MISSING_ELEMENT_MESSAGE, userNameField));
-        Assert.assertTrue(userPasswordField.isDisplayed(), String.format(MISSING_ELEMENT_MESSAGE, userPasswordField));
-        Assert.assertTrue(loginButton.isDisplayed(), String.format(MISSING_ELEMENT_MESSAGE, loginButton));
 
         userNameField.clear();
         userNameField.click();

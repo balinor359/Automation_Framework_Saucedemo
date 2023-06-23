@@ -115,6 +115,12 @@ public class TestUtilities {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(webElement));
         return element;
     }
+    public static WebElement waitVisible(WebDriver driver, WebElement webElement, int sec){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(sec));
+        WebElement element = wait.until(ExpectedConditions.visibilityOf(webElement));
+        return element;
+
+    }
 //    public static void waitPageToLoad(WebDriver driver,int sec){
 //        driver.manage().timeouts().implicitlyWait(sec, TimeUnit.SECONDS);
 ////        try {

@@ -15,18 +15,12 @@ public class TC1_Login_in_website_with_valid_data extends TestUtilities {
 
     @Test
     public void loginWithValidDataInput() {
-        MyFileWriter.writeToLog("TC1: Login_in_website_with_valid_data");
+        MyFileWriter.writeToLog("TC1: Login in website with valid data");
 
         LoginPage loginPage = new LoginPage(TestUtilities.driver);
+        loginPage.loginPageValidator();
         HomePage homePage = loginPage.testUserLogin(UserBuilder.fullUsersList.get(0));
         homePage.homepageValidator();
-
-//        System.out.println(UserBuilder.fullUsersList);
-//        System.out.println(UserBuilder.fullUsersList.get(0));
-//        System.out.println(UserBuilder.fullUsersList.get(1));
-//        System.out.println(UserBuilder.fullUsersList.get(2));
-//        System.out.println(UserBuilder.fullUsersList.get(3));
-//        System.out.println(UserBuilder.fullUsersList.get(4));
 
     }
 }

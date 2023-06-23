@@ -24,8 +24,9 @@ public class TC4_Login_in_website_via_csv_data_file extends TestUtilities {
     // then calls the login method, then the validation method from the Homepage object
     @Test(dataProvider = "csvDataFile")
     public void loginWithCsvFileDataInput(String username, String password) {
-        MyFileWriter.writeToLog("TC4: Login_in_website_via_csv_data_file");
+        MyFileWriter.writeToLog("TC4: Login in website via csv data file");
         LoginPage loginPage = new LoginPage(TestUtilities.driver);
+        loginPage.loginPageValidator();
         HomePage homePage = loginPage.login(username, password);
         homePage.homepageValidator();
     }
