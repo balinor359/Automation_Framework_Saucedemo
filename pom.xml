@@ -122,8 +122,7 @@
 <!--        <configuration>-->
 <!--&lt;!&ndash;          <testFailureIgnore>true</testFailureIgnore>&ndash;&gt;-->
 <!--          <suiteXmlFiles>-->
-<!--            &lt;!&ndash;                        <suiteXmlFile>src/test/suites/suite.xml</suiteXmlFile>&ndash;&gt;-->
-<!--            <suiteXmlFile>src/test/suites/suite2.xml</suiteXmlFile>-->
+<!--            <suiteXmlFile>src/test/suites/suite.xml</suiteXmlFile>-->
 <!--          </suiteXmlFiles>-->
 <!--        </configuration>-->
       </plugin>
