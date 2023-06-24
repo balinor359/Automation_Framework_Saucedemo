@@ -1,7 +1,7 @@
 package com.saucedemo.pom;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,14 +9,24 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
+import org.openqa.selenium.support.Color;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class HomePage extends TestUtilities {
     protected WebDriver driver;
     private static final String ADD_TO_CART_LOCATOR = "//button[@id='add-to-cart-sauce-labs-%s']";
+    private static final String ADD_TO_CART_TEXT = "Add to cart";
+    private static final String ADD_TO_CART_MISSING_MESSAGE = "'Add to cart' button is not displayed";
+    private static final String ADD_TO_CART_FONT_COLOR = "#132322";
+    private static final String ADD_TO_CART_BORDER_COLOR = "#132322";
     private static final String REMOVE_FROM_CART_LOCATOR = "//button[@id='remove-sauce-labs-%s']";
+    private static final String REMOVE_BUTTON_TEXT = "Remove";
+    private static final String REMOVE_BUTTON_FONT_COLOR = "#e2231a";
+    private static final String REMOVE_BUTTON_BORDER_COLOR = "#e2231a";
+    private static final String REMOVE_BUTTON_MISSING_MESSAGE = "'Remove' button is not displayed";
     private static final String HOME_PAGE_URL = "https://www.saucedemo.com/inventory.html";
     private static final String HOME_PAGE = "Current page is Home page.";
     private static final String HOME_PAGE_ERROR = "Home page loading Failed.";
@@ -27,6 +37,7 @@ public class HomePage extends TestUtilities {
     private static final String FACEBOOK_LINK_URL = "https://www.facebook.com/saucelabs";
     private static final String LINKEDIN_LINK_URL = "https://www.linkedin.com";
     private static final String DIFFERENT_TEXT = "The text is different!";
+    private static final String DIFFERENT_CSS_VALUE = "The CSS value is different!";
     private static final String TWITTER_LINK_MISSING_MESSAGE = "Twitter link is not displayed!";
     private static final String FACEBOOK_LINK_MISSING_MESSAGE = "Facebook link is not displayed!";
     private static final String LINKEDIN_LINK_MISSING_MESSAGE = "LinkedIn link is not displayed!";
@@ -42,10 +53,11 @@ public class HomePage extends TestUtilities {
     private static final String REDIRECT_FAILED = "Redirect failed!";
     private static final String LOGOUT_LINK_TEXT = "Logout";
     private static final String RESET_APP_STATE_LINK_TEXT = "Reset App State";
+    public static final String CART_BADGE_WRONG_AMOUNT = "Cart have different amount of products!";
     public static String selectedProductName = "";
     public static String selectedProductPrice = "";
     public static String selectedProductImageSrc = "";
-//    public static ArrayList<Product> productList;
+
 
     @FindBy(className = "shopping_cart_link")
     private WebElement shoppingCartLink;
@@ -93,6 +105,104 @@ public class HomePage extends TestUtilities {
         String xpathOfClickedElement = String.format(ADD_TO_CART_LOCATOR, productName);
         WebElement addToCartButton = driver.findElement(By.xpath(xpathOfClickedElement));
         addToCartButton.click();
+
+        removeButtonValidator(productName);
+    }
+
+    public void removeItemFromTheCart(String productName) {
+        String xpathOfClickedElement = String.format(REMOVE_FROM_CART_LOCATOR, productName);
+        WebElement removeButton = driver.findElement(By.xpath(xpathOfClickedElement));
+        removeButton.click();
+
+        addToCartButtonValidator(productName);
+    }
+
+    public void addToCartButtonValidator(String productName) {
+        try {
+            String xpathOfClickedElement = String.format(ADD_TO_CART_LOCATOR, productName);
+            WebElement addToCartButton = driver.findElement(By.xpath(xpathOfClickedElement));
+
+            Assert.assertTrue(addToCartButton.isDisplayed(), ADD_TO_CART_MISSING_MESSAGE);
+            Assert.assertEquals(addToCartButton.getText(), ADD_TO_CART_TEXT, DIFFERENT_TEXT);
+
+            String fontColor = addToCartButton.getCssValue("color");
+            String fontColorHex = Color.fromString(fontColor).asHex();
+
+            String elementBorderColor = addToCartButton.getCssValue("border-color");
+            String elementBorderColorHex = Color.fromString(elementBorderColor).asHex();
+
+            Assert.assertEquals(fontColorHex, ADD_TO_CART_FONT_COLOR, DIFFERENT_CSS_VALUE);
+            Assert.assertEquals(elementBorderColorHex, ADD_TO_CART_BORDER_COLOR, DIFFERENT_CSS_VALUE);
+        } catch (NoSuchElementException e) {
+            System.out.println("Code error: the 'Add to Cart' button you interact with does not exist!");
+        }
+    }
+
+    public void removeButtonValidator(String productName) {
+        try {
+            String xpathOfClickedElement = String.format(REMOVE_FROM_CART_LOCATOR, productName);
+            WebElement removeButton = driver.findElement(By.xpath(xpathOfClickedElement));
+
+            Assert.assertTrue(removeButton.isDisplayed(), REMOVE_BUTTON_MISSING_MESSAGE);
+            Assert.assertEquals(removeButton.getText(), REMOVE_BUTTON_TEXT, DIFFERENT_TEXT);
+
+            String fontColor = removeButton.getCssValue("color");
+            String fontColorHex = Color.fromString(fontColor).asHex();
+
+            String elementBorderColor = removeButton.getCssValue("border-color");
+            String elementBorderColorHex = Color.fromString(elementBorderColor).asHex();
+
+            Assert.assertEquals(fontColorHex, REMOVE_BUTTON_FONT_COLOR, DIFFERENT_CSS_VALUE);
+            Assert.assertEquals(elementBorderColorHex, REMOVE_BUTTON_BORDER_COLOR, DIFFERENT_CSS_VALUE);
+        } catch (NoSuchElementException e) {
+            System.out.println("Code error: the 'Remove' button you interact with does not exist!");
+        }
+    }
+
+
+    public int getItemsInTheCart() {
+        if (shoppingCartLink.getText().isEmpty()) {
+            return 0;
+        } else {
+            return Integer.parseInt(shoppingCartCounter.getText());
+        }
+
+    }
+
+    /* method who navigate to Cart page and validate product items by submitted item name*/
+    public CartPage addProductToTheCart(String productName) {
+
+
+        /* get all products */
+        List<WebElement> products = driver.findElements(By.cssSelector("div[class='inventory_item']"));
+
+        /* go through all products */
+        for (WebElement product : products) {
+            /* get child element - Name */
+            WebElement childName = product.findElement(By.cssSelector("div[class='inventory_item_name']"));
+
+            /* get parent element - Name */
+            WebElement parent = childName.findElement(By.xpath(".."));
+
+            /* get child element - Price */
+            WebElement productPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
+
+            /* get child element - Image Src*/
+            WebElement productImageSrc = product.findElement(By.cssSelector("img[class='inventory_item_img']"));
+
+            /* Save values for Name/Price/Image src for comparison in other pages */
+            selectedProductName = childName.getText();
+            selectedProductPrice = productPrice.getText();
+            selectedProductImageSrc = productImageSrc.getAttribute("src");
+
+            /* locate submitted product and click his product name link */
+            if (selectedProductName.contains(productName)) {
+                parent.click();
+                return new CartPage(driver);
+            }
+        }
+
+        return null;
     }
 
     /* method who navigate to product page and validate product items by submitted item name*/
@@ -129,33 +239,6 @@ public class HomePage extends TestUtilities {
         return null;
     }
 
-    public boolean removeItemFromTheCart(String productName) {
-        String xpathOfClickedElement = String.format(REMOVE_FROM_CART_LOCATOR, productName);
-
-        WebElement removeButton = driver.findElement(By.xpath(xpathOfClickedElement));
-
-//        //todo Да се изведе в TestUtilities !!!!
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(7));
-//        removeButton = wait.until(ExpectedConditions.elementToBeClickable(By.id(xpathOfClickedElement)));
-//        element.click();
-
-
-        if (removeButton.getText().equals("Remove")) {
-            removeButton.click();
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    public int getItemsInTheCart() {
-        if (shoppingCartLink.getText().isEmpty()) {
-            return 0;
-        } else {
-            return Integer.parseInt(shoppingCartCounter.getText());
-        }
-
-    }
 
     public void clickOnCartButton() {
         shoppingCartLink.click();

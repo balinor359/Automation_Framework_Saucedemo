@@ -1772,3 +1772,425 @@ ________________________________________________________________________________
 23/06/2023 23:36:44 : Logout is Successful!
 23/06/2023 23:36:44 : Test End!
 _________________________________________________________________________________________
+24/06/2023 13:59:13 : Test Start!
+24/06/2023 13:59:15 : TC1: Login in website with valid data
+24/06/2023 13:59:16 : Login is Successful!
+24/06/2023 13:59:16 : Current page is Home page.
+24/06/2023 13:59:16 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:15:48 : Test Start!
+24/06/2023 14:15:50 : TC2: Login in website with invalid data
+24/06/2023 14:15:51 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+24/06/2023 14:15:51 : Home page loading Failed.
+24/06/2023 14:15:51 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:16:51 : Test Start!
+24/06/2023 14:16:53 : TC3: Verify locked user cant login in website
+24/06/2023 14:16:54 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+24/06/2023 14:16:54 : Home page loading Failed.
+24/06/2023 14:16:54 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:17:02 : Test Start!
+24/06/2023 14:17:04 : TC3: Verify locked user cant login in website
+24/06/2023 14:17:04 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+24/06/2023 14:17:04 : Home page loading Failed.
+24/06/2023 14:17:04 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:18:08 : Test Start!
+24/06/2023 14:18:10 : TC4: Login in website via csv data file
+24/06/2023 14:18:10 : Login is Successful!
+24/06/2023 14:18:10 : Current page is Home page.
+24/06/2023 14:18:10 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:18:10 : Test Start!
+24/06/2023 14:18:11 : TC4: Login in website via csv data file
+24/06/2023 14:18:12 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+24/06/2023 14:18:12 : Home page loading Failed.
+24/06/2023 14:18:12 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:18:12 : Test Start!
+24/06/2023 14:18:13 : TC4: Login in website via csv data file
+24/06/2023 14:18:13 : Login is Successful!
+24/06/2023 14:18:13 : Current page is Home page.
+24/06/2023 14:18:14 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:18:14 : Test Start!
+24/06/2023 14:18:14 : TC4: Login in website via csv data file
+24/06/2023 14:18:20 : Login is Successful!
+24/06/2023 14:18:20 : Current page is Home page.
+24/06/2023 14:18:20 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:18:20 : Test Start!
+24/06/2023 14:18:21 : TC4: Login in website via csv data file
+24/06/2023 14:18:22 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+24/06/2023 14:18:22 : Home page loading Failed.
+24/06/2023 14:18:22 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:18:22 : Test Start!
+24/06/2023 14:18:23 : TC4: Login in website via csv data file
+24/06/2023 14:18:23 : Login Failed! - Epic sadface: Username is required
+24/06/2023 14:18:23 : Home page loading Failed.
+24/06/2023 14:18:23 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:18:23 : Test Start!
+24/06/2023 14:18:24 : TC4: Login in website via csv data file
+24/06/2023 14:18:25 : Login Failed! - Epic sadface: Password is required
+24/06/2023 14:18:25 : Home page loading Failed.
+24/06/2023 14:18:25 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:18:25 : Test Start!
+24/06/2023 14:18:26 : TC4: Login in website via csv data file
+24/06/2023 14:18:26 : Login Failed! - Epic sadface: Username is required
+24/06/2023 14:18:26 : Home page loading Failed.
+24/06/2023 14:18:26 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:18:26 : Test Start!
+24/06/2023 14:18:28 : TC4: Login in website via csv data file
+24/06/2023 14:18:28 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+24/06/2023 14:18:28 : Home page loading Failed.
+24/06/2023 14:18:28 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:18:28 : Test Start!
+24/06/2023 14:18:29 : TC4: Login in website via csv data file
+24/06/2023 14:18:30 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+24/06/2023 14:18:30 : Home page loading Failed.
+24/06/2023 14:18:30 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:21:06 : Test Start!
+24/06/2023 14:21:08 : TC11: Verify that footer external links are valid
+24/06/2023 14:21:08 : Login is Successful!
+24/06/2023 14:21:08 : Current page is Home page.
+24/06/2023 14:21:11 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:23:19 : Test Start!
+24/06/2023 14:23:21 : TC8.1: Test menu link All Items
+24/06/2023 14:23:21 : Login is Successful!
+24/06/2023 14:23:21 : Current page is Home page.
+24/06/2023 14:23:21 : Current page is Product page.
+24/06/2023 14:23:24 : Current page is Home page.
+24/06/2023 14:23:25 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:25:48 : Test Start!
+24/06/2023 14:25:50 : TC8.2: Test menu link about
+24/06/2023 14:25:51 : Login is Successful!
+24/06/2023 14:25:51 : Current page is Home page.
+24/06/2023 14:25:54 : Redirect is successful!
+24/06/2023 14:25:54 : Test End!
+_________________________________________________________________________________________
+24/06/2023 14:27:30 : Test Start!
+24/06/2023 14:27:32 : TC8.3: Test menu link logout
+24/06/2023 14:27:32 : Login is Successful!
+24/06/2023 14:27:32 : Current page is Home page.
+24/06/2023 14:27:35 : Logout is Successful!
+24/06/2023 14:27:35 : Test End!
+_________________________________________________________________________________________
+24/06/2023 17:18:54 : Test Start!
+24/06/2023 17:18:57 : TC8.4.1: Test menu link reset app state home page
+24/06/2023 17:18:57 : Login is Successful!
+24/06/2023 17:18:57 : Current page is Home page.
+24/06/2023 17:18:58 : Test End!
+_________________________________________________________________________________________
+24/06/2023 17:19:22 : Test Start!
+24/06/2023 17:19:24 : TC8.4.1: Test menu link reset app state home page
+24/06/2023 17:19:25 : Login is Successful!
+24/06/2023 17:19:25 : Current page is Home page.
+24/06/2023 17:19:25 : Test End!
+_________________________________________________________________________________________
+24/06/2023 17:32:10 : Test Start!
+24/06/2023 17:32:12 : TC8.4.1: Test menu link reset app state home page
+24/06/2023 17:32:12 : Login is Successful!
+24/06/2023 17:32:12 : Current page is Home page.
+24/06/2023 17:32:13 : Test End!
+_________________________________________________________________________________________
+24/06/2023 20:57:53 : Test Start!
+24/06/2023 20:57:56 : TC8.4.1: Test menu link reset app state home page
+24/06/2023 20:57:56 : Login is Successful!
+24/06/2023 20:57:56 : Current page is Home page.
+24/06/2023 20:57:56 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:01:53 : Test Start!
+24/06/2023 21:01:55 : TC8.4.1: Test menu link reset app state home page
+24/06/2023 21:01:55 : Login is Successful!
+24/06/2023 21:01:55 : Current page is Home page.
+24/06/2023 21:01:56 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:04:16 : Test Start!
+24/06/2023 21:04:18 : TC8.4.1: Test menu link reset app state home page
+24/06/2023 21:04:18 : Login is Successful!
+24/06/2023 21:04:18 : Current page is Home page.
+24/06/2023 21:04:18 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:05:57 : Test Start!
+24/06/2023 21:05:59 : TC8.4.1: Test menu link reset app state home page
+24/06/2023 21:05:59 : Login is Successful!
+24/06/2023 21:05:59 : Current page is Home page.
+24/06/2023 21:05:59 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:07:09 : Test Start!
+24/06/2023 21:07:11 : TC8.4.1: Test menu link reset app state home page
+24/06/2023 21:07:12 : Login is Successful!
+24/06/2023 21:07:12 : Current page is Home page.
+24/06/2023 21:07:15 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:20:12 : Test Start!
+24/06/2023 21:20:15 : TC8.4.1: Test menu link reset app state home page
+24/06/2023 21:20:15 : Login is Successful!
+24/06/2023 21:20:15 : Current page is Home page.
+24/06/2023 21:20:16 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:20:30 : Test Start!
+24/06/2023 21:20:32 : TC8.4.1: Test menu link reset app state home page
+24/06/2023 21:20:33 : Login is Successful!
+24/06/2023 21:20:33 : Current page is Home page.
+24/06/2023 21:20:36 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:21:10 : Test Start!
+24/06/2023 21:21:12 : TC8.4.1: Test menu link reset app state home page
+24/06/2023 21:21:12 : Login is Successful!
+24/06/2023 21:21:12 : Current page is Home page.
+24/06/2023 21:21:14 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:22:03 : Test Start!
+24/06/2023 21:22:05 : TC8.4.1: Test menu link reset app state home page
+24/06/2023 21:22:05 : Login is Successful!
+24/06/2023 21:22:05 : Current page is Home page.
+24/06/2023 21:22:06 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:23:36 : Test Start!
+24/06/2023 21:23:38 : TC8.4.1: Test menu link reset app state home page
+24/06/2023 21:23:38 : Login is Successful!
+24/06/2023 21:23:38 : Current page is Home page.
+24/06/2023 21:23:39 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:42:05 : Test Start!
+24/06/2023 21:42:07 : TC8.1: Test menu link All Items
+24/06/2023 21:42:07 : Login is Successful!
+24/06/2023 21:42:07 : Current page is Home page.
+24/06/2023 21:42:08 : Current page is Product page.
+24/06/2023 21:42:11 : Current page is Home page.
+24/06/2023 21:42:11 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:46:07 : Test Start!
+24/06/2023 21:46:09 : TC10.3: Verify product price is the same on Home and Product pages (problem_user)
+24/06/2023 21:46:10 : Login is Successful!
+24/06/2023 21:46:10 : Current page is Home page.
+24/06/2023 21:46:10 : Current page is Product page.
+24/06/2023 21:46:10 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:52:38 : Test Start!
+24/06/2023 21:52:40 : TC10.3: Verify product price is the same on Home and Product pages (problem_user)
+24/06/2023 21:52:40 : Login is Successful!
+24/06/2023 21:52:40 : Current page is Home page.
+24/06/2023 21:52:40 : Current page is Product page.
+24/06/2023 21:52:41 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:55:18 : Test Start!
+24/06/2023 21:55:20 : TC10.3: Verify product price is the same on Home and Product pages (problem_user)
+24/06/2023 21:55:21 : Login is Successful!
+24/06/2023 21:55:21 : Current page is Home page.
+24/06/2023 21:55:21 : Current page is Product page.
+24/06/2023 21:55:22 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:55:41 : Test Start!
+24/06/2023 21:55:43 : TC10.3: Verify product price is the same on Home and Product pages (problem_user)
+24/06/2023 21:55:43 : Login is Successful!
+24/06/2023 21:55:43 : Current page is Home page.
+24/06/2023 21:55:44 : Current page is Product page.
+24/06/2023 21:55:47 : Current page is Home page.
+24/06/2023 21:55:47 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:56:08 : Test Start!
+24/06/2023 21:56:09 : TC10.3: Verify product price is the same on Home and Product pages (problem_user)
+24/06/2023 21:56:10 : Login is Successful!
+24/06/2023 21:56:10 : Current page is Home page.
+24/06/2023 21:56:10 : Current page is Product page.
+24/06/2023 21:56:11 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:58:12 : Test Start!
+24/06/2023 21:58:14 : TC10.3: Verify product price is the same on Home and Product pages (problem_user)
+24/06/2023 21:58:14 : Login is Successful!
+24/06/2023 21:58:14 : Current page is Home page.
+24/06/2023 21:58:15 : Current page is Product page.
+24/06/2023 21:58:15 : Test End!
+_________________________________________________________________________________________
+24/06/2023 21:59:41 : Test Start!
+24/06/2023 21:59:43 : TC10.3: Verify product price is the same on Home and Product pages (problem_user)
+24/06/2023 21:59:43 : Login is Successful!
+24/06/2023 21:59:43 : Current page is Home page.
+24/06/2023 21:59:44 : Current page is Product page.
+24/06/2023 21:59:58 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:01:16 : Test Start!
+24/06/2023 22:01:18 : TC10.3: Verify product price is the same on Home and Product pages (problem_user)
+24/06/2023 22:01:18 : Login is Successful!
+24/06/2023 22:01:18 : Current page is Home page.
+24/06/2023 22:01:19 : Current page is Product page.
+24/06/2023 22:01:19 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:03:05 : Test Start!
+24/06/2023 22:03:07 : TC10.3: Verify product price is the same on Home and Product pages (problem_user)
+24/06/2023 22:03:08 : Login is Successful!
+24/06/2023 22:03:08 : Current page is Home page.
+24/06/2023 22:03:08 : Current page is Product page.
+24/06/2023 22:03:23 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:06:51 : Test Start!
+24/06/2023 22:06:53 : TC10.3: Verify product price is the same on Home and Product pages (problem_user)
+24/06/2023 22:06:53 : Login is Successful!
+24/06/2023 22:06:53 : Current page is Home page.
+24/06/2023 22:06:54 : Current page is Product page.
+24/06/2023 22:06:54 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:08:35 : Test Start!
+24/06/2023 22:08:37 : TC8.1: Test menu link All Items
+24/06/2023 22:08:37 : Login is Successful!
+24/06/2023 22:08:37 : Current page is Home page.
+24/06/2023 22:08:38 : Current page is Product page.
+24/06/2023 22:08:41 : Current page is Home page.
+24/06/2023 22:08:41 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:11:36 : Test Start!
+24/06/2023 22:11:38 : TC1: Login in website with valid data
+24/06/2023 22:11:39 : Login is Successful!
+24/06/2023 22:11:39 : Current page is Home page.
+24/06/2023 22:11:39 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:11:39 : Test Start!
+24/06/2023 22:11:40 : TC10.3: Verify product price is the same on Home and Product pages (problem_user)
+24/06/2023 22:11:40 : Login is Successful!
+24/06/2023 22:11:40 : Current page is Home page.
+24/06/2023 22:11:41 : Current page is Product page.
+24/06/2023 22:11:41 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:11:41 : Test Start!
+24/06/2023 22:11:42 : TC2: Login in website with invalid data
+24/06/2023 22:11:43 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+24/06/2023 22:11:43 : Home page loading Failed.
+24/06/2023 22:11:43 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:11:43 : Test Start!
+24/06/2023 22:11:44 : TC3: Verify locked user cant login in website
+24/06/2023 22:11:44 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+24/06/2023 22:11:44 : Home page loading Failed.
+24/06/2023 22:11:44 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:12:06 : Test Start!
+24/06/2023 22:12:08 : TC1: Login in website with valid data
+24/06/2023 22:12:09 : Login is Successful!
+24/06/2023 22:12:09 : Current page is Home page.
+24/06/2023 22:12:09 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:12:09 : Test Start!
+24/06/2023 22:12:10 : TC10.3: Verify product price is the same on Home and Product pages (problem_user)
+24/06/2023 22:12:10 : Login is Successful!
+24/06/2023 22:12:10 : Current page is Home page.
+24/06/2023 22:12:11 : Current page is Product page.
+24/06/2023 22:12:25 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:12:25 : Test Start!
+24/06/2023 22:12:26 : TC2: Login in website with invalid data
+24/06/2023 22:12:27 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+24/06/2023 22:12:27 : Home page loading Failed.
+24/06/2023 22:12:27 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:12:27 : Test Start!
+24/06/2023 22:12:28 : TC3: Verify locked user cant login in website
+24/06/2023 22:12:28 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+24/06/2023 22:12:28 : Home page loading Failed.
+24/06/2023 22:12:28 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:13:03 : Test Start!
+24/06/2023 22:13:04 : TC1: Login in website with valid data
+24/06/2023 22:13:05 : Login is Successful!
+24/06/2023 22:13:05 : Current page is Home page.
+24/06/2023 22:13:05 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:13:05 : Test Start!
+24/06/2023 22:13:06 : TC2: Login in website with invalid data
+24/06/2023 22:13:07 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+24/06/2023 22:13:07 : Home page loading Failed.
+24/06/2023 22:13:07 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:13:07 : Test Start!
+24/06/2023 22:13:08 : TC3: Verify locked user cant login in website
+24/06/2023 22:13:09 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+24/06/2023 22:13:09 : Home page loading Failed.
+24/06/2023 22:13:09 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:19:45 : Test Start!
+24/06/2023 22:19:47 : TC8.4.1: Test menu link reset app state product page
+24/06/2023 22:19:48 : Login is Successful!
+24/06/2023 22:19:48 : Current page is Home page.
+24/06/2023 22:19:48 : Current page is Product page.
+24/06/2023 22:19:49 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:21:06 : Test Start!
+24/06/2023 22:21:08 : TC8.4.1: Test menu link reset app state product page
+24/06/2023 22:21:09 : Login is Successful!
+24/06/2023 22:21:09 : Current page is Home page.
+24/06/2023 22:21:09 : Current page is Product page.
+24/06/2023 22:21:17 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:22:16 : Test Start!
+24/06/2023 22:22:18 : TC8.4.1: Test menu link reset app state product page
+24/06/2023 22:22:18 : Login is Successful!
+24/06/2023 22:22:18 : Current page is Home page.
+24/06/2023 22:22:19 : Current page is Product page.
+24/06/2023 22:22:20 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:24:01 : Test Start!
+24/06/2023 22:24:03 : TC8.4.1: Test menu link reset app state product page
+24/06/2023 22:24:04 : Login is Successful!
+24/06/2023 22:24:04 : Current page is Home page.
+24/06/2023 22:24:04 : Current page is Product page.
+24/06/2023 22:24:13 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:26:41 : Test Start!
+24/06/2023 22:26:43 : TC8.4.1: Test menu link reset app state product page
+24/06/2023 22:26:43 : Login is Successful!
+24/06/2023 22:26:43 : Current page is Home page.
+24/06/2023 22:26:43 : Current page is Product page.
+24/06/2023 22:26:52 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:28:11 : Test Start!
+24/06/2023 22:28:13 : TC8.4.1: Test menu link reset app state product page
+24/06/2023 22:28:14 : Login is Successful!
+24/06/2023 22:28:14 : Current page is Home page.
+24/06/2023 22:28:14 : Current page is Product page.
+24/06/2023 22:28:22 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:29:05 : Test Start!
+24/06/2023 22:29:07 : TC8.4.1: Test menu link reset app state product page
+24/06/2023 22:29:08 : Login is Successful!
+24/06/2023 22:29:08 : Current page is Home page.
+24/06/2023 22:29:08 : Current page is Product page.
+24/06/2023 22:29:16 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:31:32 : Test Start!
+24/06/2023 22:31:34 : TC8.4.1: Test menu link reset app state product page
+24/06/2023 22:31:35 : Login is Successful!
+24/06/2023 22:31:35 : Current page is Home page.
+24/06/2023 22:31:35 : Current page is Product page.
+24/06/2023 22:31:44 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:34:40 : Test Start!
+24/06/2023 22:34:42 : TC8.4.1: Test menu link reset app state product page
+24/06/2023 22:34:42 : Login is Successful!
+24/06/2023 22:34:42 : Current page is Home page.
+24/06/2023 22:34:43 : Current page is Product page.
+24/06/2023 22:34:51 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:37:55 : Test Start!
+24/06/2023 22:37:57 : TC8.4.1: Test menu link reset app state product page
+24/06/2023 22:37:58 : Login is Successful!
+24/06/2023 22:37:58 : Current page is Home page.
+24/06/2023 22:37:58 : Current page is Product page.
+24/06/2023 22:38:06 : Test End!
+_________________________________________________________________________________________
+24/06/2023 22:38:15 : Test Start!
+24/06/2023 22:38:17 : TC8.4.1: Test menu link reset app state product page
+24/06/2023 22:38:18 : Login is Successful!
+24/06/2023 22:38:18 : Current page is Home page.
+24/06/2023 22:38:18 : Current page is Product page.
+24/06/2023 22:38:27 : Test End!
+_________________________________________________________________________________________
