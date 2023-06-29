@@ -8,7 +8,7 @@ import com.saucedemo.utilities.TestUtilities;
 import com.saucedemo.utilities.UserBuilder;
 import org.testng.annotations.Test;
 
-public class TC8_1_Test_menu_link_all_items extends TestUtilities {
+public class Test_TC8_1_Test_menu_link_all_items extends TestUtilities {
     @Test
     public void testMenuAllItemsLink() {
         MyFileWriter.writeToLog("TC8.1: Test menu link All Items");

@@ -7,7 +7,7 @@ import com.saucedemo.pom.HomePage;
 import com.saucedemo.pom.LoginPage;
 import com.saucedemo.utilities.TestUtilities;
 
-public class TC1_Login_in_website_with_valid_data extends TestUtilities {
+public class Test_TC1_Login_in_website_with_valid_data extends TestUtilities {
 
     //todo  IN THE ENT COMMENTS!
     //The test uses the generated users from CSV file, initializes the web driver using the LoginPage object,

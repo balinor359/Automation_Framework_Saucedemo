@@ -2,15 +2,13 @@ package com.saucedemo.tests.common;
 
 import com.saucedemo.pom.HomePage;
 import com.saucedemo.pom.LoginPage;
-import com.saucedemo.pom.ProductPage;
 import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
 import com.saucedemo.utilities.UserBuilder;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
-public class TC12_Verify_add_to_cart_buttons_work_correctly_on_problem_user extends TestUtilities {
+public class Test_TC12_Verify_add_to_cart_buttons_work_correctly_on_problem_user extends TestUtilities {
     @Test
     public void verifyAllAddToCartButtonsProblemUser() {
         MyFileWriter.writeToLog("TC12: Verify add-to-cart buttons work correctly on (problem_user)");

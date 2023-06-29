@@ -7,9 +7,8 @@ import com.saucedemo.utilities.TestUtilities;
 import com.saucedemo.utilities.UserBuilder;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
-public class TC8_4_1_Test_menu_link_reset_app_state_home_page extends TestUtilities{
+public class Test_TC8_4_1_Test_menu_link_reset_app_state_home_page extends TestUtilities{
     @Test
     public void testMenuResetLink() {
         MyFileWriter.writeToLog("TC8.4.1: Test menu link reset app state home page");

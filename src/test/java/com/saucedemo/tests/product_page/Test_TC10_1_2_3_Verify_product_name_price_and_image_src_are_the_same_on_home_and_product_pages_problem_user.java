@@ -8,7 +8,7 @@ import com.saucedemo.utilities.TestUtilities;
 import com.saucedemo.utilities.UserBuilder;
 import org.testng.annotations.Test;
 
-public class TC10_1_2_3_Verify_product_name_price_and_image_src_are_the_same_on_home_and_product_pages_problem_user extends TestUtilities {
+public class Test_TC10_1_2_3_Verify_product_name_price_and_image_src_are_the_same_on_home_and_product_pages_problem_user extends TestUtilities {
 
     @Test
     public void verifyProductNamePriceImageSrcProblemUser() {

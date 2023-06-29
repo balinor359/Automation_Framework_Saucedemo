@@ -7,7 +7,7 @@ import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
 import com.saucedemo.utilities.UserBuilder;
 
-public class TC3_Verify_locked_user_cant_login_in_website extends TestUtilities {
+public class Test_TC3_Verify_locked_user_cant_login_in_website extends TestUtilities {
     @Test
     public void loginWithLockedUser() {
         MyFileWriter.writeToLog("TC3: Verify locked user cant login in website");

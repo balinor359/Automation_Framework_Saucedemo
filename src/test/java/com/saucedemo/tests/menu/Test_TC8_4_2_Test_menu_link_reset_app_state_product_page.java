@@ -9,10 +9,10 @@ import com.saucedemo.utilities.UserBuilder;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC8_4_2_Test_menu_link_reset_app_state_product_page extends TestUtilities {
+public class Test_TC8_4_2_Test_menu_link_reset_app_state_product_page extends TestUtilities {
     @Test
     public void testMenuResetLinkFromProductPage() {
-        MyFileWriter.writeToLog("TC8.4.1: Test menu link reset app state product page");
+        MyFileWriter.writeToLog("TC8.4.2: Test menu link reset app state product page");
 
         LoginPage loginPage = new LoginPage(TestUtilities.driver);
         loginPage.loginPageValidator();

@@ -11,7 +11,7 @@ import com.saucedemo.utilities.TestUtilities;
 
 import java.io.IOException;
 
-public class TC4_Login_in_website_via_csv_data_file extends TestUtilities {
+public class Test_TC4_Login_in_website_via_csv_data_file extends TestUtilities {
 
     //Load CSV File
     @DataProvider(name = "csvDataFile")

@@ -6,11 +6,10 @@ import com.saucedemo.pom.LoginPage;
 import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
 import com.saucedemo.utilities.UserBuilder;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class TC5_Add_products_in_the_cart extends TestUtilities {
+public class Test_TC5_Add_products_in_the_cart extends TestUtilities {
     @Test
     public void verifyProductsAddedToTheCart() {
         MyFileWriter.writeToLog("TC5: Add products in the cart");

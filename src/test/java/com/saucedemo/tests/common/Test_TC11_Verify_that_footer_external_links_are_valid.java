@@ -1,23 +1,26 @@
-package com.saucedemo.tests.menu;
+package com.saucedemo.tests.common;
 
 import com.saucedemo.pom.HomePage;
+import org.testng.annotations.Test;
 import com.saucedemo.pom.LoginPage;
 import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
 import com.saucedemo.utilities.UserBuilder;
-import org.testng.annotations.Test;
 
-public class TC8_2_Test_menu_link_about extends TestUtilities{
+public class Test_TC11_Verify_that_footer_external_links_are_valid extends TestUtilities{
+
     @Test
-    public void testMenuAboutLink() {
-        MyFileWriter.writeToLog("TC8.2: Test menu link about");
+    public void testFooterSocialLinks(){
+        MyFileWriter.writeToLog("TC11: Verify that footer external links are valid");
 
         LoginPage loginPage = new LoginPage(TestUtilities.driver);
         loginPage.loginPageValidator();
         HomePage homePage = loginPage.testUserLogin(UserBuilder.fullUsersList.get(0));
         homePage.homepageValidator();
-        homePage.menuLinksValidator();
-        homePage.clickMenuAboutButton();
+
+        homePage.socialLinksValidator();
+
 
     }
+//
 }
