@@ -19,8 +19,8 @@ public class TC8_4_1_Test_menu_link_reset_app_state_home_page extends TestUtilit
         HomePage homePage = loginPage.testUserLogin(UserBuilder.fullUsersList.get(0));
         homePage.homepageValidator();
 
-        homePage.addItemToTheCart("bolt-t-shirt");
-        homePage.addItemToTheCart("bike-light");
+        homePage.addItemToTheCart("sauce-labs-bolt-t-shirt");
+        homePage.addItemToTheCart("sauce-labs-bike-light");
 
         Assert.assertEquals(homePage.getItemsInTheCart(),2, HomePage.CART_BADGE_WRONG_AMOUNT);
 
@@ -29,9 +29,8 @@ public class TC8_4_1_Test_menu_link_reset_app_state_home_page extends TestUtilit
 
         Assert.assertEquals(homePage.getItemsInTheCart(),0, HomePage.CART_BADGE_WRONG_AMOUNT);
 
-        homePage.removeButtonValidator("bolt-t-shirt");
-        homePage.removeButtonValidator("bike-light");
-
+        homePage.addToCartButtonValidator("sauce-labs-bolt-t-shirt");
+        homePage.addToCartButtonValidator("sauce-labs-bike-light");
 
     }
 

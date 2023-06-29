@@ -1,5 +1,6 @@
 package com.saucedemo.pom;
 
+import com.saucedemo.objects.Product;
 import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
 import org.openqa.selenium.WebDriver;
@@ -16,10 +17,10 @@ public class CartPage extends TestUtilities {
     private static final String CART_PAGE_ERROR = "Cart page loading Failed.";
     private static final String PRODUCTS_NAME_MISSING_MESSAGE = "Product name is not displayed!";
     private static final String PRODUCT_PRICE_MISSING_MESSAGE = "Product price is not displayed!";
-    private static final String PRODUCT_IMAGE_MISSING_MESSAGE = "Product image is not displayed!";
+//    private static final String PRODUCT_IMAGE_MISSING_MESSAGE = "Product image is not displayed!";
     private static final String PRODUCTS_NAME_IS_DIFFERENT_MESSAGE = "Product name is different!";
     private static final String PRODUCT_PRICE_IS_DIFFERENT_MESSAGE = "Product price is different!";
-    private static final String PRODUCT_IMAGE_IS_DIFFERENT_MESSAGE = "Product image is different!";
+//    private static final String PRODUCT_IMAGE_IS_DIFFERENT_MESSAGE = "Product image is different!";
     private static final String BACK_TO_ALL_PRODUCTS_MISSING_MESSAGE = "'Back to products' link is not displayed!";
     private static final String PRODUCT_ADD_TO_CART_BUTTON_MISSING_MESSAGE = "'Add to cart' button is not displayed!";
 
@@ -30,11 +31,11 @@ public class CartPage extends TestUtilities {
 
 
     /* method who validate product page items */
-//    public void cartPageValidator() {
-//        if (driver.getCurrentUrl().contains(CART_PAGE_URL)) {
-//            System.out.println(CART_PAGE);
-//            MyFileWriter.writeToLog(CART_PAGE);
-//
+    public void cartPageValidator() {
+        if (driver.getCurrentUrl().contains(CART_PAGE_URL)) {
+            System.out.println(CART_PAGE);
+            MyFileWriter.writeToLog(CART_PAGE);
+
 //            Assert.assertTrue(productName.isDisplayed(), PRODUCTS_NAME_MISSING_MESSAGE);
 //            Assert.assertEquals(HomePage.selectedProductName, productName.getText(), PRODUCTS_NAME_IS_DIFFERENT_MESSAGE);
 //
@@ -49,10 +50,19 @@ public class CartPage extends TestUtilities {
 //
 //            waitClickable(driver, productAddToCartButton, 2);
 //            Assert.assertTrue(productAddToCartButton.isDisplayed(), PRODUCT_ADD_TO_CART_BUTTON_MISSING_MESSAGE);
-//
-//        } else {
-//            System.out.println(CART_PAGE_ERROR);
-//            MyFileWriter.writeToLog(CART_PAGE_ERROR);
-//        }
-//    }
+
+            for (Product product : Product.productList) {
+                System.out.println("Name: " + product.getName());
+                System.out.println("Image source: " + product.getImageSrc());
+                System.out.println("Price: $" + product.getPrice());
+                System.out.println();
+
+                //todo Asserts sa tuk !!!!!!!!!
+            }
+
+        } else {
+            System.out.println(CART_PAGE_ERROR);
+            MyFileWriter.writeToLog(CART_PAGE_ERROR);
+        }
+    }
 }

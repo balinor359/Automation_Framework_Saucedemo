@@ -15,7 +15,7 @@ public class TC3_Verify_locked_user_cant_login_in_website extends TestUtilities 
         LoginPage loginPage = new LoginPage(TestUtilities.driver);
         loginPage.loginPageValidator();
         HomePage homePage = loginPage.testUserLogin(UserBuilder.fullUsersList.get(1));
-        loginPage.checkErrorMsgInvalidUser();
+        loginPage.validateErrorMsgInvalidUser();
         homePage.homepageValidator();
 
     }

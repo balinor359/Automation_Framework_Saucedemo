@@ -19,13 +19,10 @@ public class TC8_4_2_Test_menu_link_reset_app_state_product_page extends TestUti
         HomePage homePage = loginPage.testUserLogin(UserBuilder.fullUsersList.get(0));
         homePage.homepageValidator();
 
-        homePage.selectProduct("Sauce Labs Fleece Jacket");
-
-        ProductPage productPage = homePage.openProductPage();
+        ProductPage productPage = homePage.selectProduct("Sauce Labs Fleece Jacket");
         productPage.productPageValidator();
 
-        //todo Грешно ли е че викам метода от homepage? Трябвав ли да го има същия метод и в productPage? или така е по-добрия вариант?
-        homePage.addItemToTheCart("fleece-jacket");
+        homePage.addItemToTheCartSimpleClick("sauce-labs-fleece-jacket");
 
         Assert.assertEquals(homePage.getItemsInTheCart(),1, HomePage.CART_BADGE_WRONG_AMOUNT);
 
@@ -34,10 +31,7 @@ public class TC8_4_2_Test_menu_link_reset_app_state_product_page extends TestUti
 
         Assert.assertEquals(homePage.getItemsInTheCart(),0, HomePage.CART_BADGE_WRONG_AMOUNT);
 
-        homePage.addToCartButtonValidator("fleece-jacket");
-        //todo Логически теста е верен, проблема е в сайта. Така ли трябва да се остави теста, да не успява да намери елемент?
-        //как трябва да се обработи? Достатъчно ли е съобщението което извеждам с try/catch? - но така теста минава!
-
+        homePage.addToCartButtonValidator("sauce-labs-fleece-jacket");
 
     }
 }

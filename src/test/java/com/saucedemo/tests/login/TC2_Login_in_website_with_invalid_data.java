@@ -15,7 +15,7 @@ public class TC2_Login_in_website_with_invalid_data extends TestUtilities {
         LoginPage loginPage = new LoginPage(TestUtilities.driver);
         loginPage.loginPageValidator();
         HomePage homePage = loginPage.testUserLogin(UserBuilder.fullUsersList.get(4));
-        loginPage.checkErrorMsgWrongUsernameAndPassword();
+        loginPage.validateErrorMsgWrongUsernameAndPassword();
         homePage.homepageValidator();
 
     }

@@ -17,15 +17,12 @@ public class TC8_1_Test_menu_link_all_items extends TestUtilities {
         loginPage.loginPageValidator();
         HomePage homePage = loginPage.testUserLogin(UserBuilder.fullUsersList.get(0));
         homePage.homepageValidator();
-        homePage.selectProduct("Sauce Labs Bike Light");
 
-        ProductPage productPage = homePage.openProductPage();
+        ProductPage productPage = homePage.selectProduct("Sauce Labs Bike Light");
         productPage.productPageValidator();
         homePage.menuLinksValidator();
         homePage.clickMenuInventoryButton();
 
-        simpleWait(2000);           //todo Ако я няма тази пауза излиза error-a
-                                             //org.openqa.selenium.remote.http.WebSocket$Listener onError WARNING: Connection reset
         homePage.homepageValidator();
 
     }

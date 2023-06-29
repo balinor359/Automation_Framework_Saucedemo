@@ -14,14 +14,12 @@ public class TC8_3_Test_menu_link_logout extends TestUtilities{
 
         LoginPage loginPage = new LoginPage(TestUtilities.driver);
         loginPage.loginPageValidator();
+
         HomePage homePage = loginPage.testUserLogin(UserBuilder.fullUsersList.get(0));
         homePage.homepageValidator();
+
         homePage.menuLinksValidator();
         homePage.clickMenuLogoutButton();
-
-        //todo Ако я няма тази пауза излиза error-a
-        //org.openqa.selenium.remote.http.WebSocket$Listener onError WARNING: Connection reset
-        simpleWait(2000);
 
         loginPage.successfulLogout();
         loginPage.loginPageValidator();

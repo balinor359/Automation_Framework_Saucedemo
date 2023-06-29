@@ -6,10 +6,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeDriverService;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxDriverService;
+import org.openqa.selenium.firefox.GeckoDriverService;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -17,6 +21,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -30,23 +35,30 @@ public class TestUtilities {
     private String browser;
     private int implicitlyWait;
 
+
     @BeforeMethod
     public void setUp() {
         MyFileWriter.writeToLog("Test Start!");
         System.out.println("Test Start!");
-        setupBrowserDriver();
+
         UserBuilder.createUserList();
+
+        setupBrowserDriver();
 
         System.out.println("Current Thread ID: " + Thread.currentThread().getId());
     }
 
     @AfterMethod
     public void tearDown() {
-        driver.close();
-        driver.quit();
+        if (driver != null) {
+            driver.close();
+            driver.quit();
+        }
+
         MyFileWriter.writeToLog("Test End!" + "\n_________________________________________________________________________________________");
         System.out.println("Test End!");
         System.out.println("_________________________________________________________________________________________");
+
     }
 
     public void setupBrowserDriver() {
@@ -108,27 +120,20 @@ public class TestUtilities {
         loadUrl(url);
     }
 
-
     //Explicit wait
-    public static WebElement waitClickable(WebDriver driver, WebElement webElement, int sec){
-        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(sec));
+    public static WebElement waitClickable(WebDriver driver, WebElement webElement, int sec) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(sec));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(webElement));
         return element;
     }
-    public static WebElement waitVisible(WebDriver driver, WebElement webElement, int sec){
+
+    public static WebElement waitVisible(WebDriver driver, WebElement webElement, int sec) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(sec));
         WebElement element = wait.until(ExpectedConditions.visibilityOf(webElement));
         return element;
 
     }
-//    public static void waitPageToLoad(WebDriver driver,int sec){
-//        driver.manage().timeouts().implicitlyWait(sec, TimeUnit.SECONDS);
-////        try {
-////            driver.manage().wait(sec);
-////        } catch (InterruptedException e) {
-////            throw new RuntimeException(e);
-////        }
-//    }
+
     public static void simpleWait(int millisecond) {
         try {
             Thread.sleep(millisecond);
@@ -137,8 +142,5 @@ public class TestUtilities {
         }
     }
 
-//    public static WebDriverWait waitSimpleTest(WebDriver driver, int sec){
-//        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(sec));
-//        return wait;
-//    }
+
 }
