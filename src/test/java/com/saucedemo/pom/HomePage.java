@@ -7,14 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
 import org.openqa.selenium.support.Color;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +35,7 @@ public class HomePage extends TestUtilities {
     private static final String PRODUCTS_LIST_MISSING_MESSAGE = "Products list is not displayed!";
     private static final String MENU_BUTTON_MISSING_MESSAGE = "Menu button is not displayed!";
     private static final String SHOPPING_CART_MISSING_MESSAGE = "Shopping cart is not displayed!";
-    private static final String TWITTER_LINK_URL = "https://twitter.com/saucelabs";
+    private static final String TWITTER_LINK_URL = "https://twitter.com";
     private static final String FACEBOOK_LINK_URL = "https://www.facebook.com/saucelabs";
     private static final String LINKEDIN_LINK_URL = "https://www.linkedin.com";
     private static final String DIFFERENT_TEXT = "The text is different!";
@@ -63,9 +60,9 @@ public class HomePage extends TestUtilities {
     public static final String CODE_ERROR_REMOVE_BUTTON = "Code error: the 'Remove' button you interact with does not exist!";
     public static final Object RETURN_NULL_OBJECT = null;
 
-    public static String selectedProductName = "";
-    public static String selectedProductPrice = "";
-    public static String selectedProductImageSrc = "";
+//    public static String selectedProductName = "";
+//    public static String selectedProductPrice = "";
+//    public static String selectedProductImageSrc = "";
 
 
     @FindBy(className = "shopping_cart_link")
@@ -75,7 +72,7 @@ public class HomePage extends TestUtilities {
     @FindBy(xpath = "//div[@class='inventory_list']")
     private WebElement productsList;
     @FindBy(xpath = "//div[@class='inventory_item']")
-    private WebElement singleProduct;
+    private List<WebElement> productListLocal;
     @FindBy(xpath = "//div[@class='inventory_item_label']//a")
     private WebElement singleProductName;
     @FindBy(xpath = "//div[@class='inventory_item_label']//a[contains(@id,'title_link')]")
@@ -120,58 +117,38 @@ public class HomePage extends TestUtilities {
         removeButtonValidator(productNameUrl);
     }
 
-    public void addItemToTheCart(String productNameUrl) {
+    public void addItemToTheCartAndSaveValues(String productNameUrl) {
         addToCartButtonValidator(productNameUrl);
 
         String xpathOfClickedElement = String.format(ADD_TO_CART_LOCATOR, productNameUrl);
         WebElement addToCartButton = driver.findElement(By.xpath(xpathOfClickedElement));
 
-        List<WebElement> products = driver.findElements(By.cssSelector("div[class='inventory_item']"));
-
-        System.out.println(addToCartButton);
+//        List<WebElement> products = driver.findElements(By.xpath("//div[@class='inventory_item']"));
 
         /* go through all products */
-        for (WebElement product : products) {
+        for (WebElement product : productListLocal) {
 
-            System.out.println("in for " + addToCartButton);
-            System.out.println(product);
-
-            /* get child element - Name */
-            WebElement childName = product.findElement(By.cssSelector("div[class='inventory_item_name']"));
-
-            /* get child element - Price */
-            WebElement productPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
-
-            /* get child element - Image Src*/
-            WebElement productImageSrc = product.findElement(By.cssSelector("img[class='inventory_item_img']"));
-
-            WebElement productNameUrlButton = product.findElement(By.xpath("//button[contains(text(),'Add to cart')]"));
+            WebElement productNameUrlButton = product.findElement(By.cssSelector("button.btn_inventory"));
             String productNameUrlLocal = productNameUrlButton.getAttribute("id");
-            /* Save values for Name/Price/Image src for comparison in other pages */
-//            selectedProductName = childName.getText();
-//            selectedProductPrice = productPrice.getText();
-//            selectedProductImageSrc = productImageSrc.getAttribute("src");
 
-            System.out.println("productNameUrlLocal " + productNameUrlLocal);
-            System.out.println("productNameUrl " + productNameUrl);
             if (productNameUrlLocal.contains(productNameUrl)) {
+                /* get child element - Name */
+                WebElement childName = product.findElement(By.cssSelector("div[class='inventory_item_name']"));
+
+                /* get child element - Price */
+                WebElement productPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
+
+                /* get child element - Image Src*/
+                WebElement productImageSrc = product.findElement(By.cssSelector("img[class='inventory_item_img']"));
+
                 /* Create new product with name, price and image src, and add it to the product list */
                 Product newProduct = new Product(childName.getText(), productPrice.getText(), productImageSrc.getAttribute("src"));
                 Product.productList.add(newProduct);
 
-                System.out.println("selectedProductName " + newProduct.getName());
-                System.out.println("selectedProductPrice " + newProduct.getPrice());
-                System.out.println("selectedProductImageSrc " + newProduct.getImageSrc());
-                System.out.println(newProduct);
-
                 addToCartButton.click();
-
                 removeButtonValidator(productNameUrl);
             }
-
-
         }
-
     }
 
     public void removeItemFromTheCart(String productName) {
@@ -185,43 +162,43 @@ public class HomePage extends TestUtilities {
     }
 
     public void addAllItemToTheCart() {
-//        String xpathOfClickedElement = String.format(ADD_TO_CART_LOCATOR_ALL);
-//        WebElement allAddToCartButton = driver.findElement(By.xpath(ADD_TO_CART_LOCATOR_ALL));
 
-
-//        removeButtonValidator(productName);
-        /* get all products */
-        List<WebElement> products = driver.findElements(By.cssSelector("div[class='inventory_item']"));
-
-        System.out.println(products);
         /* go through all products */
-        for (WebElement product : products) {
-            /* get child element - Name */
-            WebElement addToCartButton = product.findElement(By.xpath(ADD_TO_CART_LOCATOR_ALL));
-            String nameADDTOCART = addToCartButton.getText();
+        for (WebElement product : productListLocal) {
 
-            WebElement childName = product.findElement(By.cssSelector("div[class='inventory_item_name']"));
-            String name = childName.getText();
+            /* get element - Name */
+            WebElement itemName = product.findElement(By.cssSelector("div[class='inventory_item_name']"));
 
-            //todo TC12 - Не мога да разбера защо не сработва валидацията за бутона, след като завърта всички продукти и
-            // в методите се подават прихванат елемент от конкретен продукт.Каква може да е причината?
-            // Успява да кликне само 2 бутона / 3-тия е проблемен, но 5-тият може да се кликне през UI но не го клика
-            // както и не сработва проверката за самите бутони
-            System.out.println("for (WebElement product : products - childName ): " + name);
-            System.out.println("for (WebElement product : products - allAddToCartButton ): " + nameADDTOCART);
+            /* get element - Price */
+            WebElement itemPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
+
+            /* get child element - Image Src*/
+            WebElement itemImageSrc = product.findElement(By.cssSelector("img[class='inventory_item_img']"));
+
+            /* get element - Add to Cart Button */
+            WebElement ItemAddToCartBtn = product.findElement(By.cssSelector("button.btn_primary"));
+
+            ItemAddToCartBtn.click();
+
+            /* Create new product with name, price and image src, and add it to the product list */
+            Product newProduct = new Product(itemName.getText(), itemPrice.getText(), itemImageSrc.getAttribute("src"));
+            Product.productList.add(newProduct);
 
 
-            //todo Тест кейса може да остане по този начин, проблема е в самия сайт
-            addToCartButton.click();
+            try {
+                /* get element - Remove Button */
+                WebElement ItemRemoveBtn = product.findElement(By.cssSelector("button.btn_secondary"));
+                String ItemRemoveBtnId = ItemRemoveBtn.getAttribute("Id");
 
-            simpleWait(500); //todo for delete
+                removeButtonValidatorWholeUrl(ItemRemoveBtnId);
 
-            //todo Как успява да засече елемента, след като не е генериран в HTML защото докато не се кликне Add-to cart, Remove не се появява
-            WebElement removeButton = product.findElement(By.xpath(REMOVE_FROM_CART_LOCATOR_ALL));
-            String nameRemove = removeButton.getText();
-            System.out.println("for (WebElement product : products - allRemoveButton ): " + nameRemove);
+            } catch (NoSuchElementException e) {
+                System.out.println(CODE_ERROR_REMOVE_BUTTON);
+                MyFileWriter.writeToLog(CODE_ERROR_REMOVE_BUTTON);
 
-            removeButtonAllValidator(removeButton);
+                Assert.fail(CODE_ERROR_REMOVE_BUTTON);
+            }
+
         }
 
     }
@@ -273,30 +250,27 @@ public class HomePage extends TestUtilities {
             Assert.fail(CODE_ERROR_REMOVE_BUTTON);
         }
     }
-
-    public void removeButtonAllValidator(WebElement removeButton) {
+    public void removeButtonValidatorWholeUrl(String productNameUrl) {
         try {
-            System.out.println("removeButtonAllValidator method: " + removeButton);
+            String xpathOfClickedElement = String.format("//button[@id='%s']", productNameUrl);
+            WebElement removeButton = driver.findElement(By.xpath(xpathOfClickedElement));
 
             Assert.assertTrue(removeButton.isDisplayed(), REMOVE_BUTTON_MISSING_MESSAGE);
             Assert.assertEquals(removeButton.getText(), REMOVE_BUTTON_TEXT, DIFFERENT_TEXT);
 
             String fontColor = removeButton.getCssValue("color");
             String fontColorHex = Color.fromString(fontColor).asHex();
+            Assert.assertEquals(fontColorHex, REMOVE_BUTTON_FONT_COLOR, DIFFERENT_CSS_VALUE);
 
             String elementBorderColor = removeButton.getCssValue("border-color");
             String elementBorderColorHex = Color.fromString(elementBorderColor).asHex();
-
-            Assert.assertEquals(fontColorHex, REMOVE_BUTTON_FONT_COLOR, DIFFERENT_CSS_VALUE);
             Assert.assertEquals(elementBorderColorHex, REMOVE_BUTTON_BORDER_COLOR, DIFFERENT_CSS_VALUE);
-
-            System.out.println("removeButtonAllValidator method removeButton.getText(): " + removeButton.getText());
-            System.out.println("removeButtonAllValidator method fontColorHex: " + fontColorHex);
-            System.out.println("removeButtonAllValidator method elementBorderColorHex: " + elementBorderColorHex);
 
         } catch (NoSuchElementException e) {
             System.out.println(CODE_ERROR_REMOVE_BUTTON);
             MyFileWriter.writeToLog(CODE_ERROR_REMOVE_BUTTON);
+
+            Assert.fail(CODE_ERROR_REMOVE_BUTTON);
         }
     }
 
@@ -356,10 +330,10 @@ public class HomePage extends TestUtilities {
     /* method who navigate to product page and validate product items by submitted item name*/
     public ProductPage selectProduct(String productName) {
         /* get all products */
-        List<WebElement> products = driver.findElements(By.cssSelector("div[class='inventory_item']"));
+//        List<WebElement> products = driver.findElements(By.cssSelector("div[class='inventory_item']"));
 
         /* go through all products */
-        for (WebElement product : products) {
+        for (WebElement product : productListLocal) {
 
             /* get child element - Name */
             WebElement productTitle = product.findElement(By.cssSelector("div[class='inventory_item_name']"));
@@ -462,7 +436,7 @@ public class HomePage extends TestUtilities {
 
     public void validateTwitterLink() {
 
-        if (driver.getCurrentUrl().equals(TWITTER_LINK_URL)) {
+        if (driver.getCurrentUrl().contains(TWITTER_LINK_URL)) {
             System.out.println(REDIRECT_IS_SUCCESSFUL);
             MyFileWriter.writeToLog(REDIRECT_IS_SUCCESSFUL);
         } else {

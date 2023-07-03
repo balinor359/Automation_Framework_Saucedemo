@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Saucedemo_Test_Suite" parallel="tests" thread-count="3" verbose="1" annotations="JDK">
+<suite name="Saucedemo_Test_Suite" parallel="methods" thread-count="3" verbose="1" annotations="JDK">
     <test name="Test Cases 1">
         <classes>
             <class name="com.saucedemo.tests.login.Test_TC1_Login_in_website_with_valid_data"/>

@@ -3,6 +3,7 @@ package com.saucedemo.utilities;
 import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.UserBuilder;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -45,7 +46,6 @@ public class TestUtilities {
 
         setupBrowserDriver();
 
-        System.out.println("Current Thread ID: " + Thread.currentThread().getId());
     }
 
     @AfterMethod
@@ -97,11 +97,24 @@ public class TestUtilities {
     }
 
     private void createChromeDriver(String url, int implicitlyWait) {
+        //todo 1. Как мога да форсирам Framework-a да ползва зададените драйвъри, които са в root-a на програмата, а не кешираните от самия компютър?
         System.setProperty("webdriver.chrome.driver", "saucedemo-webdrivers\\chromedriver\\chromedriver.exe");
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
         loadUrl(url);
+
+        System.out.println("INFO START________________________");
+        System.out.println("Current Thread ID: " + Thread.currentThread().getId());
+
+        Capabilities capabilities = ((ChromeDriver) driver).getCapabilities();
+        String browserVersion = capabilities.getCapability("browserVersion").toString();
+        String webDriverVersion = capabilities.getCapability("chrome").toString();
+
+        System.out.println("Used WebDriver: Chrome");
+        System.out.println("Browser Version: " + browserVersion);
+        System.out.println("WebDriver Version: " + webDriverVersion);
+        System.out.println("INFO END__________________________\n");
     }
 
     private void createFirefoxDriver(String url, int implicitlyWait) {
@@ -110,6 +123,18 @@ public class TestUtilities {
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
         loadUrl(url);
+
+        System.out.println("INFO START________________________");
+        System.out.println("Current Thread ID: " + Thread.currentThread().getId());
+
+        Capabilities capabilities = ((FirefoxDriver) driver).getCapabilities();
+        String browserVersion = capabilities.getCapability("browserVersion").toString();
+        String webDriverVersion = capabilities.getCapability("moz:geckodriverVersion").toString();
+
+        System.out.println("Used WebDriver: Firefox");
+        System.out.println("Browser Version: " + browserVersion);
+        System.out.println("WebDriver Version: " + webDriverVersion);
+        System.out.println("INFO END__________________________\n");
     }
 
     private void createEdgeDriver(String url, int implicitlyWait) {
@@ -118,6 +143,19 @@ public class TestUtilities {
         driver = new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
         loadUrl(url);
+
+        System.out.println("INFO START________________________");
+        System.out.println("Current Thread ID: " + Thread.currentThread().getId());
+
+        Capabilities capabilities = ((EdgeDriver) driver).getCapabilities();
+        String browserVersion = capabilities.getCapability("browserVersion").toString();
+        String webDriverVersion = ((EdgeDriver) driver).getCapabilities().toString();
+
+        System.out.println("Used WebDriver: Edge");
+        System.out.println("Browser Version: " + browserVersion);
+        System.out.println("WebDriver Version: " + webDriverVersion);
+        System.out.println("INFO END__________________________\n");
+
     }
 
     //Explicit wait

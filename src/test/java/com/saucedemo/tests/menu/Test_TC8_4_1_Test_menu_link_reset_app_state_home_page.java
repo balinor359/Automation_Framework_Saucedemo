@@ -18,8 +18,8 @@ public class Test_TC8_4_1_Test_menu_link_reset_app_state_home_page extends TestU
         HomePage homePage = loginPage.testUserLogin(UserBuilder.fullUsersList.get(0));
         homePage.homepageValidator();
 
-        homePage.addItemToTheCart("sauce-labs-bolt-t-shirt");
-        homePage.addItemToTheCart("sauce-labs-bike-light");
+        homePage.addItemToTheCartAndSaveValues("sauce-labs-bolt-t-shirt");
+        homePage.addItemToTheCartAndSaveValues("sauce-labs-bike-light");
 
         Assert.assertEquals(homePage.getItemsInTheCart(),2, HomePage.CART_BADGE_WRONG_AMOUNT);
 
