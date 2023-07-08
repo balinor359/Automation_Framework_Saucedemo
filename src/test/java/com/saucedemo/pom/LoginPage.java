@@ -5,9 +5,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
+import com.saucedemo.pom.GenericMessages;
+
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class LoginPage extends TestUtilities {
     protected WebDriver driver;
@@ -23,9 +30,10 @@ public class LoginPage extends TestUtilities {
     private static final String LOGIN_SUCCESSFUL_MESSAGE = "Login is Successful!";
     private static final String LOGOUT_FAILED_MESSAGE = "Logout Failed!";
     private static final String LOGOUT_SUCCESSFUL_MESSAGE = "Logout is Successful!";
-    private static final String DIFFERENT_MESSAGE = "The message is different!";
+//    private static final String DIFFERENT_MESSAGE = "The message is different!";
     private static final String WRONG_USER_AND_PASS_MESSAGE = "Epic sadface: Username and password do not match any user in this service";
     private static final String LOCKED_USER_MESSAGE = "Epic sadface: Sorry, this user has been locked out.";
+    public static final String LARGE_PAGE_LOAD_TIME_MESSAGE = "Page load time is more than 2 seconds.";
 
     @FindBy(xpath = "//div[@id='login_button_container']")
     private WebElement loginForm;
@@ -48,11 +56,11 @@ public class LoginPage extends TestUtilities {
     }
 
     public void validateErrorMsgWrongUsernameAndPassword() {
-        Assert.assertEquals(errorText.getText(), WRONG_USER_AND_PASS_MESSAGE, DIFFERENT_MESSAGE);
+        Assert.assertEquals(errorText.getText(), WRONG_USER_AND_PASS_MESSAGE, GenericMessages.DIFFERENT_MESSAGE);
     }
 
     public void validateErrorMsgInvalidUser() {
-        Assert.assertEquals(errorText.getText(), LOCKED_USER_MESSAGE, DIFFERENT_MESSAGE);
+        Assert.assertEquals(errorText.getText(), LOCKED_USER_MESSAGE, GenericMessages.DIFFERENT_MESSAGE);
     }
 
     public void loginPageValidator() {
@@ -135,7 +143,8 @@ public class LoginPage extends TestUtilities {
         /* Validate the inserted data is the same with provided */
         Assert.assertEquals(testUser.getPassword(), userPasswordField.getAttribute("value"), LOGIN_WRONG_PASSWORD_MESSAGE);
 
-        loginButton.click();
+        /* Check if the page loading time is more than 2000 milliseconds */
+        validatePageLoadTime();
 
         if (driver.getCurrentUrl().equals(LOGIN_PAGE_URL)) {
             System.out.println(LOGIN_FAILED_MESSAGE);
@@ -153,4 +162,28 @@ public class LoginPage extends TestUtilities {
     }
 
 
+    public void validatePageLoadTime() {
+        /* Start timer before performing action that triggers the page load */
+        long startTime = System.currentTimeMillis();
+
+        /* Making FluentWait with timeout 2 seconds and polling every 100 milliseconds for measuring */
+        Wait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(Duration.ofSeconds(2))
+                .pollingEvery(Duration.ofMillis(100));
+
+        /* Click login button to start measuring the time */
+        loginButton.click();
+
+        /* Wait until the condition is met or timeout occurs */
+        wait.until(driver -> {
+            long endTime = System.currentTimeMillis();
+            long loadTime = endTime - startTime;
+
+            // Assertion to check if the load time is more than 2 seconds
+            Assert.assertFalse(loadTime > 2000, LARGE_PAGE_LOAD_TIME_MESSAGE);
+
+            return true;
+        });
+
+    }
 }

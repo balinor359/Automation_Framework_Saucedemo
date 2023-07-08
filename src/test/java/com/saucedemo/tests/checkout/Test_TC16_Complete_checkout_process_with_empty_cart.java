@@ -29,6 +29,11 @@ public class Test_TC16_Complete_checkout_process_with_empty_cart extends TestUti
         CheckoutOverviewPage checkoutOverviewPage = checkoutInfoPage.clickContinueButton();
         checkoutOverviewPage.checkoutOverviewPageFullValidator();
 
-        //todo success page
+        CheckoutSuccessPage checkoutSuccessPage = checkoutOverviewPage.clickFinishButton();
+
+        checkoutSuccessPage.checkoutSuccessPageValidator();
+        checkoutSuccessPage.clickBackHomeButton();
+
+        homePage.homepageValidator();
     }
 }

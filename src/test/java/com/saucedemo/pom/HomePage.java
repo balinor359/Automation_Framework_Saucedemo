@@ -12,6 +12,8 @@ import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
 import org.openqa.selenium.support.Color;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +32,7 @@ public class HomePage extends TestUtilities {
     private static final String REMOVE_BUTTON_BORDER_COLOR = "#e2231a";
     private static final String REMOVE_BUTTON_MISSING_MESSAGE = "'Remove' button is not displayed";
     private static final String HOME_PAGE_URL = "https://www.saucedemo.com/inventory.html";
+    private static final String PRODUCT_PAGE_URL = "https://www.saucedemo.com/inventory-item.html";
     private static final String HOME_PAGE = "Current page is Home page.";
     private static final String HOME_PAGE_ERROR = "Home page loading Failed.";
     private static final String PRODUCTS_LIST_MISSING_MESSAGE = "Products list is not displayed!";
@@ -59,7 +62,9 @@ public class HomePage extends TestUtilities {
     public static final String CODE_ERROR_ADD_TO_CART_BUTTON = "Code error: the 'Add to Cart' button you interact with does not exist!";
     public static final String CODE_ERROR_REMOVE_BUTTON = "Code error: the 'Remove' button you interact with does not exist!";
     public static final Object RETURN_NULL_OBJECT = null;
+    public static final String LARGE_PAGE_LOAD_TIME_MESSAGE = "Page load time is more than 2 seconds.";
 
+    public static String endPageLoadTime = "";
 //    public static String selectedProductName = "";
 //    public static String selectedProductPrice = "";
 //    public static String selectedProductImageSrc = "";
@@ -283,49 +288,6 @@ public class HomePage extends TestUtilities {
 
     }
 
-//    /* method who navigate to Cart page and validate product items by submitted item name*/
-//    public CartPage addProductToTheCart(String productName) {
-//        System.out.println("test method");
-//        /* get all products */
-//        List<WebElement> products = driver.findElements(By.cssSelector("div[class='inventory_item']"));
-//
-//        /* go through all products */
-//        for (WebElement product : products) {
-////            System.out.println("test for");
-//
-//            /* get child element - Name */
-//            WebElement childName = driver.findElement(By.cssSelector("div[class='inventory_item_name']"));
-//
-////            /* get parent element - Name */
-////            WebElement parent = childName.findElement(By.xpath(".."));
-//
-//            /* get child element - Price */
-//            WebElement productPrice = driver.findElement(By.cssSelector("div[class='inventory_item_price']"));
-//
-//            /* get child element - Image Src*/
-//            WebElement productImageSrc = driver.findElement(By.cssSelector("img[class='inventory_item_img']"));
-//
-//            /* Save values for Name/Price/Image src for comparison in other pages */
-//            selectedProductName = childName.getText();
-//            selectedProductPrice = productPrice.getText();
-//            selectedProductImageSrc = productImageSrc.getAttribute("src");
-//
-//            System.out.println("test for selectedProductName " + selectedProductName);
-//            System.out.println("test for selectedProductPrice " + selectedProductPrice);
-//            System.out.println("test for selectedProductImageSrc " + selectedProductImageSrc);
-//            System.out.println("test for productName " + productName);
-//
-//            /* locate submitted product and click his product name link */
-//            if (selectedProductName.contains(productName)) {
-//                addItemToTheCart(productName);
-////                parent.click();
-//                System.out.println("test if");
-//                return new CartPage(driver);
-//            }
-//        }
-//        //todo така ли е правилно да се затвори метода с null?
-//        return null;
-//    }
 
     /* method who navigate to product page and validate product items by submitted item name*/
     public ProductPage selectProduct(String productName) {
@@ -527,5 +489,22 @@ public class HomePage extends TestUtilities {
         menuResetButton.click();
     }
 
+
+    public void sortingValidator(){
+        /*
+         * 1. Проверка/ отделен метод  за азбучен ред asc
+         * 2. Проверка/ отделен метод  за азбучен ред desc
+         * 3. Проверка/ отделен метод  за цена asc
+         * 4. Проверка/ отделен метод  за цена desc
+         *
+        * 5. Взема всички продукти и ги изпринтва в конзолата в реда в който са
+        * 6. клика на подадена опция от дропдауна (пр: dropdown.selectByIndex(2))
+        * 7. Запазва всички продукти в нов Array List като изпълнява подадена проверка/метод
+        *     Прекалено сложно ли е? Трябва ли да направя отделни методи за всяка една опция на дропдауна? като ги извиквам всичките в sortingValidator-a?
+        * */
+
+        //todo да се запазят последователни променливи за всеки продукт > клик на сортиране по цена ( за цена) >
+        // взима всички продукти в нов арей лист > извеждане в отделни променливи > да сравня с Assert статичните с новите променливи.
+    }
 
 }

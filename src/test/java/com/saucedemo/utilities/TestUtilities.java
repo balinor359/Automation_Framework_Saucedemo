@@ -4,6 +4,7 @@ import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.UserBuilder;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -39,20 +40,27 @@ public class TestUtilities {
 
     @BeforeMethod
     public void setUp() {
+
+
         MyFileWriter.writeToLog("Test Start!");
         System.out.println("Test Start!");
 
         UserBuilder.createUserList();
 
         setupBrowserDriver();
-
+//        clearBrowserCookies();
     }
 
     @AfterMethod
     public void tearDown() {
+        //todo Clear cache метод тук // Като цяло в такива проекти, се настройват самите браузъри да им се чисти кеша постоянно !
+
+
+
         if (driver != null) {
             driver.close();
             driver.quit();
+
         }
 
         MyFileWriter.writeToLog("Test End!" + "\n_________________________________________________________________________________________");
@@ -179,6 +187,13 @@ public class TestUtilities {
             throw new RuntimeException(e);
         }
     }
+    public void clearBrowserCookies() {
+        driver.manage().deleteAllCookies();
+    }
+//    public void clearBrowserCookies() {
+//        JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+//        javascriptExecutor.executeScript("document.cookie.split(';').forEach(function(c) { document.cookie = c.replace(/^ +/, '').replace(/=.*/, '=;expires=' + new Date().toUTCString() + ';path=/'); });");
+//    }
 
 
 }

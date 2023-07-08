@@ -8,12 +8,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
+
+import java.time.Duration;
 
 public class ProductPage extends TestUtilities {
     protected WebDriver driver;
     private static final String PRODUCT_PAGE_URL = "https://www.saucedemo.com/inventory-item.html";
+    private static final String HOME_PAGE_URL = "https://www.saucedemo.com/inventory.html";
     private static final String PRODUCT_PAGE = "Current page is Product page.";
     private static final String PRODUCT_PAGE_ERROR = "Product page loading Failed.";
     private static final String PRODUCTS_NAME_MISSING_MESSAGE = "Product name is not displayed!";
@@ -24,6 +29,7 @@ public class ProductPage extends TestUtilities {
     private static final String PRODUCT_IMAGE_IS_DIFFERENT_MESSAGE = "Product image is different!";
     private static final String BACK_TO_ALL_PRODUCTS_MISSING_MESSAGE = "'Back to products' link is not displayed!";
     private static final String PRODUCT_ADD_TO_CART_BUTTON_MISSING_MESSAGE = "'Add to cart' button is not displayed!";
+    public static final String LARGE_PAGE_LOAD_TIME_MESSAGE = "Page load time is more than 2 seconds.";
 
     @FindBy(xpath = "//a[@id='inventory_sidebar_link']")
     private WebElement menuInventoryButton;
@@ -39,6 +45,8 @@ public class ProductPage extends TestUtilities {
     private WebElement productAddToCartButton;
     @FindBy(xpath = "//button[contains(@id,'remove-']")
     private WebElement productRemoveButton;
+    @FindBy(xpath = "//div[@class='inventory_list']")
+    private WebElement productsList;
     SoftAssert softAssert = new SoftAssert();
     public ProductPage(WebDriver driver) {
         this.driver = driver;
@@ -46,9 +54,12 @@ public class ProductPage extends TestUtilities {
     }
 
     //todo излишно
-//    public void addItemToTheCart() {
-//        productAddToCartButton.click();
-//    }
+    public void addItemToTheCart() {
+        productAddToCartButton.click();
+    }
+    public void clickBackToAllProductsButton() {
+        backToAllProductsButton.click();
+    }
 
     //todo Грешно ли е няколко проверки да са в 1 метод? Трябва ли да ги изведа всяка в отделен метод, след като имам 3 отделни TC?
     // Или този вариант е добре, а за отделните тест кейсове да изведа конкретни валидатори, защото няма да мине през всичките варианти?
@@ -96,4 +107,26 @@ public class ProductPage extends TestUtilities {
 //            Assert.assertEquals(HomePage.selectedProductImageSrc, productImage.getAttribute("src"), PRODUCT_IMAGE_IS_DIFFERENT_MESSAGE);
         softAssert.assertEquals(productImage.getAttribute("src"),Product.productList.get(0).getImageSrc(), PRODUCT_IMAGE_IS_DIFFERENT_MESSAGE);
     }
+//    public void verifyPageLoadSpeed() {
+//
+//        // Get the current time before the page load
+//        long startTime = System.currentTimeMillis();
+//
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//        wait.until(ExpectedConditions.urlToBe(HOME_PAGE_URL));
+//        wait.until(ExpectedConditions.visibilityOf(productsList));
+//
+//        // Get the current time after the page load
+//        long endTime = System.currentTimeMillis();
+//
+//        // Calculate the page load time in milliseconds
+//        long loadTime = endTime - startTime;
+//        System.out.println("startTime " + startTime);
+//        System.out.println("endTime " + endTime);
+//        System.out.println("loadTime " + loadTime);
+//
+//        // Assert that the page load time is under 2 seconds
+//        Assert.assertTrue(loadTime < 2, LARGE_PAGE_LOAD_TIME_MESSAGE);
+//
+//    }
 }

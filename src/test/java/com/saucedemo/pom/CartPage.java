@@ -26,6 +26,7 @@ public class CartPage extends TestUtilities {
     private static final String DIFFERENT_TEXT = "The text is different!";
     private static final String DIFFERENT_CSS_VALUE = "The CSS value is different!";
     public static final String CODE_ERROR_REMOVE_BUTTON = "Code error: the 'Remove' button you interact with does not exist!";
+    private static final String MISSING_ELEMENT_MESSAGE = "Code error: Element ( %s ) does not exist!";
     private static final String CART_PAGE = "Current page is Cart page.";
     private static final String CART_PAGE_ERROR = "Cart page loading Failed.";
     private static final String CART_LIST_MISSING_MESSAGE = "Cart list is not displayed!";
@@ -70,9 +71,18 @@ public class CartPage extends TestUtilities {
             System.out.println(CART_PAGE);
             MyFileWriter.writeToLog(CART_PAGE);
 
-            Assert.assertTrue(cartList.isDisplayed(), CART_LIST_MISSING_MESSAGE);
-            checkoutButtonValidator();
-            continueShoppingButtonValidator();
+            try{
+                Assert.assertTrue(cartList.isDisplayed(), CART_LIST_MISSING_MESSAGE);
+                checkoutButtonValidator();
+                continueShoppingButtonValidator();
+
+            } catch (NoSuchElementException e) {
+                System.out.println(String.format(MISSING_ELEMENT_MESSAGE, cartList));
+                MyFileWriter.writeToLog(String.format(MISSING_ELEMENT_MESSAGE, cartList));
+
+                Assert.fail(String.format(MISSING_ELEMENT_MESSAGE, cartList));
+            }
+
 
             if (cartItems.size() > 0) {
                 System.out.println(CART_HAVE_ITEMS_TEXT);
