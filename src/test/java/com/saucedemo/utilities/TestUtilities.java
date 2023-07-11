@@ -1,37 +1,25 @@
 package com.saucedemo.utilities;
 
-import com.saucedemo.utilities.MyFileWriter;
-import com.saucedemo.utilities.UserBuilder;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeDriverService;
-import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxDriverService;
-import org.openqa.selenium.firefox.GeckoDriverService;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 public class TestUtilities {
+    /* Create variables for web-driver / url / browser / implicitlyWait */
     public static WebDriver driver;
     private String url;
     private String browser;
@@ -40,35 +28,33 @@ public class TestUtilities {
 
     @BeforeMethod
     public void setUp() {
-
-
+        /* Print messages into console and log file */
         MyFileWriter.writeToLog("Test Start!");
         System.out.println("Test Start!");
 
+        /* Create userList */
         UserBuilder.createUserList();
 
+        /* Create the driver, depending on chosen browser in config.properties */
         setupBrowserDriver();
-//        clearBrowserCookies();
     }
 
     @AfterMethod
     public void tearDown() {
-        //todo Clear cache метод тук // Като цяло в такива проекти, се настройват самите браузъри да им се чисти кеша постоянно !
-
-
-
+        /* Close the driver*/
         if (driver != null) {
             driver.close();
             driver.quit();
-
         }
 
+        /* Print messages into console and log file */
         MyFileWriter.writeToLog("Test End!" + "\n_________________________________________________________________________________________");
         System.out.println("Test End!");
         System.out.println("_________________________________________________________________________________________");
 
     }
 
+    /* This is driver creating method who use provided data from config.properties*/
     public void setupBrowserDriver() {
         try (FileInputStream configFile = new FileInputStream("src\\test\\resources\\config.properties")) {
             Properties config = new Properties();
@@ -82,7 +68,7 @@ public class TestUtilities {
             MyFileWriter.writeToLog("Cannot read configs.");
             System.out.println("Cannot read configs.");
         }
-
+        /* This switch takes provided browser and call specific create method for specific browser */
         switch (browser) {
             case "chrome":
                 createChromeDriver(url, implicitlyWait);
@@ -100,18 +86,22 @@ public class TestUtilities {
 
     }
 
+    /* Method who get the website URL */
     private void loadUrl(String url) {
         driver.get(url);
     }
 
+    /* Create Chrome Driver */
     private void createChromeDriver(String url, int implicitlyWait) {
-        //todo 1. Как мога да форсирам Framework-a да ползва зададените драйвъри, които са в root-a на програмата, а не кешираните от самия компютър?
+        /* Set property from local web-driver folder  */
         System.setProperty("webdriver.chrome.driver", "saucedemo-webdrivers\\chromedriver\\chromedriver.exe");
         WebDriverManager.chromedriver().setup();
+        /* Create new driver */
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
         loadUrl(url);
 
+        /* Print driver info into console */
         System.out.println("INFO START________________________");
         System.out.println("Current Thread ID: " + Thread.currentThread().getId());
 
@@ -125,13 +115,17 @@ public class TestUtilities {
         System.out.println("INFO END__________________________\n");
     }
 
+    /* Create Firefox Driver */
     private void createFirefoxDriver(String url, int implicitlyWait) {
+        /* Set property from local web-driver folder  */
         System.setProperty("webdriver.gecko.driver", "saucedemo-webdrivers\\geckodriver\\geckodriver.exe");
         WebDriverManager.firefoxdriver().setup();
+        /* Create new driver */
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
         loadUrl(url);
 
+        /* Print driver info into console */
         System.out.println("INFO START________________________");
         System.out.println("Current Thread ID: " + Thread.currentThread().getId());
 
@@ -145,13 +139,17 @@ public class TestUtilities {
         System.out.println("INFO END__________________________\n");
     }
 
+    /* Create Edge Driver */
     private void createEdgeDriver(String url, int implicitlyWait) {
+        /* Set property from local web-driver folder  */
         System.setProperty("webdriver.edge.driver", "saucedemo-webdrivers\\edgedriver\\msedgedriver.exe");
         WebDriverManager.edgedriver().setup();
+        /* Create new driver */
         driver = new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
         loadUrl(url);
 
+        /* Print driver info into console */
         System.out.println("INFO START________________________");
         System.out.println("Current Thread ID: " + Thread.currentThread().getId());
 
@@ -166,13 +164,14 @@ public class TestUtilities {
 
     }
 
-    //Explicit wait
+    //Explicit wait for element to be clickable
     public static WebElement waitClickable(WebDriver driver, WebElement webElement, int sec) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(sec));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(webElement));
         return element;
     }
 
+    //Explicit wait for element to be visible
     public static WebElement waitVisible(WebDriver driver, WebElement webElement, int sec) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(sec));
         WebElement element = wait.until(ExpectedConditions.visibilityOf(webElement));
@@ -180,6 +179,7 @@ public class TestUtilities {
 
     }
 
+    /* Simple Thread wait when can`t make web-driver to wait specific page load*/
     public static void simpleWait(int millisecond) {
         try {
             Thread.sleep(millisecond);
@@ -187,13 +187,12 @@ public class TestUtilities {
             throw new RuntimeException(e);
         }
     }
+
+    //Todo
+    /* Method who delete browser cookies */
     public void clearBrowserCookies() {
         driver.manage().deleteAllCookies();
     }
-//    public void clearBrowserCookies() {
-//        JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
-//        javascriptExecutor.executeScript("document.cookie.split(';').forEach(function(c) { document.cookie = c.replace(/^ +/, '').replace(/=.*/, '=;expires=' + new Date().toUTCString() + ';path=/'); });");
-//    }
 
 
 }

@@ -1,10 +1,7 @@
 package com.saucedemo.pom;
 
-import com.saucedemo.objects.TestUser;
 import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.Color;
@@ -15,7 +12,9 @@ import org.testng.Assert;
 import java.util.List;
 
 public class CheckoutInfoPage extends TestUtilities {
+    /* Declaring web-driver in protected variable */
     protected WebDriver driver;
+    /* Declaring string variables for the current page */
     private static String errorMessage = "";
     private static final String CHECKOUT_INFO_PAGE_URL = "https://www.saucedemo.com/checkout-step-one.html";
     private static final String DIFFERENT_TEXT = "The text is different!";
@@ -39,7 +38,7 @@ public class CheckoutInfoPage extends TestUtilities {
     private static final String DIFFERENT_MESSAGE = "The message is different!";
     private static final String WRONG_INSERTED_DATA = "The inserted data is different!";
 
-
+    /* Declaring page elements */
     @FindBy(xpath = "//div[@class='checkout_info']")
     private WebElement userInfoForm;
     @FindBy(xpath = "//input[@id='first-name' and @placeholder='First Name']")
@@ -55,27 +54,34 @@ public class CheckoutInfoPage extends TestUtilities {
     @FindBy(xpath = "//button[@id='cancel']")
     private WebElement cancelButton;
 
+    /* This is constructor for checkout user info page using PageFactory for web-elements */
     public CheckoutInfoPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
+    /* This method return errorMessage and print it in the console */
     public String returnErrorText() {
         errorMessage = errorText.getText();
         System.out.println("Error text: " + errorMessage);
         return errorMessage;
     }
 
-    /* method who validate Checkout User Information page */
+    /* Method who validate Checkout User Information page */
     public void checkoutInfoPageValidator() {
+        /* Check if current page contains checkout-step-one.html */
         if (driver.getCurrentUrl().contains(CHECKOUT_INFO_PAGE_URL)) {
             System.out.println(CHECKOUT_INFO_PAGE);
             MyFileWriter.writeToLog(CHECKOUT_INFO_PAGE);
 
+            /* Validate the form is displayed */
             Assert.assertTrue(userInfoForm.isDisplayed(), USER_INFO_FORM_MISSING_MESSAGE);
+            /* Validate the "Continue" button */
             continueButtonValidator();
+            /* Validate the "Cancel" button */
             cancelButtonValidator();
 
+            /* Validate the form fields are displayed */
             Assert.assertTrue(userFirstName.isDisplayed(), String.format(MISSING_ELEMENT_MESSAGE, userFirstName));
             Assert.assertTrue(userLastName.isDisplayed(), String.format(MISSING_ELEMENT_MESSAGE, userLastName));
             Assert.assertTrue(userZipPostCode.isDisplayed(), String.format(MISSING_ELEMENT_MESSAGE, userZipPostCode));
@@ -85,15 +91,23 @@ public class CheckoutInfoPage extends TestUtilities {
             MyFileWriter.writeToLog(CHECKOUT_INFO_PAGE_ERROR);
         }
     }
-    public void validateErrorMsgFirstNameRequired(){
+
+    /* Method who validates error message for First Name field */
+    public void validateErrorMsgFirstNameRequired() {
         Assert.assertEquals(returnErrorText(), FIRST_NAME_MISSING_MESSAGE, DIFFERENT_MESSAGE);
     }
-    public void validateErrorMsgLastNameRequired(){
+
+    /* Method who validates error message for Last Name field */
+    public void validateErrorMsgLastNameRequired() {
         Assert.assertEquals(returnErrorText(), LAST_NAME_MISSING_MESSAGE, DIFFERENT_MESSAGE);
     }
-    public void validateErrorMsgPostCodeRequired(){
+
+    /* Method who validates error message for Post Code field */
+    public void validateErrorMsgPostCodeRequired() {
         Assert.assertEquals(returnErrorText(), POSTAL_CODE_MISSING_MESSAGE, DIFFERENT_MESSAGE);
     }
+
+    /* Method who clear,click, input data and check inputted data for First Name field */
     public void insertFirstName(String firstName) {
         userFirstName.clear();
         userFirstName.click();
@@ -101,6 +115,8 @@ public class CheckoutInfoPage extends TestUtilities {
         /* Validate the inserted data is the same with provided */
         Assert.assertEquals(userFirstName.getAttribute("value"), firstName, WRONG_INSERTED_DATA);
     }
+
+    /* Method who clear,click, input data and check inputted data for Last Name field */
     public void insertLastName(String lastName) {
         userLastName.clear();
         userLastName.click();
@@ -108,6 +124,8 @@ public class CheckoutInfoPage extends TestUtilities {
         /* Validate the inserted data is the same with provided */
         Assert.assertEquals(userLastName.getAttribute("value"), lastName, WRONG_INSERTED_DATA);
     }
+
+    /* Method who clear,click, input data and check inputted data for Post Code field */
     public void insertPostCode(String postCode) {
         userZipPostCode.clear();
         userZipPostCode.click();
@@ -115,6 +133,8 @@ public class CheckoutInfoPage extends TestUtilities {
         /* Validate the inserted data is the same with provided */
         Assert.assertEquals(userZipPostCode.getAttribute("value"), postCode, WRONG_INSERTED_DATA);
     }
+
+    /* Method who validates continue button has correct text / font-color / Bg color */
     public void continueButtonValidator() {
         Assert.assertTrue(continueButton.isDisplayed(), CONTINUE_BUTTON_MISSING_MESSAGE);
         Assert.assertEquals(continueButton.getAttribute("value"), CONTINUE_BUTTON_TEXT, DIFFERENT_TEXT);
@@ -128,6 +148,7 @@ public class CheckoutInfoPage extends TestUtilities {
         Assert.assertEquals(elementBgColorHex, CONTINUE_BUTTON_BACKGROUND_COLOR, DIFFERENT_CSS_VALUE);
     }
 
+    /* Method who validates cancel button has correct text / font-color / Bg color / border color */
     public void cancelButtonValidator() {
         Assert.assertTrue(cancelButton.isDisplayed(), CANCEL_BUTTON_MISSING_MESSAGE);
         Assert.assertEquals(cancelButton.getText(), CANCEL_BUTTON_TEXT, DIFFERENT_TEXT);
@@ -144,9 +165,11 @@ public class CheckoutInfoPage extends TestUtilities {
         String elementBorderColorHex = Color.fromString(elementBorderColor).asHex();
         Assert.assertEquals(elementBorderColorHex, CANCEL_BUTTON_BORDER_COLOR, DIFFERENT_CSS_VALUE);
     }
-    /* click method for "Continue" button */
+
+    /* Click method for "Continue" button */
     public CheckoutOverviewPage clickContinueButton() {
         continueButton.click();
+        /* Pass the driver to CheckoutOverviewPage (POM) */
         return new CheckoutOverviewPage(driver);
     }
 }

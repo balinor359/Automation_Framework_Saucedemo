@@ -17,7 +17,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CheckoutOverviewPage extends TestUtilities {
+    /* Declaring web-driver in protected variable */
     protected WebDriver driver;
+    /* Declaring string variables for the current page */
     private static final String CHECKOUT_OVERVIEW_PAGE_URL = "https://www.saucedemo.com/checkout-step-two.html";
     private static final String DIFFERENT_TEXT = "The text is different!";
     private static final String DIFFERENT_CSS_VALUE = "The CSS value is different!";
@@ -45,6 +47,8 @@ public class CheckoutOverviewPage extends TestUtilities {
     private static final String ITEM_TOTAL_MISSING_MESSAGE = "Item total price is not displayed!";
     private static final String ORDER_TOTAL_MISSING_MESSAGE = "Order total price is not displayed!";
     private final ArrayList<Double> pricesOnly = new ArrayList<>();
+
+    /* Declaring page elements */
     @FindBy(xpath = "//div[@class='checkout_info']")
     private WebElement userInfoForm;
     @FindBy(xpath = "//button[@id='finish']")
@@ -68,20 +72,25 @@ public class CheckoutOverviewPage extends TestUtilities {
     @FindBy(xpath = "//div[contains(@class,'summary_total_label')]")
     private WebElement orderTotal;
 
+    /* This is constructor for checkout overview page using PageFactory for web-elements */
     public CheckoutOverviewPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    /* method who validate elements on Checkout Overview page */
+    /* Method who validate elements on Checkout Overview page - Simple - cartList / summaryInfo / finish button / cancel button */
     public void checkoutOverviewPageSimpleValidator() {
+        /* Check if current page contains checkout-step-two.html */
         if (driver.getCurrentUrl().contains(CHECKOUT_OVERVIEW_PAGE_URL)) {
             System.out.println(CHECKOUT_OVERVIEW_PAGE);
             MyFileWriter.writeToLog(CHECKOUT_OVERVIEW_PAGE);
 
+            /* Validate the cartList and summaryInfo are visible */
             Assert.assertTrue(cartList.isDisplayed(), CART_LIST_MISSING_MESSAGE);
             Assert.assertTrue(summaryInfo.isDisplayed(), SUMMARY_INFO_MISSING_MESSAGE);
+            /* Validate the "Finish" button */
             finishButtonValidator();
+            /* Validate the "Cancel" button */
             cancelButtonValidator();
 
         } else {
@@ -90,16 +99,22 @@ public class CheckoutOverviewPage extends TestUtilities {
         }
     }
 
-    /* method who validate elements on Checkout Overview page */
+    /* Method who validate elements on Checkout Overview page - Full - all items from Simple method plus cartItems / ItemTotal / orderTotal */
     public void checkoutOverviewPageFullValidator() {
 
+        /* Call the simple validator who check cartList and summaryInfo visibility also finish and cancel buttons validators */
         checkoutOverviewPageSimpleValidator();
 
+        /* If cart is full call cart items validator, validate item total price and also order total */
         if (cartItems.size() > 0) {
             System.out.println(CART_HAVE_ITEMS_TEXT);
             MyFileWriter.writeToLog(CART_HAVE_ITEMS_TEXT);
+
+            /* Validate the Cart Items */
             cartItemsValidator();
+            /* Validate the Item Total */
             validateItemTotal();
+            /* Validate the Order Total */
             validateOrderTotal();
 
         } else {
@@ -109,6 +124,7 @@ public class CheckoutOverviewPage extends TestUtilities {
 
     }
 
+    /* Method who validates finish button has correct text / font-color / Bg color */
     public void finishButtonValidator() {
         Assert.assertTrue(finishButton.isDisplayed(), FINISH_BUTTON_MISSING_MESSAGE);
         Assert.assertEquals(finishButton.getText(), FINISH_BUTTON_TEXT, DIFFERENT_TEXT);
@@ -122,6 +138,7 @@ public class CheckoutOverviewPage extends TestUtilities {
         Assert.assertEquals(elementBgColorHex, FINISH_BUTTON_BACKGROUND_COLOR, DIFFERENT_CSS_VALUE);
     }
 
+    /* Method who validates cancel button has correct text / font-color / Bg color / border color */
     public void cancelButtonValidator() {
         Assert.assertTrue(cancelButton.isDisplayed(), CANCEL_BUTTON_MISSING_MESSAGE);
         Assert.assertEquals(cancelButton.getText(), CANCEL_BUTTON_TEXT, DIFFERENT_TEXT);
@@ -139,9 +156,10 @@ public class CheckoutOverviewPage extends TestUtilities {
         Assert.assertEquals(elementBorderColorHex, CANCEL_BUTTON_BORDER_COLOR, DIFFERENT_CSS_VALUE);
     }
 
+    /* Method who goes through all cart items and compare their name and price with items saved in productList */
     public void cartItemsValidator() {
 
-        /* go through all products */
+        /* Go through all products saved in cart */
         for (WebElement item : cartItems) {
 
             /* get element - Name */
@@ -153,12 +171,15 @@ public class CheckoutOverviewPage extends TestUtilities {
             WebElement cartItemPrice = item.findElement(By.cssSelector("div[class='inventory_item_price']"));
             Assert.assertTrue(cartItemPrice.isDisplayed(), PRODUCT_PRICE_MISSING_MESSAGE);
 
+            /* Go through all products in productList */
             for (Product product : Product.productList) {
+                /* If element from cart match with element from productList compare their name and price */
                 if (cartItemNameText.equals(product.getName())) {
 
                     Assert.assertEquals(cartItemName.getText(), product.getName(), PRODUCTS_NAME_IS_DIFFERENT_MESSAGE);
                     Assert.assertEquals(cartItemPrice.getText(), product.getPrice(), PRODUCT_PRICE_IS_DIFFERENT_MESSAGE);
 
+                    /* Save product price as double in pricesOnly array */
                     double price = extractPrice(product.getPrice());
                     pricesOnly.add(price);
 
@@ -167,13 +188,16 @@ public class CheckoutOverviewPage extends TestUtilities {
         }
     }
 
-    /* click method for "Finish" button */
+    /* Click method for "Finish" button */
     public CheckoutSuccessPage clickFinishButton() {
         finishButton.click();
+        /* Pass the driver to CheckoutSuccessPage (POM) */
         return new CheckoutSuccessPage(driver);
     }
 
+    /* This method extract only prices from string without any other text */
     public static double extractPrice(String priceString) {
+
         /* Matches one or more digits */
         Pattern pattern = Pattern.compile("\\d+\\.\\d+");
         Matcher matcher = pattern.matcher(priceString);
@@ -186,6 +210,7 @@ public class CheckoutOverviewPage extends TestUtilities {
         return 0;
     }
 
+    /* This method extract only prices from WebElement without any other text */
     public static double extractPriceFromElement(WebElement element) {
 
         String elementText = element.getText();
@@ -202,11 +227,10 @@ public class CheckoutOverviewPage extends TestUtilities {
         return 0;
     }
 
-    //todo Задължително ли трябва да запазвам изчислените itemTotalSum в отделна променлива, и да ги подавам към validateOrderTotal() метода
-    // след като двата метода се извикват един след друг в основен метод и за да стигне до последния трябва първо да изчисли и сравни сумата от продуктите
-    // подадени от списъка
+    /* Method who validate Item Total is equal the sum of all products in the cart */
     public void validateItemTotal() {
         double itemTotalSum = 0;
+        /* Go through all item in pricesOnly array and sum them in itemTotalSum variable */
         for (double itemPrice : pricesOnly) {
             itemTotalSum += itemPrice;
         }
@@ -216,6 +240,7 @@ public class CheckoutOverviewPage extends TestUtilities {
         Assert.assertEquals(roundedTotalSum, extractPriceFromElement(itemTotal), ITEM_TOTAL_IS_DIFFERENT_MESSAGE);
     }
 
+    /* Method who validate Order Total is equal the sum of Item Total plus tax */
     public void validateOrderTotal() {
         double orderTotalSum = extractPriceFromElement(itemTotal) + extractPriceFromElement(tax);
         double roundedOrderTotalSum = Math.round(orderTotalSum * 100) / 100D;

@@ -1,6 +1,8 @@
 package com.saucedemo.objects;
 
+/* This class create TestUser Object with all constructors , getters and setters */
 public class TestUser {
+    /* Initialise variables for username and password */
     private String username;
     private String password;
 
@@ -29,6 +31,7 @@ public class TestUser {
     public void setPassword(String password) {
         this.password = password;
     }
+
     @Override
     public String toString() {
         return '\'' + username + '\'' +

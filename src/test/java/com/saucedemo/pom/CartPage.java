@@ -15,7 +15,9 @@ import org.testng.Assert;
 import java.util.List;
 
 public class CartPage extends TestUtilities {
+    /* Declaring web-driver in protected variable */
     protected WebDriver driver;
+    /* Declaring string variables for the current page */
     private static final String CART_PAGE_URL = "https://www.saucedemo.com/cart.html";
     private static final String REMOVE_FROM_CART_LOCATOR = "//button[@id='remove-%s']";
     private static final String REMOVE_FROM_CART_LOCATOR_ALL = "//button[contains(@id,'remove-')]";
@@ -46,6 +48,7 @@ public class CartPage extends TestUtilities {
     private static final String CART_HAVE_ITEMS_TEXT = "Cart contains items.";
     private static final String CART_IS_EMPTY_TEXT = "Cart is empty.";
 
+    /* Declaring page elements */
     @FindBy(xpath = "//div[@class='cart_list']")
     private WebElement cartList;
     @FindBy(xpath = "//div[@class='cart_item']")
@@ -59,18 +62,19 @@ public class CartPage extends TestUtilities {
     @FindBy(xpath = "//button[@id='continue-shopping']")
     private WebElement continueShoppingButton;
 
+    /* This is constructor for cart page using PageFactory for web-elements */
     public CartPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-
-    /* method who validate product page items */
+    /* Method who validate Cart page */
     public void cartPageValidator() {
+        /* Check if current page contains cart.html */
         if (driver.getCurrentUrl().contains(CART_PAGE_URL)) {
             System.out.println(CART_PAGE);
             MyFileWriter.writeToLog(CART_PAGE);
-
+            /* Validate cartList is shown and call validation methods for "checkout" and "continue shopping" buttons */
             try{
                 Assert.assertTrue(cartList.isDisplayed(), CART_LIST_MISSING_MESSAGE);
                 checkoutButtonValidator();
@@ -83,7 +87,7 @@ public class CartPage extends TestUtilities {
                 Assert.fail(String.format(MISSING_ELEMENT_MESSAGE, cartList));
             }
 
-
+            /* If cart is full call cart items validator, validate item total price and also order total */
             if (cartItems.size() > 0) {
                 System.out.println(CART_HAVE_ITEMS_TEXT);
                 MyFileWriter.writeToLog(CART_HAVE_ITEMS_TEXT);
@@ -97,6 +101,8 @@ public class CartPage extends TestUtilities {
             MyFileWriter.writeToLog(CART_PAGE_ERROR);
         }
     }
+
+    /* Method who validates Checkout button has correct text / font-color / Bg color */
     public void checkoutButtonValidator() {
         Assert.assertTrue(checkoutButton.isDisplayed(), CHECKOUT_BUTTON_MISSING_MESSAGE);
         Assert.assertEquals(checkoutButton.getText(), CHECKOUT_BUTTON_TEXT, DIFFERENT_TEXT);
@@ -110,6 +116,7 @@ public class CartPage extends TestUtilities {
         Assert.assertEquals(elementBgColorHex, CHECKOUT_BUTTON_BACKGROUND_COLOR, DIFFERENT_CSS_VALUE);
     }
 
+    /* Method who validates continue shopping button has correct text / font-color / Bg color / border color */
     public void continueShoppingButtonValidator() {
         Assert.assertTrue(continueShoppingButton.isDisplayed(), CONTINUE_SHOPPING_MISSING_MESSAGE);
         Assert.assertEquals(continueShoppingButton.getText(), CONTINUE_SHOPPING_TEXT, DIFFERENT_TEXT);
@@ -126,10 +133,10 @@ public class CartPage extends TestUtilities {
         String elementBorderColorHex = Color.fromString(elementBorderColor).asHex();
         Assert.assertEquals(elementBorderColorHex, CONTINUE_SHOPPING_BUTTON_BORDER_COLOR, DIFFERENT_CSS_VALUE);
     }
-    /* method who validate product page items */
+    /* Method who goes through all cart items and compare their name and price with items saved in productList */
     public void cartItemsValidator() {
 
-        /* go through all products */
+        /* Go through all products saved in cart */
         for (WebElement item : cartItems) {
 
             /* get element - Name */
@@ -145,7 +152,10 @@ public class CartPage extends TestUtilities {
             WebElement cartItemRemoveBtn = item.findElement(By.cssSelector("button.cart_button"));
             removeButtonValidator(cartItemRemoveBtn);
 
+            /* Go through all products in productList */
             for (Product product : Product.productList) {
+
+                /* If element from cart match with element from productList compare their name and price */
                 if (cartItemNameText.equals(product.getName())) {
 
                     Assert.assertEquals(cartItemName.getText(), product.getName(), PRODUCTS_NAME_IS_DIFFERENT_MESSAGE);
@@ -155,10 +165,9 @@ public class CartPage extends TestUtilities {
             }
         }
     }
-
+    /* Method who validates remove button has correct text / font-color / border color */
     public void removeButtonValidator(WebElement cartItemRemoveBtn) {
         try {
-
             Assert.assertTrue(cartItemRemoveBtn.isDisplayed(), REMOVE_BUTTON_MISSING_MESSAGE);
             Assert.assertEquals(cartItemRemoveBtn.getText(), REMOVE_BUTTON_TEXT, DIFFERENT_TEXT);
 
@@ -177,8 +186,11 @@ public class CartPage extends TestUtilities {
             Assert.fail(CODE_ERROR_REMOVE_BUTTON);
         }
     }
+
+    /* Click method for "Checkout" button */
     public CheckoutInfoPage clickOnCheckoutButton() {
         checkoutButton.click();
+        /* Pass the driver to CheckoutInfoPage (POM) */
         return new CheckoutInfoPage(driver);
     }
 }

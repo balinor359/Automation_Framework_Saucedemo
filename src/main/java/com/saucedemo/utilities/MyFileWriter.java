@@ -4,6 +4,7 @@ import java.io.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+/* This class create object who write messages to logFile.txt with wanted time format */
 public class MyFileWriter {
 
     public static void writeToLog(String msg) {

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
@@ -15,10 +16,15 @@ import org.openqa.selenium.support.Color;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class HomePage extends TestUtilities {
+    /* Declaring web-driver in protected variable */
     protected WebDriver driver;
+    /* Declaring string variables for the current page */
     private static final String ADD_TO_CART_LOCATOR = "//button[@id='add-to-cart-%s']";
     private static final String ADD_TO_CART_LOCATOR_ALL = "//button[contains(@id,'add-to-cart-')]";
     private static final String ADD_TO_CART_TEXT = "Add to cart";
@@ -62,14 +68,19 @@ public class HomePage extends TestUtilities {
     public static final String CODE_ERROR_ADD_TO_CART_BUTTON = "Code error: the 'Add to Cart' button you interact with does not exist!";
     public static final String CODE_ERROR_REMOVE_BUTTON = "Code error: the 'Remove' button you interact with does not exist!";
     public static final Object RETURN_NULL_OBJECT = null;
-    public static final String LARGE_PAGE_LOAD_TIME_MESSAGE = "Page load time is more than 2 seconds.";
+    public static final String PRICES_ASC_ERROR_MESSAGE = "Prices are not sorted in ascending order!";
+    public static final String PRICES_DESC_ERROR_MESSAGE = "Prices are not sorted in descending order!";
+    public static ArrayList<Double> originalPriceList = new ArrayList<>();
+    public static ArrayList<Double> productsAfterLoad = new ArrayList<>();
+
+
 
     public static String endPageLoadTime = "";
 //    public static String selectedProductName = "";
 //    public static String selectedProductPrice = "";
 //    public static String selectedProductImageSrc = "";
 
-
+    /* Declaring page elements */
     @FindBy(className = "shopping_cart_link")
     private WebElement shoppingCartLink;
     @FindBy(className = "shopping_cart_badge")
@@ -102,7 +113,10 @@ public class HomePage extends TestUtilities {
     private WebElement menuLogoutButton;
     @FindBy(xpath = "//a[@id='reset_sidebar_link']")
     private WebElement menuResetButton;
+    @FindBy(xpath = "//select[@class='product_sort_container']")
+    private WebElement sortingDropdown;
 
+    /* This is constructor for home page using PageFactory for web-elements */
     public HomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -183,6 +197,7 @@ public class HomePage extends TestUtilities {
             /* get element - Add to Cart Button */
             WebElement ItemAddToCartBtn = product.findElement(By.cssSelector("button.btn_primary"));
 
+            /* Click on add to cart button */
             ItemAddToCartBtn.click();
 
             /* Create new product with name, price and image src, and add it to the product list */
@@ -318,8 +333,10 @@ public class HomePage extends TestUtilities {
                 Product newProduct = new Product(productTitle.getText(), productPrice.getText(), productImageSrc.getAttribute("src"));
                 Product.productList.add(newProduct);
 
+                /* Click on product name */
                 productTitleParent.click();
 
+                /* Pass the driver to ProductPage (POM) */
                 return new ProductPage(driver);
             }
         }
@@ -329,6 +346,7 @@ public class HomePage extends TestUtilities {
 
     public CartPage clickOnCartButton() {
         shoppingCartLink.click();
+        /* Pass the driver to CartPage (POM) */
         return new CartPage(driver);
     }
 
@@ -395,7 +413,7 @@ public class HomePage extends TestUtilities {
         validateLinkedInLink();
 
     }
-
+    /* Method who validate correctness of the social link and print right messages in console and log file */
     public void validateTwitterLink() {
 
         if (driver.getCurrentUrl().contains(TWITTER_LINK_URL)) {
@@ -407,7 +425,7 @@ public class HomePage extends TestUtilities {
             Assert.assertEquals(driver.getCurrentUrl(), TWITTER_LINK_URL, REDIRECT_FAILED);
         }
     }
-
+    /* Method who validate correctness of the social link and print right messages in console and log file */
     public void validateFacebookLink() {
 
         if (driver.getCurrentUrl().equals(FACEBOOK_LINK_URL)) {
@@ -419,7 +437,7 @@ public class HomePage extends TestUtilities {
             Assert.assertEquals(driver.getCurrentUrl(), FACEBOOK_LINK_URL, REDIRECT_FAILED);
         }
     }
-
+    /* Method who validate correctness of the social link and print right messages in console and log file */
     public void validateLinkedInLink() {
 
         if (driver.getCurrentUrl().contains(LINKEDIN_LINK_URL)) {
@@ -489,22 +507,96 @@ public class HomePage extends TestUtilities {
         menuResetButton.click();
     }
 
+    public static double extractPriceFromElement(WebElement element) {
 
+        String elementText = element.getText();
+
+        /* Matches one or more digits */
+        Pattern pattern = Pattern.compile("\\d+\\.\\d+");
+        Matcher matcher = pattern.matcher(elementText);
+
+        if (matcher.find()) {
+            String extractedPrice = matcher.group();
+            return Double.parseDouble(extractedPrice);
+        }
+
+        return 0;
+    }
+
+    public void getOriginalPriceList() {
+
+        /* go through all products */
+        for (WebElement product : productListLocal) {
+
+            /* get element - Price */
+            WebElement itemPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
+
+            /* Create new product with name, price and image src, and add it to the product list */
+
+            originalPriceList.add(Double.valueOf(extractPriceFromElement(itemPrice)));
+
+        }
+    }
+    public void getPriceListAfterLoad() {
+        List<WebElement> productsAfterLoadList = driver.findElements(By.cssSelector("div[class='inventory_item']"));
+
+        /* go through all products */
+        for (WebElement product : productsAfterLoadList) {
+
+            /* get element - Price */
+            WebElement itemPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
+
+            /* Create new product with name, price and image src, and add it to the product list */
+
+            productsAfterLoad.add(Double.valueOf(extractPriceFromElement(itemPrice)));
+
+        }
+    }
+    public void clearProductsAfterLoadList() {
+        productsAfterLoad.clear();
+    }
+    public void clickProductSortingByPriceLowHigh() {
+        new Select(sortingDropdown).selectByValue("lohi");
+
+    }
+    public void clickProductSortingByPriceHighLow() {
+        new Select(sortingDropdown).selectByValue("hilo");
+    }
+    public void validateProductsPricesAreAsc() {
+        boolean isAscending = true;
+        for (int i = 0; i < productsAfterLoad.size() - 1; i++) {
+            /* check if current i is greater than next, if it is return false */
+            if (productsAfterLoad.get(i) > productsAfterLoad.get(i + 1)) {
+                isAscending = false;
+                break;
+            }
+        }
+
+        Assert.assertTrue(isAscending, PRICES_ASC_ERROR_MESSAGE);
+    }
+    public void validateProductsPricesAreDesc() {
+        boolean isDescending = true;
+        for (int i = 0; i < productsAfterLoad.size() - 1; i++) {
+            /* check if current i is greater than next, if it is return false */
+            if (productsAfterLoad.get(i) < productsAfterLoad.get(i + 1)) {
+                isDescending = false;
+                break;
+            }
+        }
+
+        Assert.assertTrue(isDescending, PRICES_DESC_ERROR_MESSAGE);
+    }
     public void sortingValidator(){
-        /*
-         * 1. Проверка/ отделен метод  за азбучен ред asc
-         * 2. Проверка/ отделен метод  за азбучен ред desc
-         * 3. Проверка/ отделен метод  за цена asc
-         * 4. Проверка/ отделен метод  за цена desc
-         *
-        * 5. Взема всички продукти и ги изпринтва в конзолата в реда в който са
-        * 6. клика на подадена опция от дропдауна (пр: dropdown.selectByIndex(2))
-        * 7. Запазва всички продукти в нов Array List като изпълнява подадена проверка/метод
-        *     Прекалено сложно ли е? Трябва ли да направя отделни методи за всяка една опция на дропдауна? като ги извиквам всичките в sortingValidator-a?
-        * */
+        getOriginalPriceList();
+        clickProductSortingByPriceLowHigh();
+        getPriceListAfterLoad();
+        validateProductsPricesAreAsc();
 
-        //todo да се запазят последователни променливи за всеки продукт > клик на сортиране по цена ( за цена) >
-        // взима всички продукти в нов арей лист > извеждане в отделни променливи > да сравня с Assert статичните с новите променливи.
+        clearProductsAfterLoadList();
+
+        clickProductSortingByPriceHighLow();
+        getPriceListAfterLoad();
+        validateProductsPricesAreDesc();
     }
 
 }

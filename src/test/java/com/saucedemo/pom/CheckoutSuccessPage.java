@@ -10,7 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class CheckoutSuccessPage extends TestUtilities {
+    /* Declaring web-driver in protected variable */
     protected WebDriver driver;
+    /* Declaring string variables for the current page */
     private static final String CHECKOUT_SUCCESS_PAGE_URL = "https://www.saucedemo.com/checkout-complete.html";
     private static final String CHECKOUT_SUCCESS_PAGE = "Current page is Checkout Success page.";
     private static final String CHECKOUT_SUCCESS_PAGE_ERROR = "Checkout Success page loading Failed.";
@@ -29,6 +31,7 @@ public class CheckoutSuccessPage extends TestUtilities {
     private static final String SUCCESS_HEADING_TEXT = "Thank you for your order!";
     private static final String SUCCESS_MESSAGE_TEXT = "Your order has been dispatched, and will arrive just as fast as the pony can get there!";
 
+    /* Declaring page elements */
     @FindBy(xpath = "//img[@class='pony_express']")
     private WebElement successIcon;
     @FindBy(xpath = "//h2[@class='complete-header']")
@@ -38,20 +41,26 @@ public class CheckoutSuccessPage extends TestUtilities {
     @FindBy(xpath = "//button[@id='back-to-products']")
     private WebElement backHomeButton;
 
+    /* This is constructor for checkout success page using PageFactory for web-elements */
     public CheckoutSuccessPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    /* method who validate elements on Checkout Overview page */
+    /* Method who validate elements on Checkout Overview page */
     public void checkoutSuccessPageValidator() {
+        /* Check if current page contains checkout-complete.html */
         if (driver.getCurrentUrl().contains(CHECKOUT_SUCCESS_PAGE_URL)) {
             System.out.println(CHECKOUT_SUCCESS_PAGE);
             MyFileWriter.writeToLog(CHECKOUT_SUCCESS_PAGE);
 
+            /* Validate the Icon */
             successIconValidator();
+            /* Validate the Heading */
             successHeadingValidator();
+            /* Validate the Message */
             successMessageValidator();
+            /* Validate the "Back Home" button */
             backHomeButtonValidator();
 
         } else {
@@ -59,19 +68,26 @@ public class CheckoutSuccessPage extends TestUtilities {
             MyFileWriter.writeToLog(CHECKOUT_SUCCESS_PAGE_ERROR);
         }
     }
+
+    /* Method who validate that icon is displayed and with right src */
     public void successIconValidator() {
         Assert.assertTrue(successIcon.isDisplayed(), SUCCESS_ICON_MISSING_MESSAGE);
         Assert.assertEquals(successIcon.getAttribute("src"), SUCCESS_ICON_SRC, SUCCESS_ICON_DIFFERENT_SRC);
     }
+
+    /* Method who validate that heading is displayed and with right text */
     public void successHeadingValidator() {
         Assert.assertTrue(successHeading.isDisplayed(), SUCCESS_HEADING_MISSING_MESSAGE);
         Assert.assertEquals(successHeading.getText(), SUCCESS_HEADING_TEXT, DIFFERENT_TEXT);
     }
+
+    /* Method who validate that message is displayed and with right text */
     public void successMessageValidator() {
         Assert.assertTrue(successMessage.isDisplayed(), SUCCESS_MESSAGE_MISSING_MESSAGE);
         Assert.assertEquals(successMessage.getText(), SUCCESS_MESSAGE_TEXT, DIFFERENT_TEXT);
     }
 
+    /* Method who validate that back to home button is displayed, with right font and background colors, and with right text */
     public void backHomeButtonValidator() {
         Assert.assertTrue(backHomeButton.isDisplayed(), BACK_HOME_BUTTON_MISSING_MESSAGE);
         Assert.assertEquals(backHomeButton.getText(), BACK_HOME_BUTTON_TEXT, DIFFERENT_TEXT);
@@ -85,9 +101,10 @@ public class CheckoutSuccessPage extends TestUtilities {
         Assert.assertEquals(elementBgColorHex, BACK_HOME_BUTTON_BACKGROUND_COLOR, DIFFERENT_CSS_VALUE);
     }
 
-    /* click method for "Back Home" button */
+    /* Click method for "Back Home" button */
     public HomePage clickBackHomeButton() {
         backHomeButton.click();
+        /* Pass the driver to HomePage (POM) */
         return new HomePage(driver);
     }
 }

@@ -2,12 +2,15 @@ package com.saucedemo.objects;
 
 import java.util.ArrayList;
 
+/* This class create Product Object with all constructors , getters and setters */
 public class Product {
+    /* Initialise variables for name, price and product image src */
     private String name;
     private String imageSrc;
     private String price;
-
+    /* Create new product list to store all products from Homepage */
     public static ArrayList<Product> productList = new ArrayList<>();
+
     public Product() {
 
     }
