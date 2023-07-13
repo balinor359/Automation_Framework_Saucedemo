@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -22,23 +23,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class HomePage extends TestUtilities {
+
     /* Declaring web-driver in protected variable */
     protected WebDriver driver;
+
     /* Declaring string variables for the current page */
     private static final String ADD_TO_CART_LOCATOR = "//button[@id='add-to-cart-%s']";
-    private static final String ADD_TO_CART_LOCATOR_ALL = "//button[contains(@id,'add-to-cart-')]";
-    private static final String ADD_TO_CART_TEXT = "Add to cart";
-    private static final String ADD_TO_CART_MISSING_MESSAGE = "'Add to cart' button is not displayed";
-    private static final String ADD_TO_CART_FONT_COLOR = "#132322";
-    private static final String ADD_TO_CART_BORDER_COLOR = "#132322";
     private static final String REMOVE_FROM_CART_LOCATOR = "//button[@id='remove-%s']";
-    private static final String REMOVE_FROM_CART_LOCATOR_ALL = "//button[contains(@id,'remove-')]";
-    private static final String REMOVE_BUTTON_TEXT = "Remove";
-    private static final String REMOVE_BUTTON_FONT_COLOR = "#e2231a";
-    private static final String REMOVE_BUTTON_BORDER_COLOR = "#e2231a";
-    private static final String REMOVE_BUTTON_MISSING_MESSAGE = "'Remove' button is not displayed";
     private static final String HOME_PAGE_URL = "https://www.saucedemo.com/inventory.html";
-    private static final String PRODUCT_PAGE_URL = "https://www.saucedemo.com/inventory-item.html";
     private static final String HOME_PAGE = "Current page is Home page.";
     private static final String HOME_PAGE_ERROR = "Home page loading Failed.";
     private static final String PRODUCTS_LIST_MISSING_MESSAGE = "Products list is not displayed!";
@@ -47,8 +39,6 @@ public class HomePage extends TestUtilities {
     private static final String TWITTER_LINK_URL = "https://twitter.com";
     private static final String FACEBOOK_LINK_URL = "https://www.facebook.com/saucelabs";
     private static final String LINKEDIN_LINK_URL = "https://www.linkedin.com";
-    private static final String DIFFERENT_TEXT = "The text is different!";
-    private static final String DIFFERENT_CSS_VALUE = "The CSS value is different!";
     private static final String TWITTER_LINK_MISSING_MESSAGE = "Twitter link is not displayed!";
     private static final String FACEBOOK_LINK_MISSING_MESSAGE = "Facebook link is not displayed!";
     private static final String LINKEDIN_LINK_MISSING_MESSAGE = "LinkedIn link is not displayed!";
@@ -59,26 +49,19 @@ public class HomePage extends TestUtilities {
     private static final String ALL_ITEMS_LINK_TEXT = "All Items";
     private static final String ABOUT_LINK_TEXT = "About";
     private static final String ABOUT_LINK_URL = "https://saucelabs.com/";
-    private static final String ABOUT_LINK_URL_DIFFERENT_MESSAGE = "The URL is different.";
     private static final String REDIRECT_IS_SUCCESSFUL = "Redirect is successful!";
     private static final String REDIRECT_FAILED = "Redirect failed!";
     private static final String LOGOUT_LINK_TEXT = "Logout";
     private static final String RESET_APP_STATE_LINK_TEXT = "Reset App State";
     public static final String CART_BADGE_WRONG_AMOUNT = "Cart have different amount of products!";
-    public static final String CODE_ERROR_ADD_TO_CART_BUTTON = "Code error: the 'Add to Cart' button you interact with does not exist!";
-    public static final String CODE_ERROR_REMOVE_BUTTON = "Code error: the 'Remove' button you interact with does not exist!";
-    public static final Object RETURN_NULL_OBJECT = null;
-    public static final String PRICES_ASC_ERROR_MESSAGE = "Prices are not sorted in ascending order!";
-    public static final String PRICES_DESC_ERROR_MESSAGE = "Prices are not sorted in descending order!";
+    private static final String CODE_ERROR_ADD_TO_CART_BUTTON = "Code error: the 'Add to Cart' button you interact with does not exist!";
+    private static final Object RETURN_NULL_OBJECT = null;
+    private static final String PRICES_ASC_ERROR_MESSAGE = "Prices are not sorted in ascending order!";
+    private static final String PRICES_DESC_ERROR_MESSAGE = "Prices are not sorted in descending order!";
+    private static final String SORT_BY_PRICE_LOW_TO_HIGH_TEXT = "lohi";
+    private static final String SORT_BY_PRICE_HIGH_TO_LOW_TEXT = "hilo";
     public static ArrayList<Double> originalPriceList = new ArrayList<>();
     public static ArrayList<Double> productsAfterLoad = new ArrayList<>();
-
-
-
-    public static String endPageLoadTime = "";
-//    public static String selectedProductName = "";
-//    public static String selectedProductPrice = "";
-//    public static String selectedProductImageSrc = "";
 
     /* Declaring page elements */
     @FindBy(className = "shopping_cart_link")
@@ -122,10 +105,7 @@ public class HomePage extends TestUtilities {
         PageFactory.initElements(driver, this);
     }
 
-//    public ProductPage loadProductPageElements() {
-//        return new ProductPage(driver);
-//    }
-
+    /* Method who add product in the cart, by given productNameUrl, validates add-to-cart button, click it, then validate is remove button is shown */
     public void addItemToTheCartSimpleClick(String productNameUrl) {
         addToCartButtonValidator(productNameUrl);
 
@@ -136,65 +116,74 @@ public class HomePage extends TestUtilities {
         removeButtonValidator(productNameUrl);
     }
 
+
+    /* Method who add product in the cart and save its data, by given productNameUrl */
     public void addItemToTheCartAndSaveValues(String productNameUrl) {
         addToCartButtonValidator(productNameUrl);
+
+
 
         String xpathOfClickedElement = String.format(ADD_TO_CART_LOCATOR, productNameUrl);
         WebElement addToCartButton = driver.findElement(By.xpath(xpathOfClickedElement));
 
-//        List<WebElement> products = driver.findElements(By.xpath("//div[@class='inventory_item']"));
-
-        /* go through all products */
+        /* Go through all products */
         for (WebElement product : productListLocal) {
 
+            /* Take product - action button, and take his whole id */
             WebElement productNameUrlButton = product.findElement(By.cssSelector("button.btn_inventory"));
             String productNameUrlLocal = productNameUrlButton.getAttribute("id");
 
+            /* Check is id contains productNameUrl */
             if (productNameUrlLocal.contains(productNameUrl)) {
-                /* get child element - Name */
+                /* Take child element - Name */
                 WebElement childName = product.findElement(By.cssSelector("div[class='inventory_item_name']"));
 
-                /* get child element - Price */
+                /* Take child element - Price */
                 WebElement productPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
 
-                /* get child element - Image Src*/
+                /* Take child element - Image Src*/
                 WebElement productImageSrc = product.findElement(By.cssSelector("img[class='inventory_item_img']"));
+
+
 
                 /* Create new product with name, price and image src, and add it to the product list */
                 Product newProduct = new Product(childName.getText(), productPrice.getText(), productImageSrc.getAttribute("src"));
                 Product.productList.add(newProduct);
 
+                /* Click add to cart button, then validate is remove button is shown */
                 addToCartButton.click();
                 removeButtonValidator(productNameUrl);
             }
         }
     }
 
-    public void removeItemFromTheCart(String productName) {
-        removeButtonValidator(productName);
+    /* Method who remove product from the cart, by given productNameUrl, validates remove button, click it, then validate is add-to-cart button is shown */
+    public void removeItemFromTheCart(String productNameUrl) {
+        removeButtonValidator(productNameUrl);
 
-        String xpathOfClickedElement = String.format(REMOVE_FROM_CART_LOCATOR, productName);
+        String xpathOfClickedElement = String.format(REMOVE_FROM_CART_LOCATOR, productNameUrl);
         WebElement removeButton = driver.findElement(By.xpath(xpathOfClickedElement));
         removeButton.click();
 
-        addToCartButtonValidator(productName);
+        addToCartButtonValidator(productNameUrl);
     }
 
+    /* Method who add all products to the cart */
     public void addAllItemToTheCart() {
 
-        /* go through all products */
+        /* Go through all products */
         for (WebElement product : productListLocal) {
 
-            /* get element - Name */
+            /* Take element - Name */
             WebElement itemName = product.findElement(By.cssSelector("div[class='inventory_item_name']"));
 
-            /* get element - Price */
+            /* Take element - Price */
             WebElement itemPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
 
-            /* get child element - Image Src*/
+            /* Take child element - Image Src*/
             WebElement itemImageSrc = product.findElement(By.cssSelector("img[class='inventory_item_img']"));
 
-            /* get element - Add to Cart Button */
+            /* Take element - Add to Cart Button */
             WebElement ItemAddToCartBtn = product.findElement(By.cssSelector("button.btn_primary"));
 
             /* Click on add to cart button */
@@ -206,38 +195,39 @@ public class HomePage extends TestUtilities {
 
 
             try {
-                /* get element - Remove Button */
+                /* Take element - Remove Button, and get his whole id attribute, then validate the remove button */
                 WebElement ItemRemoveBtn = product.findElement(By.cssSelector("button.btn_secondary"));
                 String ItemRemoveBtnId = ItemRemoveBtn.getAttribute("Id");
 
                 removeButtonValidatorWholeUrl(ItemRemoveBtnId);
 
             } catch (NoSuchElementException e) {
-                System.out.println(CODE_ERROR_REMOVE_BUTTON);
-                MyFileWriter.writeToLog(CODE_ERROR_REMOVE_BUTTON);
+                System.out.println(GenericMessages.CODE_ERROR_REMOVE_BUTTON);
+                MyFileWriter.writeToLog(GenericMessages.CODE_ERROR_REMOVE_BUTTON);
 
-                Assert.fail(CODE_ERROR_REMOVE_BUTTON);
+                Assert.fail(GenericMessages.CODE_ERROR_REMOVE_BUTTON);
             }
 
         }
 
     }
 
+    /* Method who validates add to cart button has correct text / font-color / border color */
     public void addToCartButtonValidator(String productNameUrl) {
         try {
             String xpathOfClickedElement = String.format(ADD_TO_CART_LOCATOR, productNameUrl);
             WebElement addToCartButton = driver.findElement(By.xpath(xpathOfClickedElement));
 
-            Assert.assertTrue(addToCartButton.isDisplayed(), ADD_TO_CART_MISSING_MESSAGE);
-            Assert.assertEquals(addToCartButton.getText(), ADD_TO_CART_TEXT, DIFFERENT_TEXT);
+            Assert.assertTrue(addToCartButton.isDisplayed(), GenericMessages.ADD_TO_CART_MISSING_MESSAGE);
+            Assert.assertEquals(addToCartButton.getText(), GenericMessages.ADD_TO_CART_TEXT, GenericMessages.DIFFERENT_TEXT);
 
             String fontColor = addToCartButton.getCssValue("color");
             String fontColorHex = Color.fromString(fontColor).asHex();
-            Assert.assertEquals(fontColorHex, ADD_TO_CART_FONT_COLOR, DIFFERENT_CSS_VALUE);
+            Assert.assertEquals(fontColorHex, GenericMessages.ADD_TO_CART_FONT_COLOR, GenericMessages.DIFFERENT_CSS_VALUE);
 
             String elementBorderColor = addToCartButton.getCssValue("border-color");
             String elementBorderColorHex = Color.fromString(elementBorderColor).asHex();
-            Assert.assertEquals(elementBorderColorHex, ADD_TO_CART_BORDER_COLOR, DIFFERENT_CSS_VALUE);
+            Assert.assertEquals(elementBorderColorHex, GenericMessages.ADD_TO_CART_BORDER_COLOR, GenericMessages.DIFFERENT_CSS_VALUE);
 
         } catch (NoSuchElementException e) {
             System.out.println(CODE_ERROR_ADD_TO_CART_BUTTON);
@@ -247,86 +237,86 @@ public class HomePage extends TestUtilities {
         }
     }
 
+    /* Method who validates remove button has correct text / font-color / border color, by given fragment of his productNameUrl */
     public void removeButtonValidator(String productNameUrl) {
         try {
             String xpathOfClickedElement = String.format(REMOVE_FROM_CART_LOCATOR, productNameUrl);
             WebElement removeButton = driver.findElement(By.xpath(xpathOfClickedElement));
 
-            Assert.assertTrue(removeButton.isDisplayed(), REMOVE_BUTTON_MISSING_MESSAGE);
-            Assert.assertEquals(removeButton.getText(), REMOVE_BUTTON_TEXT, DIFFERENT_TEXT);
+            Assert.assertTrue(removeButton.isDisplayed(), GenericMessages.REMOVE_BUTTON_MISSING_MESSAGE);
+            Assert.assertEquals(removeButton.getText(), GenericMessages.REMOVE_BUTTON_TEXT, GenericMessages.DIFFERENT_TEXT);
 
             String fontColor = removeButton.getCssValue("color");
             String fontColorHex = Color.fromString(fontColor).asHex();
-            Assert.assertEquals(fontColorHex, REMOVE_BUTTON_FONT_COLOR, DIFFERENT_CSS_VALUE);
+            Assert.assertEquals(fontColorHex, GenericMessages.REMOVE_BUTTON_FONT_COLOR, GenericMessages.DIFFERENT_CSS_VALUE);
 
             String elementBorderColor = removeButton.getCssValue("border-color");
             String elementBorderColorHex = Color.fromString(elementBorderColor).asHex();
-            Assert.assertEquals(elementBorderColorHex, REMOVE_BUTTON_BORDER_COLOR, DIFFERENT_CSS_VALUE);
+            Assert.assertEquals(elementBorderColorHex, GenericMessages.REMOVE_BUTTON_BORDER_COLOR, GenericMessages.DIFFERENT_CSS_VALUE);
 
         } catch (NoSuchElementException e) {
-            System.out.println(CODE_ERROR_REMOVE_BUTTON);
-            MyFileWriter.writeToLog(CODE_ERROR_REMOVE_BUTTON);
+            System.out.println(GenericMessages.CODE_ERROR_REMOVE_BUTTON);
+            MyFileWriter.writeToLog(GenericMessages.CODE_ERROR_REMOVE_BUTTON);
 
-            Assert.fail(CODE_ERROR_REMOVE_BUTTON);
+            Assert.fail(GenericMessages.CODE_ERROR_REMOVE_BUTTON);
         }
     }
+
+    /* Method who validates remove button has correct text / font-color / border color, by his whole id attribute */
     public void removeButtonValidatorWholeUrl(String productNameUrl) {
         try {
             String xpathOfClickedElement = String.format("//button[@id='%s']", productNameUrl);
             WebElement removeButton = driver.findElement(By.xpath(xpathOfClickedElement));
 
-            Assert.assertTrue(removeButton.isDisplayed(), REMOVE_BUTTON_MISSING_MESSAGE);
-            Assert.assertEquals(removeButton.getText(), REMOVE_BUTTON_TEXT, DIFFERENT_TEXT);
+            Assert.assertTrue(removeButton.isDisplayed(), GenericMessages.REMOVE_BUTTON_MISSING_MESSAGE);
+            Assert.assertEquals(removeButton.getText(), GenericMessages.REMOVE_BUTTON_TEXT, GenericMessages.DIFFERENT_TEXT);
 
             String fontColor = removeButton.getCssValue("color");
             String fontColorHex = Color.fromString(fontColor).asHex();
-            Assert.assertEquals(fontColorHex, REMOVE_BUTTON_FONT_COLOR, DIFFERENT_CSS_VALUE);
+            Assert.assertEquals(fontColorHex, GenericMessages.REMOVE_BUTTON_FONT_COLOR, GenericMessages.DIFFERENT_CSS_VALUE);
 
             String elementBorderColor = removeButton.getCssValue("border-color");
             String elementBorderColorHex = Color.fromString(elementBorderColor).asHex();
-            Assert.assertEquals(elementBorderColorHex, REMOVE_BUTTON_BORDER_COLOR, DIFFERENT_CSS_VALUE);
+            Assert.assertEquals(elementBorderColorHex, GenericMessages.REMOVE_BUTTON_BORDER_COLOR, GenericMessages.DIFFERENT_CSS_VALUE);
 
         } catch (NoSuchElementException e) {
-            System.out.println(CODE_ERROR_REMOVE_BUTTON);
-            MyFileWriter.writeToLog(CODE_ERROR_REMOVE_BUTTON);
+            System.out.println(GenericMessages.CODE_ERROR_REMOVE_BUTTON);
+            MyFileWriter.writeToLog(GenericMessages.CODE_ERROR_REMOVE_BUTTON);
 
-            Assert.fail(CODE_ERROR_REMOVE_BUTTON);
+            Assert.fail(GenericMessages.CODE_ERROR_REMOVE_BUTTON);
         }
     }
 
+    /* Method who check if cart is empty, and if it`s not return the amount of products in the cart */
     public int getItemsInTheCart() {
         if (shoppingCartLink.getText().isEmpty()) {
             return 0;
         } else {
             return Integer.parseInt(shoppingCartBadge.getText());
         }
-
     }
 
 
-    /* method who navigate to product page and validate product items by submitted item name*/
+    /* Method who navigate to product page and validate product items by submitted item name */
     public ProductPage selectProduct(String productName) {
-        /* get all products */
-//        List<WebElement> products = driver.findElements(By.cssSelector("div[class='inventory_item']"));
-
-        /* go through all products */
+        /* Go through all products */
         for (WebElement product : productListLocal) {
 
-            /* get child element - Name */
+            /* Take child element - Name */
             WebElement productTitle = product.findElement(By.cssSelector("div[class='inventory_item_name']"));
 
-            /* get parent element - Name */
-            WebElement productTitleParent = productTitle.findElement(By.xpath(".."));
+            /* Take element - Link */
+            WebElement productTitleParent = product.findElement(By.tagName("a"));
 
-            /* get child element - Price */
+            /* Take child element - Price */
             WebElement productPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
 
-            /* get child element - Image Src*/
+            /* Take child element - Image Src*/
             WebElement productImageSrc = product.findElement(By.cssSelector("img[class='inventory_item_img']"));
 
             /* Save values for Name/Price/Image src for comparison in other pages */
 
-            /* locate submitted product and click his product name link */
+            /* Locate submitted product and click his product name link */
             if (productTitle.getText().contains(productName)) {
 
                 /* Create new product with name, price and image src, and add it to the product list */
@@ -334,23 +324,30 @@ public class HomePage extends TestUtilities {
                 Product.productList.add(newProduct);
 
                 /* Click on product name */
+//                waitClickable(driver, productTitleParent, 5);
+
+
                 productTitleParent.click();
+//                productTitleParent2.click();
 
                 /* Pass the driver to ProductPage (POM) */
                 return new ProductPage(driver);
             }
         }
-
+        /* Return null driver if haven`t found the product */
         return (ProductPage) RETURN_NULL_OBJECT;
     }
 
+    /* Click method for "Cart" button */
     public CartPage clickOnCartButton() {
         shoppingCartLink.click();
         /* Pass the driver to CartPage (POM) */
         return new CartPage(driver);
     }
 
+    /* Method who validate Homepage is loaded */
     public void homepageValidator() {
+        /* Check if current page is inventory.html */
         if (driver.getCurrentUrl().equals(HOME_PAGE_URL)) {
             System.out.println(HOME_PAGE);
             MyFileWriter.writeToLog(HOME_PAGE);
@@ -363,42 +360,37 @@ public class HomePage extends TestUtilities {
             System.out.println(HOME_PAGE_ERROR);
             MyFileWriter.writeToLog(HOME_PAGE_ERROR);
 
-            //todo Ако assertite ги няма, теста ще минава, не трябва ли да се остави да гръмне грешката за липсващ елемент,
-            // ако се обработи с try/catch теста пак ще мине, единствено ще се изведе в конзолата съобщение, по кой от двата начина трябва да се процедира?
-//            Assert.assertTrue(productsList.isDisplayed(), PRODUCTS_LIST_MISSING_MESSAGE);
-//            Assert.assertTrue(menuButton.isDisplayed(), MENU_BUTTON_MISSING_MESSAGE);
-//            Assert.assertTrue(shoppingCart.isDisplayed(), SHOPPING_CART_MISSING_MESSAGE);
-
-            //todo или така е по-правилно да се направи, за да се считат за неуспешни?
             Assert.assertEquals(driver.getCurrentUrl(), HOME_PAGE_URL, HOME_PAGE_ERROR);
         }
     }
 
+    /* Method who validates social footer links are displayed and working correctly */
     public void socialLinksValidator() {
         /* Verify all social links in footer are displayed */
         Assert.assertTrue(footerTwitterLink.isDisplayed(), TWITTER_LINK_MISSING_MESSAGE);
         Assert.assertTrue(footerFacebookLink.isDisplayed(), FACEBOOK_LINK_MISSING_MESSAGE);
         Assert.assertTrue(footerLinkedinLink.isDisplayed(), LINKEDIN_LINK_MISSING_MESSAGE);
 
-
         /* Following waits are needed for test execution on firefox and edge */
-        /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab*/
+        /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab */
         waitClickable(driver, footerTwitterLink, 5);
         footerTwitterLink.click();
         simpleWait(600);
 
-        /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab*/
+        /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab */
         waitClickable(driver, footerFacebookLink, 5);
         footerFacebookLink.click();
         simpleWait(600);
 
-        /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab*/
+        /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab */
         waitClickable(driver, footerLinkedinLink, 5);
         footerLinkedinLink.click();
         simpleWait(600);
 
         /* Array list with tabs */
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+
+        System.out.println("tabs " + tabs);
 
         /* Switch to wanted tab, then validate correctness of the external link */
         driver.switchTo().window(tabs.get(3));
@@ -411,11 +403,12 @@ public class HomePage extends TestUtilities {
         /* Switch to wanted tab, then validate correctness of the external link */
         driver.switchTo().window(tabs.get(1));
         validateLinkedInLink();
-
     }
+
     /* Method who validate correctness of the social link and print right messages in console and log file */
     public void validateTwitterLink() {
-
+        /* Wait web-driver to load it in new tab */
+        simpleWait(600);
         if (driver.getCurrentUrl().contains(TWITTER_LINK_URL)) {
             System.out.println(REDIRECT_IS_SUCCESSFUL);
             MyFileWriter.writeToLog(REDIRECT_IS_SUCCESSFUL);
@@ -424,10 +417,14 @@ public class HomePage extends TestUtilities {
             MyFileWriter.writeToLog(REDIRECT_FAILED);
             Assert.assertEquals(driver.getCurrentUrl(), TWITTER_LINK_URL, REDIRECT_FAILED);
         }
+
+
     }
+
     /* Method who validate correctness of the social link and print right messages in console and log file */
     public void validateFacebookLink() {
-
+        /* Wait web-driver to load it in new tab */
+        simpleWait(600);
         if (driver.getCurrentUrl().equals(FACEBOOK_LINK_URL)) {
             System.out.println(REDIRECT_IS_SUCCESSFUL);
             MyFileWriter.writeToLog(REDIRECT_IS_SUCCESSFUL);
@@ -436,10 +433,13 @@ public class HomePage extends TestUtilities {
             MyFileWriter.writeToLog(REDIRECT_FAILED);
             Assert.assertEquals(driver.getCurrentUrl(), FACEBOOK_LINK_URL, REDIRECT_FAILED);
         }
+
     }
+
     /* Method who validate correctness of the social link and print right messages in console and log file */
     public void validateLinkedInLink() {
-
+        /* Wait web-driver to load it in new tab */
+        simpleWait(600);
         if (driver.getCurrentUrl().contains(LINKEDIN_LINK_URL)) {
             System.out.println(REDIRECT_IS_SUCCESSFUL);
             MyFileWriter.writeToLog(REDIRECT_IS_SUCCESSFUL);
@@ -448,9 +448,10 @@ public class HomePage extends TestUtilities {
             MyFileWriter.writeToLog(REDIRECT_FAILED);
             Assert.assertEquals(driver.getCurrentUrl(), LINKEDIN_LINK_URL, REDIRECT_FAILED);
         }
+
     }
 
-    /* method who validates existence and correctness of menu items */
+    /* Method who validates existence and correctness of menu items */
     public void menuLinksValidator() {
         /* Click on hamburger menu */
         menuButton.click();
@@ -461,28 +462,28 @@ public class HomePage extends TestUtilities {
         - check actual with expected link text */
         waitClickable(driver, menuInventoryButton, 2);
         Assert.assertTrue(menuInventoryButton.isDisplayed(), ALL_ITEMS_LINK_MISSING_MESSAGE);
-        Assert.assertEquals(menuInventoryButton.getText(), ALL_ITEMS_LINK_TEXT, DIFFERENT_TEXT);
+        Assert.assertEquals(menuInventoryButton.getText(), ALL_ITEMS_LINK_TEXT, GenericMessages.DIFFERENT_TEXT);
 
         waitClickable(driver, menuAboutButton, 2);
         Assert.assertTrue(menuAboutButton.isDisplayed(), ABOUT_LINK_MISSING_MESSAGE);
-        Assert.assertEquals(menuAboutButton.getText(), ABOUT_LINK_TEXT, DIFFERENT_TEXT);
+        Assert.assertEquals(menuAboutButton.getText(), ABOUT_LINK_TEXT, GenericMessages.DIFFERENT_TEXT);
 
         waitClickable(driver, menuLogoutButton, 2);
         Assert.assertTrue(menuLogoutButton.isDisplayed(), LOGOUT_LINK_MISSING_MESSAGE);
-        Assert.assertEquals(menuLogoutButton.getText(), LOGOUT_LINK_TEXT, DIFFERENT_TEXT);
+        Assert.assertEquals(menuLogoutButton.getText(), LOGOUT_LINK_TEXT, GenericMessages.DIFFERENT_TEXT);
 
         waitClickable(driver, menuResetButton, 2);
         Assert.assertTrue(menuResetButton.isDisplayed(), RESET_APP_STATE_LINK_MISSING_MESSAGE);
-        Assert.assertEquals(menuResetButton.getText(), RESET_APP_STATE_LINK_TEXT, DIFFERENT_TEXT);
+        Assert.assertEquals(menuResetButton.getText(), RESET_APP_STATE_LINK_TEXT, GenericMessages.DIFFERENT_TEXT);
     }
 
 
-    /* click method for Menu item - "All Items" */
+    /* Click method for Menu item - "All Items" */
     public void clickMenuInventoryButton() {
         menuInventoryButton.click();
     }
 
-    /* click and check method for Menu item - "About" */
+    /* Click and check method for Menu item - "About" */
     public void clickMenuAboutButton() {
         menuAboutButton.click();
 
@@ -497,16 +498,17 @@ public class HomePage extends TestUtilities {
         }
     }
 
-    /* click method for Menu item - "Logout" */
+    /* Click method for Menu item - "Logout" */
     public void clickMenuLogoutButton() {
         menuLogoutButton.click();
     }
 
-    /* click method for Menu item - "Reset App State" */
+    /* Click method for Menu item - "Reset App State" */
     public void clickMenuResetButton() {
         menuResetButton.click();
     }
 
+    /* This method extract only prices from WebElement without any other text */
     public static double extractPriceFromElement(WebElement element) {
 
         String elementText = element.getText();
@@ -523,49 +525,58 @@ public class HomePage extends TestUtilities {
         return 0;
     }
 
+    /* This method fill originalPriceList with product prices */
     public void getOriginalPriceList() {
 
-        /* go through all products */
+        /* Go through all products */
         for (WebElement product : productListLocal) {
 
-            /* get element - Price */
+            /* Take element - Price */
             WebElement itemPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
 
-            /* Create new product with name, price and image src, and add it to the product list */
-
+            /* Extract only price from the WebElement, and add it to the list */
             originalPriceList.add(Double.valueOf(extractPriceFromElement(itemPrice)));
 
         }
     }
+
+    /* This method fill productsAfterLoad list with product prices */
     public void getPriceListAfterLoad() {
         List<WebElement> productsAfterLoadList = driver.findElements(By.cssSelector("div[class='inventory_item']"));
 
-        /* go through all products */
+        /* Go through all products */
         for (WebElement product : productsAfterLoadList) {
 
-            /* get element - Price */
+            /* Take element - Price */
             WebElement itemPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
 
-            /* Create new product with name, price and image src, and add it to the product list */
-
+            /* Extract only price from the WebElement, and add it to the list */
             productsAfterLoad.add(Double.valueOf(extractPriceFromElement(itemPrice)));
 
         }
     }
+
+    /* This method clear productsAfterLoad list data */
     public void clearProductsAfterLoadList() {
         productsAfterLoad.clear();
     }
+
+    /* This method select sorting product by price Low to High from dropdown */
     public void clickProductSortingByPriceLowHigh() {
-        new Select(sortingDropdown).selectByValue("lohi");
+        new Select(sortingDropdown).selectByValue(SORT_BY_PRICE_LOW_TO_HIGH_TEXT);
 
     }
+
+    /* This method select sorting product by price High to Low from dropdown */
     public void clickProductSortingByPriceHighLow() {
-        new Select(sortingDropdown).selectByValue("hilo");
+        new Select(sortingDropdown).selectByValue(SORT_BY_PRICE_HIGH_TO_LOW_TEXT);
     }
+
+    /* Method who validate sorting Low to High prices is correct */
     public void validateProductsPricesAreAsc() {
         boolean isAscending = true;
         for (int i = 0; i < productsAfterLoad.size() - 1; i++) {
-            /* check if current i is greater than next, if it is return false */
+            /* Check if current i is greater than next, if it is return false */
             if (productsAfterLoad.get(i) > productsAfterLoad.get(i + 1)) {
                 isAscending = false;
                 break;
@@ -574,10 +585,12 @@ public class HomePage extends TestUtilities {
 
         Assert.assertTrue(isAscending, PRICES_ASC_ERROR_MESSAGE);
     }
+
+    /* Method who validate sorting High to Low prices is correct */
     public void validateProductsPricesAreDesc() {
         boolean isDescending = true;
         for (int i = 0; i < productsAfterLoad.size() - 1; i++) {
-            /* check if current i is greater than next, if it is return false */
+            /* Check if current i is greater than next, if it is return false */
             if (productsAfterLoad.get(i) < productsAfterLoad.get(i + 1)) {
                 isDescending = false;
                 break;
@@ -586,7 +599,9 @@ public class HomePage extends TestUtilities {
 
         Assert.assertTrue(isDescending, PRICES_DESC_ERROR_MESSAGE);
     }
-    public void sortingValidator(){
+
+    /* Method who take, compare and clear the price list after sorting */
+    public void sortingValidator() {
         getOriginalPriceList();
         clickProductSortingByPriceLowHigh();
         getPriceListAfterLoad();

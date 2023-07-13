@@ -12,22 +12,17 @@ import org.testng.asserts.SoftAssert;
 
 
 public class ProductPage extends TestUtilities {
+
     /* Declaring web-driver in protected variable */
     protected WebDriver driver;
+
     /* Declaring string variables for the current page */
     private static final String PRODUCT_PAGE_URL = "https://www.saucedemo.com/inventory-item.html";
-    private static final String HOME_PAGE_URL = "https://www.saucedemo.com/inventory.html";
     private static final String PRODUCT_PAGE = "Current page is Product page.";
     private static final String PRODUCT_PAGE_ERROR = "Product page loading Failed.";
-    private static final String PRODUCTS_NAME_MISSING_MESSAGE = "Product name is not displayed!";
-    private static final String PRODUCT_PRICE_MISSING_MESSAGE = "Product price is not displayed!";
     private static final String PRODUCT_IMAGE_MISSING_MESSAGE = "Product image is not displayed!";
-    private static final String PRODUCTS_NAME_IS_DIFFERENT_MESSAGE = "Product name is different!";
-    private static final String PRODUCT_PRICE_IS_DIFFERENT_MESSAGE = "Product price is different!";
     private static final String PRODUCT_IMAGE_IS_DIFFERENT_MESSAGE = "Product image is different!";
     private static final String BACK_TO_ALL_PRODUCTS_MISSING_MESSAGE = "'Back to products' link is not displayed!";
-    private static final String PRODUCT_ADD_TO_CART_BUTTON_MISSING_MESSAGE = "'Add to cart' button is not displayed!";
-    public static final String LARGE_PAGE_LOAD_TIME_MESSAGE = "Page load time is more than 2 seconds.";
 
     /* Declaring page elements */
     @FindBy(xpath = "//a[@id='inventory_sidebar_link']")
@@ -79,7 +74,7 @@ public class ProductPage extends TestUtilities {
             Assert.assertTrue(backToAllProductsButton.isDisplayed(), BACK_TO_ALL_PRODUCTS_MISSING_MESSAGE);
 
             waitClickable(driver, productAddToCartButton, 2);
-            Assert.assertTrue(productAddToCartButton.isDisplayed(), PRODUCT_ADD_TO_CART_BUTTON_MISSING_MESSAGE);
+            Assert.assertTrue(productAddToCartButton.isDisplayed(), GenericMessages.ADD_TO_CART_MISSING_MESSAGE);
 
             /* Validate the product name */
             validateProductName();
@@ -98,16 +93,16 @@ public class ProductPage extends TestUtilities {
 
     /* Method who validate the product name */
     public void validateProductName() {
-        Assert.assertTrue(productName.isDisplayed(), PRODUCTS_NAME_MISSING_MESSAGE);
+        Assert.assertTrue(productName.isDisplayed(), GenericMessages.PRODUCTS_NAME_MISSING_MESSAGE);
         /* Its use soft assert, to get all errors at the end of the test */
-        softAssert.assertEquals(productName.getText(), Product.productList.get(0).getName(), PRODUCTS_NAME_IS_DIFFERENT_MESSAGE);
+        softAssert.assertEquals(productName.getText(), Product.productList.get(0).getName(), GenericMessages.PRODUCTS_NAME_IS_DIFFERENT_MESSAGE);
     }
 
     /* Method who validate the product price */
     public void validateProductPrice() {
-        Assert.assertTrue(productPrice.isDisplayed(), PRODUCT_PRICE_MISSING_MESSAGE);
+        Assert.assertTrue(productPrice.isDisplayed(), GenericMessages.PRODUCT_PRICE_MISSING_MESSAGE);
         /* Its use soft assert, to get all errors at the end of the test */
-        softAssert.assertEquals(productPrice.getText(), Product.productList.get(0).getPrice(), PRODUCT_PRICE_IS_DIFFERENT_MESSAGE);
+        softAssert.assertEquals(productPrice.getText(), Product.productList.get(0).getPrice(), GenericMessages.PRODUCT_PRICE_IS_DIFFERENT_MESSAGE);
     }
 
     /* Method who validate the product image src */

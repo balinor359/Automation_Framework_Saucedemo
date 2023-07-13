@@ -10,27 +10,25 @@ import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
-import com.saucedemo.pom.GenericMessages;
 
 import java.time.Duration;
 
 public class LoginPage extends TestUtilities {
+
     /* Declaring web-driver in protected variable */
     protected WebDriver driver;
+
     /* Declaring string variables for the current page */
     private static String loginErrorMessage = "";
     private static final String LOGIN_PAGE = "Current page is Login page.";
     private static final String LOGIN_FORM_MISSING_MESSAGE = "Login form is missing!";
-    private static final String MISSING_ELEMENT_MESSAGE = "Element ( %s ) is missing!";
     private static final String LOGIN_PAGE_URL = "https://www.saucedemo.com/";
-    private static final String HOME_PAGE_URL = "https://www.saucedemo.com/inventory.html";
     private static final String LOGIN_FAILED_MESSAGE = "Login Failed!";
     private static final String LOGIN_WRONG_USERNAME_MESSAGE = "Wrong username!";
     private static final String LOGIN_WRONG_PASSWORD_MESSAGE = "Wrong password!";
     private static final String LOGIN_SUCCESSFUL_MESSAGE = "Login is Successful!";
     private static final String LOGOUT_FAILED_MESSAGE = "Logout Failed!";
     private static final String LOGOUT_SUCCESSFUL_MESSAGE = "Logout is Successful!";
-    //    private static final String DIFFERENT_MESSAGE = "The message is different!";
     private static final String WRONG_USER_AND_PASS_MESSAGE = "Epic sadface: Username and password do not match any user in this service";
     private static final String LOCKED_USER_MESSAGE = "Epic sadface: Sorry, this user has been locked out.";
     public static final String LARGE_PAGE_LOAD_TIME_MESSAGE = "Page load time is more than 2 seconds.";
@@ -71,9 +69,9 @@ public class LoginPage extends TestUtilities {
     /* Method who validate login page elements are displayed */
     public void loginPageValidator() {
         Assert.assertTrue(loginForm.isDisplayed(), LOGIN_FORM_MISSING_MESSAGE);
-        Assert.assertTrue(userNameField.isDisplayed(), String.format(MISSING_ELEMENT_MESSAGE, userNameField));
-        Assert.assertTrue(userPasswordField.isDisplayed(), String.format(MISSING_ELEMENT_MESSAGE, userPasswordField));
-        Assert.assertTrue(loginButton.isDisplayed(), String.format(MISSING_ELEMENT_MESSAGE, loginButton));
+        Assert.assertTrue(userNameField.isDisplayed(), String.format(GenericMessages.MISSING_ELEMENT_MESSAGE, userNameField));
+        Assert.assertTrue(userPasswordField.isDisplayed(), String.format(GenericMessages.MISSING_ELEMENT_MESSAGE, userPasswordField));
+        Assert.assertTrue(loginButton.isDisplayed(), String.format(GenericMessages.MISSING_ELEMENT_MESSAGE, loginButton));
     }
 
     /* Method who validate login page elements are displayed */
@@ -118,12 +116,12 @@ public class LoginPage extends TestUtilities {
             System.out.println("Error text: " + returnErrorText());
             MyFileWriter.writeToLog(LOGIN_FAILED_MESSAGE + " - " + returnErrorText());
 
-            Assert.assertEquals(driver.getCurrentUrl(), HOME_PAGE_URL, LOGIN_FAILED_MESSAGE);
+            Assert.assertEquals(driver.getCurrentUrl(), GenericMessages.HOME_PAGE_URL, LOGIN_FAILED_MESSAGE);
         } else {
             System.out.println(LOGIN_SUCCESSFUL_MESSAGE);
             MyFileWriter.writeToLog(LOGIN_SUCCESSFUL_MESSAGE);
 
-            Assert.assertEquals(driver.getCurrentUrl(), HOME_PAGE_URL, LOGIN_FAILED_MESSAGE);
+            Assert.assertEquals(driver.getCurrentUrl(), GenericMessages.HOME_PAGE_URL, LOGIN_FAILED_MESSAGE);
         }
         /* Pass the driver to HomePage (POM) */
         return new HomePage(driver);
@@ -155,12 +153,12 @@ public class LoginPage extends TestUtilities {
             System.out.println("Error text: " + returnErrorText());
             MyFileWriter.writeToLog(LOGIN_FAILED_MESSAGE + " - " + returnErrorText());
 
-            Assert.assertEquals(driver.getCurrentUrl(), HOME_PAGE_URL, LOGIN_FAILED_MESSAGE);
+            Assert.assertEquals(driver.getCurrentUrl(), GenericMessages.HOME_PAGE_URL, LOGIN_FAILED_MESSAGE);
         } else {
             System.out.println(LOGIN_SUCCESSFUL_MESSAGE);
             MyFileWriter.writeToLog(LOGIN_SUCCESSFUL_MESSAGE);
 
-            Assert.assertEquals(driver.getCurrentUrl(), HOME_PAGE_URL, LOGIN_FAILED_MESSAGE);
+            Assert.assertEquals(driver.getCurrentUrl(), GenericMessages.HOME_PAGE_URL, LOGIN_FAILED_MESSAGE);
         }
         /* Pass the driver to HomePage (POM) */
         return new HomePage(driver);

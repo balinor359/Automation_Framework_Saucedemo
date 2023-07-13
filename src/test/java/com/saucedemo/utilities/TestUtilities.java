@@ -1,5 +1,6 @@
 package com.saucedemo.utilities;
 
+import com.saucedemo.objects.Product;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
@@ -41,9 +42,11 @@ public class TestUtilities {
 
     @AfterMethod
     public void tearDown() {
+        /* Clear saved list with products after each test */
+        clearProductList();
+
         /* Close the driver*/
         if (driver != null) {
-            driver.close();
             driver.quit();
         }
 
@@ -194,5 +197,8 @@ public class TestUtilities {
         driver.manage().deleteAllCookies();
     }
 
-
+    /* This method clear productsAfterLoad list data */
+    public void clearProductList() {
+        Product.productList.clear();
+    }
 }
