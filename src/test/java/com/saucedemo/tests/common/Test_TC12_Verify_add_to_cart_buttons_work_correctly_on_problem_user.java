@@ -24,8 +24,6 @@ public class Test_TC12_Verify_add_to_cart_buttons_work_correctly_on_problem_user
         loginPage.loginPageValidator();
 
         HomePage homePage = loginPage.testUserLogin(UserBuilder.fullUsersList.get(2));
-//        HomePage homePage = loginPage.testUserLogin(UserBuilder.fullUsersList.get(0));
-        //todo С нормален user get(0) , всичко е ок и теста минава
         homePage.homepageValidator();
 
         homePage.addAllItemToTheCart();
