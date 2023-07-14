@@ -191,12 +191,6 @@ public class TestUtilities {
         }
     }
 
-    //Todo
-    /* Method who delete browser cookies */
-    public void clearBrowserCookies() {
-        driver.manage().deleteAllCookies();
-    }
-
     /* This method clear productsAfterLoad list data */
     public void clearProductList() {
         Product.productList.clear();

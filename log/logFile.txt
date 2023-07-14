@@ -12587,3 +12587,729 @@ ________________________________________________________________________________
 13/07/2023 20:17:16 : Redirect failed!
 13/07/2023 20:17:17 : Test End!
 _________________________________________________________________________________________
+14/07/2023 15:15:45 : Test Start!
+14/07/2023 15:15:45 : TC1: Login in website with valid data
+14/07/2023 15:15:45 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:17:46 : Test Start!
+14/07/2023 15:17:48 : TC1: Login in website with valid data
+14/07/2023 15:17:48 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:18:25 : Test Start!
+14/07/2023 15:18:28 : TC1: Login in website with valid data
+14/07/2023 15:18:29 : Login is Successful!
+14/07/2023 15:18:29 : Current page is Home page.
+14/07/2023 15:18:29 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:20:08 : Test Start!
+14/07/2023 15:20:10 : TC1: Login in website with valid data
+14/07/2023 15:20:10 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:24:18 : Test Start!
+14/07/2023 15:24:22 : TC1: Login in website with valid data
+14/07/2023 15:24:22 : Login is Successful!
+14/07/2023 15:24:22 : Current page is Home page.
+14/07/2023 15:24:23 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:25:20 : Test Start!
+14/07/2023 15:25:22 : TC2: Login in website with invalid data
+14/07/2023 15:25:22 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:25:32 : Test Start!
+14/07/2023 15:25:34 : TC2: Login in website with invalid data
+14/07/2023 15:25:35 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:26:59 : Test Start!
+14/07/2023 15:27:01 : TC2: Login in website with invalid data
+14/07/2023 15:27:02 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 15:27:02 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:27:14 : Test Start!
+14/07/2023 15:27:16 : TC3: Verify locked user cant login in website
+14/07/2023 15:27:17 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+14/07/2023 15:27:17 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:27:53 : Test Start!
+14/07/2023 15:27:53 : Test Start!
+14/07/2023 15:27:53 : Test Start!
+14/07/2023 15:27:56 : TC3: Verify locked user cant login in website
+14/07/2023 15:27:56 : TC1: Login in website with valid data
+14/07/2023 15:27:56 : TC2: Login in website with invalid data
+14/07/2023 15:27:57 : Login is Successful!
+14/07/2023 15:27:57 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 15:27:57 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+14/07/2023 15:27:57 : Current page is Home page.
+14/07/2023 15:27:57 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:27:57 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:27:57 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:29:50 : Test Start!
+14/07/2023 15:29:53 : TC1: Login in website with valid data
+14/07/2023 15:29:53 : Login is Successful!
+14/07/2023 15:29:53 : Current page is Home page.
+14/07/2023 15:29:53 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:30:38 : Test Start!
+14/07/2023 15:30:38 : Test Start!
+14/07/2023 15:30:38 : Test Start!
+14/07/2023 15:30:41 : TC3: Verify locked user cant login in website
+14/07/2023 15:30:41 : TC2: Login in website with invalid data
+14/07/2023 15:30:41 : TC1: Login in website with valid data
+14/07/2023 15:30:41 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 15:30:41 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+14/07/2023 15:30:42 : Login is Successful!
+14/07/2023 15:30:42 : Current page is Home page.
+14/07/2023 15:30:42 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:30:42 : Test End!
+_________________________________________________________________________________________
+14/07/2023 15:30:42 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:10:17 : Test Start!
+14/07/2023 16:10:17 : Test Start!
+14/07/2023 16:10:17 : Test Start!
+14/07/2023 16:10:19 : Parallel_TC3: Verify locked user cant login in website
+14/07/2023 16:10:19 : Parallel_TC2: Login in website with invalid data
+14/07/2023 16:10:19 : Parallel_TC1: Login in website with valid data
+14/07/2023 16:10:20 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:10:20 : Login is Successful!
+14/07/2023 16:10:20 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+14/07/2023 16:10:20 : Current page is Home page.
+14/07/2023 16:10:20 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:10:20 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:10:20 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:11:24 : Test Start!
+14/07/2023 16:11:26 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+14/07/2023 16:11:27 : Login is Successful!
+14/07/2023 16:11:27 : Current page is Home page.
+14/07/2023 16:11:27 : Current page is Product page.
+14/07/2023 16:11:28 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:11:28 : Test Start!
+14/07/2023 16:11:29 : TC11: Verify that footer external links are valid
+14/07/2023 16:11:29 : Login is Successful!
+14/07/2023 16:11:29 : Current page is Home page.
+14/07/2023 16:11:32 : Redirect is successful!
+14/07/2023 16:11:33 : Redirect is successful!
+14/07/2023 16:11:33 : Redirect is successful!
+14/07/2023 16:11:34 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:11:34 : Test Start!
+14/07/2023 16:11:35 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+14/07/2023 16:11:35 : Login is Successful!
+14/07/2023 16:11:35 : Current page is Home page.
+14/07/2023 16:11:41 : Code error: the 'Remove' button you interact with does not exist!
+14/07/2023 16:11:41 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:11:41 : Test Start!
+14/07/2023 16:11:42 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+14/07/2023 16:11:42 : Login is Successful!
+14/07/2023 16:11:42 : Current page is Home page.
+14/07/2023 16:11:43 : Current page is Product page.
+14/07/2023 16:11:43 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:11:43 : Test Start!
+14/07/2023 16:11:44 : TC14: Verify products sorting work correctly
+14/07/2023 16:11:44 : Login is Successful!
+14/07/2023 16:11:44 : Current page is Home page.
+14/07/2023 16:11:45 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:11:45 : Test Start!
+14/07/2023 16:11:46 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+14/07/2023 16:11:51 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:11:51 : Test Start!
+14/07/2023 16:11:52 : TC6: Complete checkout process with empty cart
+14/07/2023 16:11:53 : Login is Successful!
+14/07/2023 16:11:53 : Current page is Home page.
+14/07/2023 16:11:53 : Current page is Cart page.
+14/07/2023 16:11:58 : Cart is empty.
+14/07/2023 16:11:58 : Current page is Checkout User Information page.
+14/07/2023 16:11:59 : Current page is Checkout Overview page.
+14/07/2023 16:12:04 : Cart is empty.
+14/07/2023 16:12:04 : Current page is Checkout Success page.
+14/07/2023 16:12:04 : Current page is Home page.
+14/07/2023 16:12:04 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:04 : Test Start!
+14/07/2023 16:12:05 : TC1: Login in website with valid data
+14/07/2023 16:12:06 : Login is Successful!
+14/07/2023 16:12:06 : Current page is Home page.
+14/07/2023 16:12:06 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:06 : Test Start!
+14/07/2023 16:12:07 : TC2: Login in website with invalid data
+14/07/2023 16:12:07 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:12:07 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:07 : Test Start!
+14/07/2023 16:12:08 : TC3: Verify locked user cant login in website
+14/07/2023 16:12:09 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+14/07/2023 16:12:09 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:09 : Test Start!
+14/07/2023 16:12:10 : TC4: Login in website via csv data file
+14/07/2023 16:12:10 : Login is Successful!
+14/07/2023 16:12:10 : Current page is Home page.
+14/07/2023 16:12:10 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:10 : Test Start!
+14/07/2023 16:12:11 : TC4: Login in website via csv data file
+14/07/2023 16:12:12 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+14/07/2023 16:12:12 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:12 : Test Start!
+14/07/2023 16:12:13 : TC4: Login in website via csv data file
+14/07/2023 16:12:13 : Login is Successful!
+14/07/2023 16:12:13 : Current page is Home page.
+14/07/2023 16:12:14 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:14 : Test Start!
+14/07/2023 16:12:14 : TC4: Login in website via csv data file
+14/07/2023 16:12:20 : Login is Successful!
+14/07/2023 16:12:20 : Current page is Home page.
+14/07/2023 16:12:20 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:20 : Test Start!
+14/07/2023 16:12:21 : TC4: Login in website via csv data file
+14/07/2023 16:12:22 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:12:22 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:22 : Test Start!
+14/07/2023 16:12:23 : TC4: Login in website via csv data file
+14/07/2023 16:12:23 : Login Failed! - Epic sadface: Username is required
+14/07/2023 16:12:23 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:23 : Test Start!
+14/07/2023 16:12:24 : TC4: Login in website via csv data file
+14/07/2023 16:12:25 : Login Failed! - Epic sadface: Password is required
+14/07/2023 16:12:25 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:25 : Test Start!
+14/07/2023 16:12:26 : TC4: Login in website via csv data file
+14/07/2023 16:12:26 : Login Failed! - Epic sadface: Username is required
+14/07/2023 16:12:26 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:26 : Test Start!
+14/07/2023 16:12:27 : TC4: Login in website via csv data file
+14/07/2023 16:12:28 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:12:28 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:28 : Test Start!
+14/07/2023 16:12:29 : TC4: Login in website via csv data file
+14/07/2023 16:12:29 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:12:29 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:29 : Test Start!
+14/07/2023 16:12:30 : TC5: Add products in the cart
+14/07/2023 16:12:31 : Login is Successful!
+14/07/2023 16:12:31 : Current page is Home page.
+14/07/2023 16:12:31 : Current page is Cart page.
+14/07/2023 16:12:31 : Cart contains items.
+14/07/2023 16:12:32 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:32 : Test Start!
+14/07/2023 16:12:33 : TC6: Test checkout user information fields validation
+14/07/2023 16:12:33 : Login is Successful!
+14/07/2023 16:12:33 : Current page is Home page.
+14/07/2023 16:12:34 : Current page is Cart page.
+14/07/2023 16:12:34 : Cart contains items.
+14/07/2023 16:12:34 : Current page is Checkout User Information page.
+14/07/2023 16:12:34 : Current page is Checkout Overview page.
+14/07/2023 16:12:35 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:35 : Test Start!
+14/07/2023 16:12:36 : TC7: Add products in cart and complete the checkout process
+14/07/2023 16:12:36 : Login is Successful!
+14/07/2023 16:12:36 : Current page is Home page.
+14/07/2023 16:12:37 : Current page is Cart page.
+14/07/2023 16:12:37 : Cart contains items.
+14/07/2023 16:12:37 : Current page is Checkout User Information page.
+14/07/2023 16:12:37 : Current page is Checkout Overview page.
+14/07/2023 16:12:38 : Cart contains items.
+14/07/2023 16:12:38 : Current page is Checkout Success page.
+14/07/2023 16:12:38 : Current page is Home page.
+14/07/2023 16:12:38 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:38 : Test Start!
+14/07/2023 16:12:39 : TC8.1: Test menu link All Items
+14/07/2023 16:12:40 : Login is Successful!
+14/07/2023 16:12:40 : Current page is Home page.
+14/07/2023 16:12:40 : Current page is Product page.
+14/07/2023 16:12:41 : Current page is Home page.
+14/07/2023 16:12:41 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:41 : Test Start!
+14/07/2023 16:12:42 : TC8.2: Test menu link about
+14/07/2023 16:12:42 : Login is Successful!
+14/07/2023 16:12:42 : Current page is Home page.
+14/07/2023 16:12:45 : Redirect is successful!
+14/07/2023 16:12:46 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:46 : Test Start!
+14/07/2023 16:12:47 : TC8.3: Test menu link logout
+14/07/2023 16:12:47 : Login is Successful!
+14/07/2023 16:12:47 : Current page is Home page.
+14/07/2023 16:12:48 : Logout is Successful!
+14/07/2023 16:12:48 : Current page is Login page.
+14/07/2023 16:12:48 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:48 : Test Start!
+14/07/2023 16:12:49 : TC8.4.1: Test menu link reset app state home page
+14/07/2023 16:12:49 : Login is Successful!
+14/07/2023 16:12:49 : Current page is Home page.
+14/07/2023 16:12:56 : Code error: the 'Add to Cart' button you interact with does not exist!
+14/07/2023 16:12:56 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:12:56 : Test Start!
+14/07/2023 16:12:57 : TC8.4.2: Test menu link reset app state product page
+14/07/2023 16:12:57 : Login is Successful!
+14/07/2023 16:12:57 : Current page is Home page.
+14/07/2023 16:12:57 : Current page is Product page.
+14/07/2023 16:13:03 : Code error: the 'Add to Cart' button you interact with does not exist!
+14/07/2023 16:13:04 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:13:04 : Test Start!
+14/07/2023 16:13:05 : Parallel_TC1: Login in website with valid data
+14/07/2023 16:13:05 : Login is Successful!
+14/07/2023 16:13:05 : Current page is Home page.
+14/07/2023 16:13:05 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:13:05 : Test Start!
+14/07/2023 16:13:06 : Parallel_TC2: Login in website with invalid data
+14/07/2023 16:13:07 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:13:07 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:13:07 : Test Start!
+14/07/2023 16:13:08 : Parallel_TC3: Verify locked user cant login in website
+14/07/2023 16:13:08 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+14/07/2023 16:13:08 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:15:26 : Test Start!
+14/07/2023 16:15:30 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+14/07/2023 16:15:31 : Login is Successful!
+14/07/2023 16:15:31 : Current page is Home page.
+14/07/2023 16:15:31 : Current page is Product page.
+14/07/2023 16:15:32 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:15:32 : Test Start!
+14/07/2023 16:15:33 : TC11: Verify that footer external links are valid
+14/07/2023 16:15:33 : Login is Successful!
+14/07/2023 16:15:33 : Current page is Home page.
+14/07/2023 16:15:36 : Redirect is successful!
+14/07/2023 16:15:37 : Redirect is successful!
+14/07/2023 16:15:38 : Redirect is successful!
+14/07/2023 16:15:38 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:15:38 : Test Start!
+14/07/2023 16:15:39 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+14/07/2023 16:15:39 : Login is Successful!
+14/07/2023 16:15:39 : Current page is Home page.
+14/07/2023 16:15:45 : Code error: the 'Remove' button you interact with does not exist!
+14/07/2023 16:15:45 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:15:45 : Test Start!
+14/07/2023 16:15:46 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+14/07/2023 16:15:46 : Login is Successful!
+14/07/2023 16:15:46 : Current page is Home page.
+14/07/2023 16:15:47 : Current page is Product page.
+14/07/2023 16:15:47 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:15:47 : Test Start!
+14/07/2023 16:15:48 : TC14: Verify products sorting work correctly
+14/07/2023 16:15:49 : Login is Successful!
+14/07/2023 16:15:49 : Current page is Home page.
+14/07/2023 16:15:49 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:15:49 : Test Start!
+14/07/2023 16:15:50 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+14/07/2023 16:15:56 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:15:56 : Test Start!
+14/07/2023 16:15:57 : TC6: Complete checkout process with empty cart
+14/07/2023 16:15:57 : Login is Successful!
+14/07/2023 16:15:57 : Current page is Home page.
+14/07/2023 16:15:57 : Current page is Cart page.
+14/07/2023 16:16:03 : Cart is empty.
+14/07/2023 16:16:03 : Current page is Checkout User Information page.
+14/07/2023 16:16:03 : Current page is Checkout Overview page.
+14/07/2023 16:16:08 : Cart is empty.
+14/07/2023 16:16:08 : Current page is Checkout Success page.
+14/07/2023 16:16:08 : Current page is Home page.
+14/07/2023 16:16:09 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:09 : Test Start!
+14/07/2023 16:16:10 : TC1: Login in website with valid data
+14/07/2023 16:16:10 : Login is Successful!
+14/07/2023 16:16:10 : Current page is Home page.
+14/07/2023 16:16:10 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:10 : Test Start!
+14/07/2023 16:16:11 : TC2: Login in website with invalid data
+14/07/2023 16:16:12 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:16:12 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:12 : Test Start!
+14/07/2023 16:16:13 : TC3: Verify locked user cant login in website
+14/07/2023 16:16:13 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+14/07/2023 16:16:14 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:14 : Test Start!
+14/07/2023 16:16:15 : TC4: Login in website via csv data file
+14/07/2023 16:16:15 : Login is Successful!
+14/07/2023 16:16:15 : Current page is Home page.
+14/07/2023 16:16:15 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:15 : Test Start!
+14/07/2023 16:16:16 : TC4: Login in website via csv data file
+14/07/2023 16:16:17 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+14/07/2023 16:16:17 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:17 : Test Start!
+14/07/2023 16:16:18 : TC4: Login in website via csv data file
+14/07/2023 16:16:18 : Login is Successful!
+14/07/2023 16:16:18 : Current page is Home page.
+14/07/2023 16:16:19 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:19 : Test Start!
+14/07/2023 16:16:20 : TC4: Login in website via csv data file
+14/07/2023 16:16:26 : Login is Successful!
+14/07/2023 16:16:26 : Current page is Home page.
+14/07/2023 16:16:26 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:26 : Test Start!
+14/07/2023 16:16:27 : TC4: Login in website via csv data file
+14/07/2023 16:16:27 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:16:28 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:28 : Test Start!
+14/07/2023 16:16:29 : TC4: Login in website via csv data file
+14/07/2023 16:16:29 : Login Failed! - Epic sadface: Username is required
+14/07/2023 16:16:29 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:29 : Test Start!
+14/07/2023 16:16:30 : TC4: Login in website via csv data file
+14/07/2023 16:16:31 : Login Failed! - Epic sadface: Password is required
+14/07/2023 16:16:31 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:31 : Test Start!
+14/07/2023 16:16:32 : TC4: Login in website via csv data file
+14/07/2023 16:16:32 : Login Failed! - Epic sadface: Username is required
+14/07/2023 16:16:32 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:32 : Test Start!
+14/07/2023 16:16:33 : TC4: Login in website via csv data file
+14/07/2023 16:16:34 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:16:34 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:34 : Test Start!
+14/07/2023 16:16:35 : TC4: Login in website via csv data file
+14/07/2023 16:16:35 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:16:36 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:36 : Test Start!
+14/07/2023 16:16:36 : TC5: Add products in the cart
+14/07/2023 16:16:37 : Login is Successful!
+14/07/2023 16:16:37 : Current page is Home page.
+14/07/2023 16:16:37 : Current page is Cart page.
+14/07/2023 16:16:38 : Cart contains items.
+14/07/2023 16:16:38 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:38 : Test Start!
+14/07/2023 16:16:39 : TC6: Test checkout user information fields validation
+14/07/2023 16:16:39 : Login is Successful!
+14/07/2023 16:16:39 : Current page is Home page.
+14/07/2023 16:16:40 : Current page is Cart page.
+14/07/2023 16:16:40 : Cart contains items.
+14/07/2023 16:16:40 : Current page is Checkout User Information page.
+14/07/2023 16:16:41 : Current page is Checkout Overview page.
+14/07/2023 16:16:41 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:41 : Test Start!
+14/07/2023 16:16:42 : TC7: Add products in cart and complete the checkout process
+14/07/2023 16:16:43 : Login is Successful!
+14/07/2023 16:16:43 : Current page is Home page.
+14/07/2023 16:16:43 : Current page is Cart page.
+14/07/2023 16:16:43 : Cart contains items.
+14/07/2023 16:16:43 : Current page is Checkout User Information page.
+14/07/2023 16:16:44 : Current page is Checkout Overview page.
+14/07/2023 16:16:44 : Cart contains items.
+14/07/2023 16:16:44 : Current page is Checkout Success page.
+14/07/2023 16:16:44 : Current page is Home page.
+14/07/2023 16:16:45 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:45 : Test Start!
+14/07/2023 16:16:46 : TC8.1: Test menu link All Items
+14/07/2023 16:16:46 : Login is Successful!
+14/07/2023 16:16:46 : Current page is Home page.
+14/07/2023 16:16:46 : Current page is Product page.
+14/07/2023 16:16:47 : Current page is Home page.
+14/07/2023 16:16:47 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:47 : Test Start!
+14/07/2023 16:16:48 : TC8.2: Test menu link about
+14/07/2023 16:16:49 : Login is Successful!
+14/07/2023 16:16:49 : Current page is Home page.
+14/07/2023 16:16:52 : Redirect is successful!
+14/07/2023 16:16:52 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:52 : Test Start!
+14/07/2023 16:16:53 : TC8.3: Test menu link logout
+14/07/2023 16:16:54 : Login is Successful!
+14/07/2023 16:16:54 : Current page is Home page.
+14/07/2023 16:16:55 : Logout is Successful!
+14/07/2023 16:16:55 : Current page is Login page.
+14/07/2023 16:16:55 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:16:55 : Test Start!
+14/07/2023 16:16:56 : TC8.4.1: Test menu link reset app state home page
+14/07/2023 16:16:56 : Login is Successful!
+14/07/2023 16:16:56 : Current page is Home page.
+14/07/2023 16:17:03 : Code error: the 'Add to Cart' button you interact with does not exist!
+14/07/2023 16:17:03 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:17:03 : Test Start!
+14/07/2023 16:17:04 : TC8.4.2: Test menu link reset app state product page
+14/07/2023 16:17:04 : Login is Successful!
+14/07/2023 16:17:04 : Current page is Home page.
+14/07/2023 16:17:04 : Current page is Product page.
+14/07/2023 16:17:10 : Code error: the 'Add to Cart' button you interact with does not exist!
+14/07/2023 16:17:11 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:17:11 : Test Start!
+14/07/2023 16:17:12 : Parallel_TC1: Login in website with valid data
+14/07/2023 16:17:12 : Login is Successful!
+14/07/2023 16:17:12 : Current page is Home page.
+14/07/2023 16:17:13 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:17:13 : Test Start!
+14/07/2023 16:17:14 : Parallel_TC2: Login in website with invalid data
+14/07/2023 16:17:14 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:17:14 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:17:14 : Test Start!
+14/07/2023 16:17:15 : Parallel_TC3: Verify locked user cant login in website
+14/07/2023 16:17:16 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+14/07/2023 16:17:16 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:19:58 : Test Start!
+14/07/2023 16:20:00 : TC11: Verify that footer external links are valid
+14/07/2023 16:20:00 : Login is Successful!
+14/07/2023 16:20:00 : Current page is Home page.
+14/07/2023 16:20:03 : Redirect is successful!
+14/07/2023 16:20:04 : Redirect is successful!
+14/07/2023 16:20:05 : Redirect is successful!
+14/07/2023 16:20:05 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:21:08 : Test Start!
+14/07/2023 16:21:13 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+14/07/2023 16:21:14 : Login is Successful!
+14/07/2023 16:21:14 : Current page is Home page.
+14/07/2023 16:21:14 : Current page is Product page.
+14/07/2023 16:21:15 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:21:15 : Test Start!
+14/07/2023 16:21:18 : TC11: Verify that footer external links are valid
+14/07/2023 16:21:19 : Login is Successful!
+14/07/2023 16:21:19 : Current page is Home page.
+14/07/2023 16:21:22 : Redirect is successful!
+14/07/2023 16:21:22 : Redirect is successful!
+14/07/2023 16:21:23 : Redirect is successful!
+14/07/2023 16:21:25 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:21:25 : Test Start!
+14/07/2023 16:21:28 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+14/07/2023 16:21:29 : Login is Successful!
+14/07/2023 16:21:29 : Current page is Home page.
+14/07/2023 16:21:35 : Code error: the 'Remove' button you interact with does not exist!
+14/07/2023 16:21:36 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:21:36 : Test Start!
+14/07/2023 16:21:38 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+14/07/2023 16:21:39 : Login is Successful!
+14/07/2023 16:21:39 : Current page is Home page.
+14/07/2023 16:21:40 : Current page is Product page.
+14/07/2023 16:21:41 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:21:41 : Test Start!
+14/07/2023 16:21:43 : TC14: Verify products sorting work correctly
+14/07/2023 16:21:44 : Login is Successful!
+14/07/2023 16:21:44 : Current page is Home page.
+14/07/2023 16:21:46 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:21:46 : Test Start!
+14/07/2023 16:21:49 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+14/07/2023 16:21:55 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:21:55 : Test Start!
+14/07/2023 16:21:58 : TC6: Complete checkout process with empty cart
+14/07/2023 16:21:59 : Login is Successful!
+14/07/2023 16:21:59 : Current page is Home page.
+14/07/2023 16:21:59 : Current page is Cart page.
+14/07/2023 16:22:04 : Cart is empty.
+14/07/2023 16:22:05 : Current page is Checkout User Information page.
+14/07/2023 16:22:06 : Current page is Checkout Overview page.
+14/07/2023 16:22:11 : Cart is empty.
+14/07/2023 16:22:11 : Current page is Checkout Success page.
+14/07/2023 16:22:11 : Current page is Home page.
+14/07/2023 16:22:12 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:22:12 : Test Start!
+14/07/2023 16:22:15 : TC1: Login in website with valid data
+14/07/2023 16:22:16 : Login is Successful!
+14/07/2023 16:22:16 : Current page is Home page.
+14/07/2023 16:22:17 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:22:17 : Test Start!
+14/07/2023 16:22:20 : TC2: Login in website with invalid data
+14/07/2023 16:22:20 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:22:21 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:22:21 : Test Start!
+14/07/2023 16:22:24 : TC3: Verify locked user cant login in website
+14/07/2023 16:22:25 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+14/07/2023 16:22:26 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:22:26 : Test Start!
+14/07/2023 16:22:29 : TC4: Login in website via csv data file
+14/07/2023 16:22:30 : Login is Successful!
+14/07/2023 16:22:30 : Current page is Home page.
+14/07/2023 16:22:31 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:22:31 : Test Start!
+14/07/2023 16:22:33 : TC4: Login in website via csv data file
+14/07/2023 16:22:34 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+14/07/2023 16:22:35 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:22:35 : Test Start!
+14/07/2023 16:22:38 : TC4: Login in website via csv data file
+14/07/2023 16:22:39 : Login is Successful!
+14/07/2023 16:22:39 : Current page is Home page.
+14/07/2023 16:22:40 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:22:40 : Test Start!
+14/07/2023 16:22:43 : TC4: Login in website via csv data file
+14/07/2023 16:22:48 : Login is Successful!
+14/07/2023 16:22:48 : Current page is Home page.
+14/07/2023 16:22:49 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:22:49 : Test Start!
+14/07/2023 16:22:52 : TC4: Login in website via csv data file
+14/07/2023 16:22:53 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:22:54 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:22:54 : Test Start!
+14/07/2023 16:22:57 : TC4: Login in website via csv data file
+14/07/2023 16:22:58 : Login Failed! - Epic sadface: Username is required
+14/07/2023 16:22:59 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:22:59 : Test Start!
+14/07/2023 16:23:01 : TC4: Login in website via csv data file
+14/07/2023 16:23:02 : Login Failed! - Epic sadface: Password is required
+14/07/2023 16:23:03 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:23:03 : Test Start!
+14/07/2023 16:23:06 : TC4: Login in website via csv data file
+14/07/2023 16:23:07 : Login Failed! - Epic sadface: Username is required
+14/07/2023 16:23:08 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:23:08 : Test Start!
+14/07/2023 16:23:11 : TC4: Login in website via csv data file
+14/07/2023 16:23:12 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:23:13 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:23:13 : Test Start!
+14/07/2023 16:23:15 : TC4: Login in website via csv data file
+14/07/2023 16:23:16 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:23:17 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:23:17 : Test Start!
+14/07/2023 16:23:20 : TC5: Add products in the cart
+14/07/2023 16:23:21 : Login is Successful!
+14/07/2023 16:23:21 : Current page is Home page.
+14/07/2023 16:23:22 : Current page is Cart page.
+14/07/2023 16:23:22 : Cart contains items.
+14/07/2023 16:23:23 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:23:23 : Test Start!
+14/07/2023 16:23:26 : TC6: Test checkout user information fields validation
+14/07/2023 16:23:27 : Login is Successful!
+14/07/2023 16:23:27 : Current page is Home page.
+14/07/2023 16:23:27 : Current page is Cart page.
+14/07/2023 16:23:28 : Cart contains items.
+14/07/2023 16:23:28 : Current page is Checkout User Information page.
+14/07/2023 16:23:29 : Current page is Checkout Overview page.
+14/07/2023 16:23:30 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:23:30 : Test Start!
+14/07/2023 16:23:33 : TC7: Add products in cart and complete the checkout process
+14/07/2023 16:23:34 : Login is Successful!
+14/07/2023 16:23:34 : Current page is Home page.
+14/07/2023 16:23:35 : Current page is Cart page.
+14/07/2023 16:23:35 : Cart contains items.
+14/07/2023 16:23:35 : Current page is Checkout User Information page.
+14/07/2023 16:23:36 : Current page is Checkout Overview page.
+14/07/2023 16:23:36 : Cart contains items.
+14/07/2023 16:23:37 : Current page is Checkout Success page.
+14/07/2023 16:23:37 : Current page is Home page.
+14/07/2023 16:23:38 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:23:38 : Test Start!
+14/07/2023 16:23:41 : TC8.1: Test menu link All Items
+14/07/2023 16:23:42 : Login is Successful!
+14/07/2023 16:23:42 : Current page is Home page.
+14/07/2023 16:23:42 : Current page is Product page.
+14/07/2023 16:23:43 : Current page is Home page.
+14/07/2023 16:23:43 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:23:43 : Test Start!
+14/07/2023 16:23:46 : TC8.2: Test menu link about
+14/07/2023 16:23:47 : Login is Successful!
+14/07/2023 16:23:47 : Current page is Home page.
+14/07/2023 16:23:53 : Redirect is successful!
+14/07/2023 16:23:54 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:23:54 : Test Start!
+14/07/2023 16:23:57 : TC8.3: Test menu link logout
+14/07/2023 16:23:58 : Login is Successful!
+14/07/2023 16:23:58 : Current page is Home page.
+14/07/2023 16:23:59 : Logout is Successful!
+14/07/2023 16:23:59 : Current page is Login page.
+14/07/2023 16:23:59 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:23:59 : Test Start!
+14/07/2023 16:24:02 : TC8.4.1: Test menu link reset app state home page
+14/07/2023 16:24:03 : Login is Successful!
+14/07/2023 16:24:03 : Current page is Home page.
+14/07/2023 16:24:09 : Code error: the 'Add to Cart' button you interact with does not exist!
+14/07/2023 16:24:10 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:24:10 : Test Start!
+14/07/2023 16:24:13 : TC8.4.2: Test menu link reset app state product page
+14/07/2023 16:24:14 : Login is Successful!
+14/07/2023 16:24:14 : Current page is Home page.
+14/07/2023 16:24:14 : Current page is Product page.
+14/07/2023 16:24:20 : Code error: the 'Add to Cart' button you interact with does not exist!
+14/07/2023 16:24:21 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:24:21 : Test Start!
+14/07/2023 16:24:22 : Parallel_TC1: Login in website with valid data
+14/07/2023 16:24:23 : Login is Successful!
+14/07/2023 16:24:23 : Current page is Home page.
+14/07/2023 16:24:23 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:24:23 : Test Start!
+14/07/2023 16:24:24 : Parallel_TC2: Login in website with invalid data
+14/07/2023 16:24:24 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+14/07/2023 16:24:25 : Test End!
+_________________________________________________________________________________________
+14/07/2023 16:24:25 : Test Start!
+14/07/2023 16:24:26 : Parallel_TC3: Verify locked user cant login in website
+14/07/2023 16:24:26 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+14/07/2023 16:24:26 : Test End!
+_________________________________________________________________________________________

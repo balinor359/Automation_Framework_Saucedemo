@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Saucedemo_Test_Suite" parallel="methods" thread-count="3" verbose="1" annotations="JDK">
+<suite name="Saucedemo_Test_Suite" parallel="tests" thread-count="3" verbose="1" annotations="JDK">
     <test name="Test Cases 1">
         <classes>
-<!--            <class name="com.saucedemo.tests.login.Test_TC1_Login_in_website_with_valid_data"/>-->
-            <class name="com.saucedemo.tests.login.Test_TC1_Login_in_website_with_valid_data"/>
+            <class name="com.saucedemo.tests.parallel.Parallel_Test_TC1_Login_in_website_with_valid_data"/>
         </classes>
     </test> <!-- Test -->
     <test name="Test Cases 2">
         <classes>
-<!--            <class name="com.saucedemo.tests.login.Test_TC2_Login_in_website_with_invalid_data"/>-->
-            <class name="com.saucedemo.tests.login.Test_TC2_Login_in_website_with_invalid_data"/>
+            <class name="com.saucedemo.tests.parallel.Parallel_Test_TC2_Login_in_website_with_invalid_data"/>
         </classes>
     </test> <!-- Test -->
     <test name="Test Cases 3">
         <classes>
-<!--            <class name="com.saucedemo.tests.login.Test_TC3_Verify_locked_user_cant_login_in_website"/>-->
-            <class name="com.saucedemo.tests.login.Test_TC3_Verify_locked_user_cant_login_in_website"/>
+            <class name="com.saucedemo.tests.parallel.Parallel_Test_TC3_Verify_locked_user_cant_login_in_website"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

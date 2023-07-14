@@ -122,7 +122,6 @@ public class HomePage extends TestUtilities {
         addToCartButtonValidator(productNameUrl);
 
 
-
         String xpathOfClickedElement = String.format(ADD_TO_CART_LOCATOR, productNameUrl);
         WebElement addToCartButton = driver.findElement(By.xpath(xpathOfClickedElement));
 
@@ -389,8 +388,6 @@ public class HomePage extends TestUtilities {
 
         /* Array list with tabs */
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
-
-        System.out.println("tabs " + tabs);
 
         /* Switch to wanted tab, then validate correctness of the external link */
         driver.switchTo().window(tabs.get(3));
