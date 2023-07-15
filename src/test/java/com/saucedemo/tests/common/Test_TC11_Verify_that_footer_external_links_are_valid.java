@@ -27,7 +27,6 @@ public class Test_TC11_Verify_that_footer_external_links_are_valid extends TestU
 
         homePage.socialLinksValidator();
 
-
     }
 //
 }
