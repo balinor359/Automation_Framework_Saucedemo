@@ -14446,3 +14446,3405 @@ ________________________________________________________________________________
 _________________________________________________________________________________________
 15/07/2023 15:07:11 : Test End!
 _________________________________________________________________________________________
+15/07/2023 15:14:07 : Test Start!
+15/07/2023 15:14:07 : Test Start!
+15/07/2023 15:14:07 : Test Start!
+15/07/2023 15:16:04 : Test Start!
+15/07/2023 15:16:04 : Test Start!
+15/07/2023 15:16:04 : Test Start!
+15/07/2023 15:16:10 : Parallel_TC2: Login in website with invalid data
+15/07/2023 15:16:10 : Parallel_TC3: Verify locked user cant login in website
+15/07/2023 15:16:10 : Parallel_TC1: Login in website with valid data
+15/07/2023 15:16:11 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+15/07/2023 15:16:11 : Login is Successful!
+15/07/2023 15:16:11 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+15/07/2023 15:16:11 : Current page is Home page.
+15/07/2023 15:16:12 : Test End!
+_________________________________________________________________________________________
+15/07/2023 15:16:12 : Test End!
+_________________________________________________________________________________________
+15/07/2023 15:16:12 : Test End!
+_________________________________________________________________________________________
+15/07/2023 15:16:34 : Test Start!
+15/07/2023 15:16:34 : Test Start!
+15/07/2023 15:16:34 : Test Start!
+15/07/2023 15:16:38 : Parallel_TC1: Login in website with valid data
+15/07/2023 15:16:38 : Parallel_TC2: Login in website with invalid data
+15/07/2023 15:16:38 : Parallel_TC3: Verify locked user cant login in website
+15/07/2023 15:16:39 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+15/07/2023 15:16:39 : Login is Successful!
+15/07/2023 15:16:39 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+15/07/2023 15:16:39 : Current page is Home page.
+15/07/2023 15:16:39 : Test End!
+_________________________________________________________________________________________
+15/07/2023 15:16:39 : Test End!
+_________________________________________________________________________________________
+15/07/2023 15:16:39 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:06:11 : Test Start!
+26/07/2023 19:06:14 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+26/07/2023 19:06:15 : Login is Successful!
+26/07/2023 19:06:15 : Current page is Home page.
+26/07/2023 19:06:15 : Current page is Product page.
+26/07/2023 19:06:16 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:06:16 : Test Start!
+26/07/2023 19:06:17 : TC11: Verify that footer external links are valid
+26/07/2023 19:06:17 : Login is Successful!
+26/07/2023 19:06:17 : Current page is Home page.
+26/07/2023 19:06:20 : Redirect is successful!
+26/07/2023 19:06:21 : Redirect is successful!
+26/07/2023 19:06:22 : Redirect is successful!
+26/07/2023 19:06:22 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:06:22 : Test Start!
+26/07/2023 19:06:23 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+26/07/2023 19:06:23 : Login is Successful!
+26/07/2023 19:06:23 : Current page is Home page.
+26/07/2023 19:06:29 : Code error: the 'Remove' button you interact with does not exist!
+26/07/2023 19:06:29 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:06:29 : Test Start!
+26/07/2023 19:06:30 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+26/07/2023 19:06:30 : Login is Successful!
+26/07/2023 19:06:30 : Current page is Home page.
+26/07/2023 19:06:31 : Current page is Product page.
+26/07/2023 19:06:31 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:06:31 : Test Start!
+26/07/2023 19:06:32 : TC14: Verify products sorting work correctly
+26/07/2023 19:06:32 : Login is Successful!
+26/07/2023 19:06:32 : Current page is Home page.
+26/07/2023 19:06:33 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:06:33 : Test Start!
+26/07/2023 19:06:34 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+26/07/2023 19:06:40 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:06:40 : Test Start!
+26/07/2023 19:06:41 : TC6: Complete checkout process with empty cart
+26/07/2023 19:06:41 : Login is Successful!
+26/07/2023 19:06:41 : Current page is Home page.
+26/07/2023 19:06:41 : Current page is Cart page.
+26/07/2023 19:06:46 : Cart is empty.
+26/07/2023 19:06:46 : Current page is Checkout User Information page.
+26/07/2023 19:06:47 : Current page is Checkout Overview page.
+26/07/2023 19:06:52 : Cart is empty.
+26/07/2023 19:06:52 : Current page is Checkout Success page.
+26/07/2023 19:06:52 : Current page is Home page.
+26/07/2023 19:06:53 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:06:53 : Test Start!
+26/07/2023 19:06:54 : TC1: Login in website with valid data
+26/07/2023 19:06:54 : Login is Successful!
+26/07/2023 19:06:54 : Current page is Home page.
+26/07/2023 19:06:54 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:06:54 : Test Start!
+26/07/2023 19:06:55 : TC2: Login in website with invalid data
+26/07/2023 19:06:56 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+26/07/2023 19:06:56 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:06:56 : Test Start!
+26/07/2023 19:06:57 : TC3: Verify locked user cant login in website
+26/07/2023 19:06:57 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+26/07/2023 19:06:57 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:06:57 : Test Start!
+26/07/2023 19:06:58 : TC4: Login in website via csv data file
+26/07/2023 19:06:59 : Login is Successful!
+26/07/2023 19:06:59 : Current page is Home page.
+26/07/2023 19:06:59 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:06:59 : Test Start!
+26/07/2023 19:07:00 : TC4: Login in website via csv data file
+26/07/2023 19:07:00 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+26/07/2023 19:07:01 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:01 : Test Start!
+26/07/2023 19:07:01 : TC4: Login in website via csv data file
+26/07/2023 19:07:02 : Login is Successful!
+26/07/2023 19:07:02 : Current page is Home page.
+26/07/2023 19:07:02 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:02 : Test Start!
+26/07/2023 19:07:03 : TC4: Login in website via csv data file
+26/07/2023 19:07:08 : Login is Successful!
+26/07/2023 19:07:08 : Current page is Home page.
+26/07/2023 19:07:09 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:09 : Test Start!
+26/07/2023 19:07:10 : TC4: Login in website via csv data file
+26/07/2023 19:07:10 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+26/07/2023 19:07:10 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:10 : Test Start!
+26/07/2023 19:07:11 : TC4: Login in website via csv data file
+26/07/2023 19:07:12 : Login Failed! - Epic sadface: Username is required
+26/07/2023 19:07:12 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:12 : Test Start!
+26/07/2023 19:07:13 : TC4: Login in website via csv data file
+26/07/2023 19:07:13 : Login Failed! - Epic sadface: Password is required
+26/07/2023 19:07:13 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:13 : Test Start!
+26/07/2023 19:07:14 : TC4: Login in website via csv data file
+26/07/2023 19:07:15 : Login Failed! - Epic sadface: Username is required
+26/07/2023 19:07:15 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:15 : Test Start!
+26/07/2023 19:07:16 : TC4: Login in website via csv data file
+26/07/2023 19:07:16 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+26/07/2023 19:07:16 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:16 : Test Start!
+26/07/2023 19:07:17 : TC4: Login in website via csv data file
+26/07/2023 19:07:18 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+26/07/2023 19:07:18 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:18 : Test Start!
+26/07/2023 19:07:19 : TC5: Add products in the cart
+26/07/2023 19:07:19 : Login is Successful!
+26/07/2023 19:07:19 : Current page is Home page.
+26/07/2023 19:07:20 : Current page is Cart page.
+26/07/2023 19:07:20 : Cart contains items.
+26/07/2023 19:07:20 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:20 : Test Start!
+26/07/2023 19:07:21 : TC6: Test checkout user information fields validation
+26/07/2023 19:07:22 : Login is Successful!
+26/07/2023 19:07:22 : Current page is Home page.
+26/07/2023 19:07:22 : Current page is Cart page.
+26/07/2023 19:07:22 : Cart contains items.
+26/07/2023 19:07:23 : Current page is Checkout User Information page.
+26/07/2023 19:07:23 : Current page is Checkout Overview page.
+26/07/2023 19:07:23 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:23 : Test Start!
+26/07/2023 19:07:24 : TC7: Add products in cart and complete the checkout process
+26/07/2023 19:07:25 : Login is Successful!
+26/07/2023 19:07:25 : Current page is Home page.
+26/07/2023 19:07:25 : Current page is Cart page.
+26/07/2023 19:07:26 : Cart contains items.
+26/07/2023 19:07:26 : Current page is Checkout User Information page.
+26/07/2023 19:07:26 : Current page is Checkout Overview page.
+26/07/2023 19:07:26 : Cart contains items.
+26/07/2023 19:07:27 : Current page is Checkout Success page.
+26/07/2023 19:07:27 : Current page is Home page.
+26/07/2023 19:07:27 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:27 : Test Start!
+26/07/2023 19:07:28 : TC8.1: Test menu link All Items
+26/07/2023 19:07:28 : Login is Successful!
+26/07/2023 19:07:28 : Current page is Home page.
+26/07/2023 19:07:29 : Current page is Product page.
+26/07/2023 19:07:29 : Current page is Home page.
+26/07/2023 19:07:30 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:30 : Test Start!
+26/07/2023 19:07:31 : TC8.2: Test menu link about
+26/07/2023 19:07:31 : Login is Successful!
+26/07/2023 19:07:31 : Current page is Home page.
+26/07/2023 19:07:34 : Redirect is successful!
+26/07/2023 19:07:34 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:34 : Test Start!
+26/07/2023 19:07:35 : TC8.3: Test menu link logout
+26/07/2023 19:07:36 : Login is Successful!
+26/07/2023 19:07:36 : Current page is Home page.
+26/07/2023 19:07:36 : Logout is Successful!
+26/07/2023 19:07:36 : Current page is Login page.
+26/07/2023 19:07:37 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:37 : Test Start!
+26/07/2023 19:07:38 : TC8.4.1: Test menu link reset app state home page
+26/07/2023 19:07:38 : Login is Successful!
+26/07/2023 19:07:38 : Current page is Home page.
+26/07/2023 19:07:45 : Code error: the 'Add to Cart' button you interact with does not exist!
+26/07/2023 19:07:45 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:45 : Test Start!
+26/07/2023 19:07:46 : TC8.4.2: Test menu link reset app state product page
+26/07/2023 19:07:46 : Login is Successful!
+26/07/2023 19:07:46 : Current page is Home page.
+26/07/2023 19:07:46 : Current page is Product page.
+26/07/2023 19:07:52 : Code error: the 'Add to Cart' button you interact with does not exist!
+26/07/2023 19:07:52 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:52 : Test Start!
+26/07/2023 19:07:53 : Parallel_TC1: Login in website with valid data
+26/07/2023 19:07:54 : Login is Successful!
+26/07/2023 19:07:54 : Current page is Home page.
+26/07/2023 19:07:54 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:54 : Test Start!
+26/07/2023 19:07:55 : Parallel_TC2: Login in website with invalid data
+26/07/2023 19:07:55 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+26/07/2023 19:07:56 : Test End!
+_________________________________________________________________________________________
+26/07/2023 19:07:56 : Test Start!
+26/07/2023 19:07:57 : Parallel_TC3: Verify locked user cant login in website
+26/07/2023 19:07:57 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+26/07/2023 19:07:57 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:37:18 : Test Start!
+04/10/2023 19:38:13 : Test Start!
+04/10/2023 19:38:18 : TC1: Login in website with valid data
+04/10/2023 19:38:18 : Login is Successful!
+04/10/2023 19:38:18 : Current page is Home page.
+04/10/2023 19:38:19 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:38:38 : Test Start!
+04/10/2023 19:38:39 : TC2: Login in website with invalid data
+04/10/2023 19:38:40 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 19:38:40 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:38:54 : Test Start!
+04/10/2023 19:38:56 : TC3: Verify locked user cant login in website
+04/10/2023 19:38:56 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 19:38:56 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:39:13 : Test Start!
+04/10/2023 19:39:15 : TC4: Login in website via csv data file
+04/10/2023 19:39:16 : Login is Successful!
+04/10/2023 19:39:16 : Current page is Home page.
+04/10/2023 19:39:16 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:39:16 : Test Start!
+04/10/2023 19:39:17 : TC4: Login in website via csv data file
+04/10/2023 19:39:17 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 19:39:18 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:39:18 : Test Start!
+04/10/2023 19:39:19 : TC4: Login in website via csv data file
+04/10/2023 19:39:19 : Login is Successful!
+04/10/2023 19:39:19 : Current page is Home page.
+04/10/2023 19:39:19 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:39:19 : Test Start!
+04/10/2023 19:39:20 : TC4: Login in website via csv data file
+04/10/2023 19:39:26 : Login is Successful!
+04/10/2023 19:39:26 : Current page is Home page.
+04/10/2023 19:39:26 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:39:26 : Test Start!
+04/10/2023 19:39:27 : TC4: Login in website via csv data file
+04/10/2023 19:39:27 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 19:39:28 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:39:28 : Test Start!
+04/10/2023 19:39:29 : TC4: Login in website via csv data file
+04/10/2023 19:39:29 : Login Failed! - Epic sadface: Username is required
+04/10/2023 19:39:29 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:39:29 : Test Start!
+04/10/2023 19:39:30 : TC4: Login in website via csv data file
+04/10/2023 19:39:31 : Login Failed! - Epic sadface: Password is required
+04/10/2023 19:39:31 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:39:31 : Test Start!
+04/10/2023 19:39:32 : TC4: Login in website via csv data file
+04/10/2023 19:39:32 : Login Failed! - Epic sadface: Username is required
+04/10/2023 19:39:32 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:39:32 : Test Start!
+04/10/2023 19:39:33 : TC4: Login in website via csv data file
+04/10/2023 19:39:34 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 19:39:34 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:39:34 : Test Start!
+04/10/2023 19:39:35 : TC4: Login in website via csv data file
+04/10/2023 19:39:35 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 19:39:36 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:39:53 : Test Start!
+04/10/2023 19:39:55 : TC5: Add products in the cart
+04/10/2023 19:39:55 : Login is Successful!
+04/10/2023 19:39:55 : Current page is Home page.
+04/10/2023 19:39:56 : Current page is Cart page.
+04/10/2023 19:39:56 : Cart contains items.
+04/10/2023 19:39:56 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:40:10 : Test Start!
+04/10/2023 19:40:12 : TC6: Test checkout user information fields validation
+04/10/2023 19:40:12 : Login is Successful!
+04/10/2023 19:40:12 : Current page is Home page.
+04/10/2023 19:40:13 : Current page is Cart page.
+04/10/2023 19:40:13 : Cart contains items.
+04/10/2023 19:40:13 : Current page is Checkout User Information page.
+04/10/2023 19:40:14 : Current page is Checkout Overview page.
+04/10/2023 19:40:14 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:40:28 : Test Start!
+04/10/2023 19:40:29 : TC7: Add products in cart and complete the checkout process
+04/10/2023 19:40:30 : Login is Successful!
+04/10/2023 19:40:30 : Current page is Home page.
+04/10/2023 19:40:31 : Current page is Cart page.
+04/10/2023 19:40:31 : Cart contains items.
+04/10/2023 19:40:31 : Current page is Checkout User Information page.
+04/10/2023 19:40:32 : Current page is Checkout Overview page.
+04/10/2023 19:40:32 : Cart contains items.
+04/10/2023 19:40:32 : Current page is Checkout Success page.
+04/10/2023 19:40:32 : Current page is Home page.
+04/10/2023 19:40:32 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:41:12 : Test Start!
+04/10/2023 19:41:14 : TC8.1: Test menu link All Items
+04/10/2023 19:41:15 : Login is Successful!
+04/10/2023 19:41:15 : Current page is Home page.
+04/10/2023 19:41:15 : Current page is Product page.
+04/10/2023 19:41:16 : Current page is Home page.
+04/10/2023 19:41:16 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:41:16 : Test Start!
+04/10/2023 19:41:17 : TC8.2: Test menu link about
+04/10/2023 19:41:18 : Login is Successful!
+04/10/2023 19:41:18 : Current page is Home page.
+04/10/2023 19:41:21 : Redirect is successful!
+04/10/2023 19:41:21 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:41:21 : Test Start!
+04/10/2023 19:41:22 : TC8.3: Test menu link logout
+04/10/2023 19:41:23 : Login is Successful!
+04/10/2023 19:41:23 : Current page is Home page.
+04/10/2023 19:41:23 : Logout is Successful!
+04/10/2023 19:41:23 : Current page is Login page.
+04/10/2023 19:41:24 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:41:24 : Test Start!
+04/10/2023 19:41:25 : TC8.4.1: Test menu link reset app state home page
+04/10/2023 19:41:25 : Login is Successful!
+04/10/2023 19:41:25 : Current page is Home page.
+04/10/2023 19:41:32 : Code error: the 'Add to Cart' button you interact with does not exist!
+04/10/2023 19:41:32 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:41:32 : Test Start!
+04/10/2023 19:41:33 : TC8.4.2: Test menu link reset app state product page
+04/10/2023 19:41:33 : Login is Successful!
+04/10/2023 19:41:33 : Current page is Home page.
+04/10/2023 19:41:33 : Current page is Product page.
+04/10/2023 19:41:40 : Code error: the 'Add to Cart' button you interact with does not exist!
+04/10/2023 19:41:40 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:43:16 : Test Start!
+04/10/2023 19:43:18 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+04/10/2023 19:43:18 : Login is Successful!
+04/10/2023 19:43:18 : Current page is Home page.
+04/10/2023 19:43:19 : Current page is Product page.
+04/10/2023 19:43:19 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:44:23 : Test Start!
+04/10/2023 19:44:24 : TC11: Verify that footer external links are valid
+04/10/2023 19:44:25 : Login is Successful!
+04/10/2023 19:44:25 : Current page is Home page.
+04/10/2023 19:44:28 : Redirect failed!
+04/10/2023 19:44:29 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:44:29 : Test Start!
+04/10/2023 19:44:29 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+04/10/2023 19:44:30 : Login is Successful!
+04/10/2023 19:44:30 : Current page is Home page.
+04/10/2023 19:44:35 : Code error: the 'Remove' button you interact with does not exist!
+04/10/2023 19:44:36 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:44:36 : Test Start!
+04/10/2023 19:44:37 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+04/10/2023 19:44:37 : Login is Successful!
+04/10/2023 19:44:37 : Current page is Home page.
+04/10/2023 19:44:38 : Current page is Product page.
+04/10/2023 19:44:38 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:44:38 : Test Start!
+04/10/2023 19:44:39 : TC14: Verify products sorting work correctly
+04/10/2023 19:44:39 : Login is Successful!
+04/10/2023 19:44:39 : Current page is Home page.
+04/10/2023 19:44:40 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:44:40 : Test Start!
+04/10/2023 19:44:41 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+04/10/2023 19:44:47 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:46:26 : Test Start!
+04/10/2023 19:46:28 : TC6: Complete checkout process with empty cart
+04/10/2023 19:46:29 : Login is Successful!
+04/10/2023 19:46:29 : Current page is Home page.
+04/10/2023 19:46:29 : Current page is Cart page.
+04/10/2023 19:46:34 : Cart is empty.
+04/10/2023 19:46:34 : Current page is Checkout User Information page.
+04/10/2023 19:46:35 : Current page is Checkout Overview page.
+04/10/2023 19:46:40 : Cart is empty.
+04/10/2023 19:46:40 : Current page is Checkout Success page.
+04/10/2023 19:46:40 : Current page is Home page.
+04/10/2023 19:46:40 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:47:03 : Test Start!
+04/10/2023 19:47:03 : Test Start!
+04/10/2023 19:47:03 : Test Start!
+04/10/2023 19:47:26 : Test Start!
+04/10/2023 19:47:26 : Test Start!
+04/10/2023 19:47:26 : Test Start!
+04/10/2023 19:47:43 : Test Start!
+04/10/2023 19:47:45 : Test Start!
+04/10/2023 19:47:46 : Test Start!
+04/10/2023 19:48:49 : Test Start!
+04/10/2023 19:48:51 : TC11: Verify that footer external links are valid
+04/10/2023 19:48:52 : Login is Successful!
+04/10/2023 19:48:52 : Current page is Home page.
+04/10/2023 19:48:55 : Redirect failed!
+04/10/2023 19:48:55 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:49:07 : Test Start!
+04/10/2023 19:49:09 : TC11: Verify that footer external links are valid
+04/10/2023 19:49:09 : Login is Successful!
+04/10/2023 19:49:09 : Current page is Home page.
+04/10/2023 19:49:12 : Redirect failed!
+04/10/2023 19:49:12 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:49:36 : Test Start!
+04/10/2023 19:49:38 : TC11: Verify that footer external links are valid
+04/10/2023 19:49:38 : Login is Successful!
+04/10/2023 19:49:39 : Current page is Home page.
+04/10/2023 19:49:42 : Redirect failed!
+04/10/2023 19:49:42 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:50:32 : Test Start!
+04/10/2023 19:50:36 : TC1: Login in website with valid data
+04/10/2023 19:50:37 : Login is Successful!
+04/10/2023 19:50:37 : Current page is Home page.
+04/10/2023 19:50:38 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:50:43 : Test Start!
+04/10/2023 19:50:47 : TC2: Login in website with invalid data
+04/10/2023 19:50:48 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 19:50:49 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:50:54 : Test Start!
+04/10/2023 19:50:58 : TC3: Verify locked user cant login in website
+04/10/2023 19:50:59 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 19:51:00 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:51:04 : Test Start!
+04/10/2023 19:51:07 : TC4: Login in website via csv data file
+04/10/2023 19:51:08 : Login is Successful!
+04/10/2023 19:51:08 : Current page is Home page.
+04/10/2023 19:51:09 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:51:09 : Test Start!
+04/10/2023 19:51:12 : TC4: Login in website via csv data file
+04/10/2023 19:51:13 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 19:51:14 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:51:14 : Test Start!
+04/10/2023 19:51:17 : TC4: Login in website via csv data file
+04/10/2023 19:51:18 : Login is Successful!
+04/10/2023 19:51:18 : Current page is Home page.
+04/10/2023 19:51:19 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:51:19 : Test Start!
+04/10/2023 19:51:22 : TC4: Login in website via csv data file
+04/10/2023 19:51:28 : Login is Successful!
+04/10/2023 19:51:28 : Current page is Home page.
+04/10/2023 19:51:29 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:51:29 : Test Start!
+04/10/2023 19:51:31 : TC4: Login in website via csv data file
+04/10/2023 19:51:32 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 19:51:33 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:51:33 : Test Start!
+04/10/2023 19:51:36 : TC4: Login in website via csv data file
+04/10/2023 19:51:37 : Login Failed! - Epic sadface: Username is required
+04/10/2023 19:51:38 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:51:38 : Test Start!
+04/10/2023 19:51:41 : TC4: Login in website via csv data file
+04/10/2023 19:51:42 : Login Failed! - Epic sadface: Password is required
+04/10/2023 19:51:43 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:51:43 : Test Start!
+04/10/2023 19:51:46 : TC4: Login in website via csv data file
+04/10/2023 19:51:47 : Login Failed! - Epic sadface: Username is required
+04/10/2023 19:51:48 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:51:48 : Test Start!
+04/10/2023 19:51:51 : TC4: Login in website via csv data file
+04/10/2023 19:51:51 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 19:51:52 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:51:52 : Test Start!
+04/10/2023 19:51:55 : TC4: Login in website via csv data file
+04/10/2023 19:51:56 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 19:51:57 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:52:34 : Test Start!
+04/10/2023 19:52:38 : TC6: Complete checkout process with empty cart
+04/10/2023 19:52:39 : Login is Successful!
+04/10/2023 19:52:39 : Current page is Home page.
+04/10/2023 19:52:39 : Current page is Cart page.
+04/10/2023 19:52:44 : Cart is empty.
+04/10/2023 19:52:44 : Current page is Checkout User Information page.
+04/10/2023 19:52:45 : Current page is Checkout Overview page.
+04/10/2023 19:52:50 : Cart is empty.
+04/10/2023 19:52:51 : Current page is Checkout Success page.
+04/10/2023 19:52:51 : Current page is Home page.
+04/10/2023 19:52:52 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:52:52 : Test Start!
+04/10/2023 19:52:55 : TC5: Add products in the cart
+04/10/2023 19:52:56 : Login is Successful!
+04/10/2023 19:52:56 : Current page is Home page.
+04/10/2023 19:52:57 : Current page is Cart page.
+04/10/2023 19:52:57 : Cart contains items.
+04/10/2023 19:52:58 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:52:58 : Test Start!
+04/10/2023 19:53:01 : TC6: Test checkout user information fields validation
+04/10/2023 19:53:02 : Login is Successful!
+04/10/2023 19:53:02 : Current page is Home page.
+04/10/2023 19:53:03 : Current page is Cart page.
+04/10/2023 19:53:03 : Cart contains items.
+04/10/2023 19:53:03 : Current page is Checkout User Information page.
+04/10/2023 19:53:05 : Current page is Checkout Overview page.
+04/10/2023 19:53:06 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:53:06 : Test Start!
+04/10/2023 19:53:09 : TC7: Add products in cart and complete the checkout process
+04/10/2023 19:53:10 : Login is Successful!
+04/10/2023 19:53:10 : Current page is Home page.
+04/10/2023 19:53:11 : Current page is Cart page.
+04/10/2023 19:53:11 : Cart contains items.
+04/10/2023 19:53:11 : Current page is Checkout User Information page.
+04/10/2023 19:53:12 : Current page is Checkout Overview page.
+04/10/2023 19:53:12 : Cart contains items.
+04/10/2023 19:53:13 : Current page is Checkout Success page.
+04/10/2023 19:53:13 : Current page is Home page.
+04/10/2023 19:53:14 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:53:55 : Test Start!
+04/10/2023 19:53:59 : TC8.1: Test menu link All Items
+04/10/2023 19:54:00 : Login is Successful!
+04/10/2023 19:54:00 : Current page is Home page.
+04/10/2023 19:54:01 : Current page is Product page.
+04/10/2023 19:54:01 : Current page is Home page.
+04/10/2023 19:54:03 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:54:03 : Test Start!
+04/10/2023 19:54:06 : TC8.2: Test menu link about
+04/10/2023 19:54:07 : Login is Successful!
+04/10/2023 19:54:07 : Current page is Home page.
+04/10/2023 19:54:13 : Redirect is successful!
+04/10/2023 19:54:14 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:54:14 : Test Start!
+04/10/2023 19:54:17 : TC8.3: Test menu link logout
+04/10/2023 19:54:18 : Login is Successful!
+04/10/2023 19:54:18 : Current page is Home page.
+04/10/2023 19:54:18 : Logout is Successful!
+04/10/2023 19:54:18 : Current page is Login page.
+04/10/2023 19:54:20 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:54:20 : Test Start!
+04/10/2023 19:54:22 : TC8.4.1: Test menu link reset app state home page
+04/10/2023 19:54:23 : Login is Successful!
+04/10/2023 19:54:23 : Current page is Home page.
+04/10/2023 19:54:30 : Code error: the 'Add to Cart' button you interact with does not exist!
+04/10/2023 19:54:30 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:54:30 : Test Start!
+04/10/2023 19:54:33 : TC8.4.2: Test menu link reset app state product page
+04/10/2023 19:54:34 : Login is Successful!
+04/10/2023 19:54:34 : Current page is Home page.
+04/10/2023 19:54:35 : Current page is Product page.
+04/10/2023 19:54:41 : Code error: the 'Add to Cart' button you interact with does not exist!
+04/10/2023 19:54:41 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:55:03 : Test Start!
+04/10/2023 19:55:06 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+04/10/2023 19:55:07 : Login is Successful!
+04/10/2023 19:55:07 : Current page is Home page.
+04/10/2023 19:55:08 : Current page is Product page.
+04/10/2023 19:55:09 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:55:22 : Test Start!
+04/10/2023 19:55:26 : TC11: Verify that footer external links are valid
+04/10/2023 19:55:27 : Login is Successful!
+04/10/2023 19:55:27 : Current page is Home page.
+04/10/2023 19:55:30 : Redirect is successful!
+04/10/2023 19:55:30 : Redirect is successful!
+04/10/2023 19:55:31 : Redirect is successful!
+04/10/2023 19:55:33 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:55:33 : Test Start!
+04/10/2023 19:55:36 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+04/10/2023 19:55:36 : Login is Successful!
+04/10/2023 19:55:36 : Current page is Home page.
+04/10/2023 19:55:42 : Code error: the 'Remove' button you interact with does not exist!
+04/10/2023 19:55:43 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:55:43 : Test Start!
+04/10/2023 19:55:46 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+04/10/2023 19:55:47 : Login is Successful!
+04/10/2023 19:55:47 : Current page is Home page.
+04/10/2023 19:55:47 : Current page is Product page.
+04/10/2023 19:55:48 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:55:48 : Test Start!
+04/10/2023 19:55:51 : TC14: Verify products sorting work correctly
+04/10/2023 19:55:52 : Login is Successful!
+04/10/2023 19:55:52 : Current page is Home page.
+04/10/2023 19:55:54 : Test End!
+_________________________________________________________________________________________
+04/10/2023 19:55:54 : Test Start!
+04/10/2023 19:55:57 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+04/10/2023 19:56:04 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:03:52 : Test Start!
+04/10/2023 20:05:15 : Test Start!
+04/10/2023 20:10:49 : Test Start!
+04/10/2023 20:23:45 : Test Start!
+04/10/2023 20:23:49 : TC1: Login in website with valid data
+04/10/2023 20:23:50 : Login is Successful!
+04/10/2023 20:23:50 : Current page is Home page.
+04/10/2023 20:23:50 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:25:21 : Test Start!
+04/10/2023 20:25:21 : Test Start!
+04/10/2023 20:25:21 : Test Start!
+04/10/2023 20:25:49 : Test Start!
+04/10/2023 20:25:50 : TC2: Login in website with invalid data
+04/10/2023 20:25:51 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:25:51 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:25:56 : Test Start!
+04/10/2023 20:25:58 : TC3: Verify locked user cant login in website
+04/10/2023 20:25:59 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 20:25:59 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:26:32 : Test Start!
+04/10/2023 20:26:34 : TC1: Login in website with valid data
+04/10/2023 20:26:34 : Login is Successful!
+04/10/2023 20:26:35 : Current page is Home page.
+04/10/2023 20:26:35 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:26:35 : Test Start!
+04/10/2023 20:26:36 : TC2: Login in website with invalid data
+04/10/2023 20:26:36 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:26:36 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:26:36 : Test Start!
+04/10/2023 20:26:37 : TC3: Verify locked user cant login in website
+04/10/2023 20:26:38 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 20:26:38 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:26:38 : Test Start!
+04/10/2023 20:26:39 : TC4: Login in website via csv data file
+04/10/2023 20:26:39 : Login is Successful!
+04/10/2023 20:26:39 : Current page is Home page.
+04/10/2023 20:26:40 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:26:40 : Test Start!
+04/10/2023 20:26:40 : TC4: Login in website via csv data file
+04/10/2023 20:26:41 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 20:26:41 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:26:41 : Test Start!
+04/10/2023 20:26:42 : TC4: Login in website via csv data file
+04/10/2023 20:26:42 : Login is Successful!
+04/10/2023 20:26:42 : Current page is Home page.
+04/10/2023 20:26:43 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:26:43 : Test Start!
+04/10/2023 20:26:43 : TC4: Login in website via csv data file
+04/10/2023 20:26:49 : Login is Successful!
+04/10/2023 20:26:49 : Current page is Home page.
+04/10/2023 20:26:49 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:26:49 : Test Start!
+04/10/2023 20:26:50 : TC4: Login in website via csv data file
+04/10/2023 20:26:50 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:26:51 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:26:51 : Test Start!
+04/10/2023 20:26:51 : TC4: Login in website via csv data file
+04/10/2023 20:26:52 : Login Failed! - Epic sadface: Username is required
+04/10/2023 20:26:52 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:26:52 : Test Start!
+04/10/2023 20:26:53 : TC4: Login in website via csv data file
+04/10/2023 20:26:53 : Login Failed! - Epic sadface: Password is required
+04/10/2023 20:26:53 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:26:53 : Test Start!
+04/10/2023 20:26:54 : TC4: Login in website via csv data file
+04/10/2023 20:26:55 : Login Failed! - Epic sadface: Username is required
+04/10/2023 20:26:55 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:26:55 : Test Start!
+04/10/2023 20:26:56 : TC4: Login in website via csv data file
+04/10/2023 20:26:56 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:26:56 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:26:56 : Test Start!
+04/10/2023 20:26:57 : TC4: Login in website via csv data file
+04/10/2023 20:26:58 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:26:58 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:27:34 : Test Start!
+04/10/2023 20:27:36 : TC6: Complete checkout process with empty cart
+04/10/2023 20:27:36 : Login is Successful!
+04/10/2023 20:27:36 : Current page is Home page.
+04/10/2023 20:27:36 : Current page is Cart page.
+04/10/2023 20:27:41 : Cart is empty.
+04/10/2023 20:27:42 : Current page is Checkout User Information page.
+04/10/2023 20:27:42 : Current page is Checkout Overview page.
+04/10/2023 20:27:47 : Cart is empty.
+04/10/2023 20:27:47 : Current page is Checkout Success page.
+04/10/2023 20:27:48 : Current page is Home page.
+04/10/2023 20:27:48 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:27:48 : Test Start!
+04/10/2023 20:27:49 : TC5: Add products in the cart
+04/10/2023 20:27:49 : Login is Successful!
+04/10/2023 20:27:49 : Current page is Home page.
+04/10/2023 20:27:50 : Current page is Cart page.
+04/10/2023 20:27:50 : Cart contains items.
+04/10/2023 20:27:50 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:27:50 : Test Start!
+04/10/2023 20:27:51 : TC6: Test checkout user information fields validation
+04/10/2023 20:27:52 : Login is Successful!
+04/10/2023 20:27:52 : Current page is Home page.
+04/10/2023 20:27:53 : Current page is Cart page.
+04/10/2023 20:27:53 : Cart contains items.
+04/10/2023 20:27:53 : Current page is Checkout User Information page.
+04/10/2023 20:27:54 : Current page is Checkout Overview page.
+04/10/2023 20:27:54 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:27:54 : Test Start!
+04/10/2023 20:27:55 : TC7: Add products in cart and complete the checkout process
+04/10/2023 20:27:55 : Login is Successful!
+04/10/2023 20:27:55 : Current page is Home page.
+04/10/2023 20:27:56 : Current page is Cart page.
+04/10/2023 20:27:56 : Cart contains items.
+04/10/2023 20:27:56 : Current page is Checkout User Information page.
+04/10/2023 20:27:57 : Current page is Checkout Overview page.
+04/10/2023 20:27:57 : Cart contains items.
+04/10/2023 20:27:57 : Current page is Checkout Success page.
+04/10/2023 20:27:57 : Current page is Home page.
+04/10/2023 20:27:58 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:28:24 : Test Start!
+04/10/2023 20:28:26 : TC8.1: Test menu link All Items
+04/10/2023 20:28:26 : Login is Successful!
+04/10/2023 20:28:26 : Current page is Home page.
+04/10/2023 20:28:27 : Current page is Product page.
+04/10/2023 20:28:28 : Current page is Home page.
+04/10/2023 20:28:28 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:28:28 : Test Start!
+04/10/2023 20:28:29 : TC8.2: Test menu link about
+04/10/2023 20:28:29 : Login is Successful!
+04/10/2023 20:28:29 : Current page is Home page.
+04/10/2023 20:28:33 : Redirect is successful!
+04/10/2023 20:28:33 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:28:33 : Test Start!
+04/10/2023 20:28:34 : TC8.3: Test menu link logout
+04/10/2023 20:28:34 : Login is Successful!
+04/10/2023 20:28:34 : Current page is Home page.
+04/10/2023 20:28:35 : Logout is Successful!
+04/10/2023 20:28:35 : Current page is Login page.
+04/10/2023 20:28:35 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:28:35 : Test Start!
+04/10/2023 20:28:36 : TC8.4.1: Test menu link reset app state home page
+04/10/2023 20:28:37 : Login is Successful!
+04/10/2023 20:28:37 : Current page is Home page.
+04/10/2023 20:28:43 : Code error: the 'Add to Cart' button you interact with does not exist!
+04/10/2023 20:28:43 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:28:43 : Test Start!
+04/10/2023 20:28:44 : TC8.4.2: Test menu link reset app state product page
+04/10/2023 20:28:44 : Login is Successful!
+04/10/2023 20:28:44 : Current page is Home page.
+04/10/2023 20:28:45 : Current page is Product page.
+04/10/2023 20:28:51 : Code error: the 'Add to Cart' button you interact with does not exist!
+04/10/2023 20:28:51 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:29:09 : Test Start!
+04/10/2023 20:29:11 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+04/10/2023 20:29:12 : Login is Successful!
+04/10/2023 20:29:12 : Current page is Home page.
+04/10/2023 20:29:12 : Current page is Product page.
+04/10/2023 20:29:12 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:29:23 : Test Start!
+04/10/2023 20:29:25 : TC11: Verify that footer external links are valid
+04/10/2023 20:29:25 : Login is Successful!
+04/10/2023 20:29:25 : Current page is Home page.
+04/10/2023 20:29:29 : Redirect failed!
+04/10/2023 20:29:29 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:29:29 : Test Start!
+04/10/2023 20:29:30 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+04/10/2023 20:29:30 : Login is Successful!
+04/10/2023 20:29:30 : Current page is Home page.
+04/10/2023 20:29:36 : Code error: the 'Remove' button you interact with does not exist!
+04/10/2023 20:29:36 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:29:36 : Test Start!
+04/10/2023 20:29:37 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+04/10/2023 20:29:37 : Login is Successful!
+04/10/2023 20:29:37 : Current page is Home page.
+04/10/2023 20:29:37 : Current page is Product page.
+04/10/2023 20:29:38 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:29:38 : Test Start!
+04/10/2023 20:29:39 : TC14: Verify products sorting work correctly
+04/10/2023 20:29:39 : Login is Successful!
+04/10/2023 20:29:39 : Current page is Home page.
+04/10/2023 20:29:40 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:29:40 : Test Start!
+04/10/2023 20:29:41 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+04/10/2023 20:29:46 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:31:10 : Test Start!
+04/10/2023 20:31:12 : TC11: Verify that footer external links are valid
+04/10/2023 20:31:12 : Login is Successful!
+04/10/2023 20:31:12 : Current page is Home page.
+04/10/2023 20:31:16 : Redirect failed!
+04/10/2023 20:31:16 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:31:16 : Test Start!
+04/10/2023 20:31:17 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+04/10/2023 20:31:17 : Login is Successful!
+04/10/2023 20:31:17 : Current page is Home page.
+04/10/2023 20:31:23 : Code error: the 'Remove' button you interact with does not exist!
+04/10/2023 20:31:23 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:31:23 : Test Start!
+04/10/2023 20:31:24 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+04/10/2023 20:31:24 : Login is Successful!
+04/10/2023 20:31:24 : Current page is Home page.
+04/10/2023 20:31:25 : Current page is Product page.
+04/10/2023 20:31:25 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:31:25 : Test Start!
+04/10/2023 20:31:26 : TC14: Verify products sorting work correctly
+04/10/2023 20:31:26 : Login is Successful!
+04/10/2023 20:31:26 : Current page is Home page.
+04/10/2023 20:31:27 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:31:27 : Test Start!
+04/10/2023 20:31:28 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+04/10/2023 20:31:33 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:31:40 : Test Start!
+04/10/2023 20:31:40 : Test Start!
+04/10/2023 20:31:40 : Test Start!
+04/10/2023 20:36:57 : Test Start!
+04/10/2023 20:36:59 : TC1: Login in website with valid data
+04/10/2023 20:36:59 : Login is Successful!
+04/10/2023 20:36:59 : Current page is Home page.
+04/10/2023 20:36:59 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:37:07 : Test Start!
+04/10/2023 20:37:07 : Test Start!
+04/10/2023 20:37:07 : Test Start!
+04/10/2023 20:37:10 : Parallel_TC2: Login in website with invalid data
+04/10/2023 20:37:10 : Parallel_TC1: Login in website with valid data
+04/10/2023 20:37:10 : Parallel_TC3: Verify locked user cant login in website
+04/10/2023 20:37:10 : Login is Successful!
+04/10/2023 20:37:10 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:37:10 : Current page is Home page.
+04/10/2023 20:37:10 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 20:37:10 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:37:10 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:37:11 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:37:45 : Test Start!
+04/10/2023 20:37:45 : Test Start!
+04/10/2023 20:37:45 : Test Start!
+04/10/2023 20:37:47 : Parallel_TC2: Login in website with invalid data
+04/10/2023 20:37:47 : Parallel_TC3: Verify locked user cant login in website
+04/10/2023 20:37:47 : Parallel_TC1: Login in website with valid data
+04/10/2023 20:37:48 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:37:48 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 20:37:48 : Login is Successful!
+04/10/2023 20:37:48 : Current page is Home page.
+04/10/2023 20:37:48 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:37:48 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:37:48 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:38:12 : Test Start!
+04/10/2023 20:38:12 : Test Start!
+04/10/2023 20:38:12 : Test Start!
+04/10/2023 20:38:14 : Parallel_TC2: Login in website with invalid data
+04/10/2023 20:38:14 : Parallel_TC3: Verify locked user cant login in website
+04/10/2023 20:38:14 : Parallel_TC1: Login in website with valid data
+04/10/2023 20:38:15 : Login is Successful!
+04/10/2023 20:38:15 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:38:15 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 20:38:15 : Current page is Home page.
+04/10/2023 20:38:15 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:38:15 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:38:15 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:39:15 : Test Start!
+04/10/2023 20:39:15 : Test Start!
+04/10/2023 20:39:15 : Test Start!
+04/10/2023 20:39:17 : Parallel_TC3: Verify locked user cant login in website
+04/10/2023 20:39:17 : Parallel_TC2: Login in website with invalid data
+04/10/2023 20:39:17 : Parallel_TC1: Login in website with valid data
+04/10/2023 20:39:18 : Login is Successful!
+04/10/2023 20:39:18 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 20:39:18 : Current page is Home page.
+04/10/2023 20:39:18 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:39:18 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:39:18 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:39:18 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:15 : Test Start!
+04/10/2023 20:42:17 : Parallel_TC1: Login in website with valid data
+04/10/2023 20:42:18 : Login is Successful!
+04/10/2023 20:42:18 : Current page is Home page.
+04/10/2023 20:42:18 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:18 : Test Start!
+04/10/2023 20:42:19 : Parallel_TC2: Login in website with invalid data
+04/10/2023 20:42:20 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:42:20 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:20 : Test Start!
+04/10/2023 20:42:21 : Parallel_TC3: Verify locked user cant login in website
+04/10/2023 20:42:21 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 20:42:22 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:22 : Test Start!
+04/10/2023 20:42:23 : TC6: Complete checkout process with empty cart
+04/10/2023 20:42:23 : Login is Successful!
+04/10/2023 20:42:23 : Current page is Home page.
+04/10/2023 20:42:23 : Current page is Cart page.
+04/10/2023 20:42:28 : Cart is empty.
+04/10/2023 20:42:28 : Current page is Checkout User Information page.
+04/10/2023 20:42:29 : Current page is Checkout Overview page.
+04/10/2023 20:42:34 : Cart is empty.
+04/10/2023 20:42:34 : Current page is Checkout Success page.
+04/10/2023 20:42:34 : Current page is Home page.
+04/10/2023 20:42:35 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:35 : Test Start!
+04/10/2023 20:42:35 : TC1: Login in website with valid data
+04/10/2023 20:42:36 : Login is Successful!
+04/10/2023 20:42:36 : Current page is Home page.
+04/10/2023 20:42:36 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:36 : Test Start!
+04/10/2023 20:42:37 : TC2: Login in website with invalid data
+04/10/2023 20:42:37 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:42:37 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:37 : Test Start!
+04/10/2023 20:42:38 : TC3: Verify locked user cant login in website
+04/10/2023 20:42:39 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 20:42:39 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:39 : Test Start!
+04/10/2023 20:42:40 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+04/10/2023 20:42:40 : Login is Successful!
+04/10/2023 20:42:40 : Current page is Home page.
+04/10/2023 20:42:41 : Current page is Product page.
+04/10/2023 20:42:41 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:41 : Test Start!
+04/10/2023 20:42:42 : TC4: Login in website via csv data file
+04/10/2023 20:42:42 : Login is Successful!
+04/10/2023 20:42:42 : Current page is Home page.
+04/10/2023 20:42:42 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:42 : Test Start!
+04/10/2023 20:42:43 : TC4: Login in website via csv data file
+04/10/2023 20:42:44 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 20:42:44 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:44 : Test Start!
+04/10/2023 20:42:45 : TC4: Login in website via csv data file
+04/10/2023 20:42:45 : Login is Successful!
+04/10/2023 20:42:45 : Current page is Home page.
+04/10/2023 20:42:45 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:45 : Test Start!
+04/10/2023 20:42:46 : TC4: Login in website via csv data file
+04/10/2023 20:42:52 : Login is Successful!
+04/10/2023 20:42:52 : Current page is Home page.
+04/10/2023 20:42:52 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:52 : Test Start!
+04/10/2023 20:42:53 : TC4: Login in website via csv data file
+04/10/2023 20:42:53 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:42:53 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:53 : Test Start!
+04/10/2023 20:42:54 : TC4: Login in website via csv data file
+04/10/2023 20:42:55 : Login Failed! - Epic sadface: Username is required
+04/10/2023 20:42:55 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:55 : Test Start!
+04/10/2023 20:42:56 : TC4: Login in website via csv data file
+04/10/2023 20:42:56 : Login Failed! - Epic sadface: Password is required
+04/10/2023 20:42:56 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:56 : Test Start!
+04/10/2023 20:42:57 : TC4: Login in website via csv data file
+04/10/2023 20:42:58 : Login Failed! - Epic sadface: Username is required
+04/10/2023 20:42:58 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:58 : Test Start!
+04/10/2023 20:42:59 : TC4: Login in website via csv data file
+04/10/2023 20:42:59 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:42:59 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:42:59 : Test Start!
+04/10/2023 20:43:00 : TC4: Login in website via csv data file
+04/10/2023 20:43:01 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 20:43:01 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:43:01 : Test Start!
+04/10/2023 20:43:02 : TC11: Verify that footer external links are valid
+04/10/2023 20:43:02 : Login is Successful!
+04/10/2023 20:43:02 : Current page is Home page.
+04/10/2023 20:43:05 : Redirect failed!
+04/10/2023 20:43:05 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:43:05 : Test Start!
+04/10/2023 20:43:06 : TC5: Add products in the cart
+04/10/2023 20:43:07 : Login is Successful!
+04/10/2023 20:43:07 : Current page is Home page.
+04/10/2023 20:43:07 : Current page is Cart page.
+04/10/2023 20:43:08 : Cart contains items.
+04/10/2023 20:43:08 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:43:08 : Test Start!
+04/10/2023 20:43:09 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+04/10/2023 20:43:09 : Login is Successful!
+04/10/2023 20:43:09 : Current page is Home page.
+04/10/2023 20:43:15 : Code error: the 'Remove' button you interact with does not exist!
+04/10/2023 20:43:15 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:43:15 : Test Start!
+04/10/2023 20:43:16 : TC6: Test checkout user information fields validation
+04/10/2023 20:43:16 : Login is Successful!
+04/10/2023 20:43:16 : Current page is Home page.
+04/10/2023 20:43:17 : Current page is Cart page.
+04/10/2023 20:43:17 : Cart contains items.
+04/10/2023 20:43:17 : Current page is Checkout User Information page.
+04/10/2023 20:43:18 : Current page is Checkout Overview page.
+04/10/2023 20:43:18 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:43:18 : Test Start!
+04/10/2023 20:43:19 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+04/10/2023 20:43:19 : Login is Successful!
+04/10/2023 20:43:19 : Current page is Home page.
+04/10/2023 20:43:20 : Current page is Product page.
+04/10/2023 20:43:20 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:43:20 : Test Start!
+04/10/2023 20:43:21 : TC8.4.1: Test menu link reset app state home page
+04/10/2023 20:43:22 : Login is Successful!
+04/10/2023 20:43:22 : Current page is Home page.
+04/10/2023 20:43:28 : Code error: the 'Add to Cart' button you interact with does not exist!
+04/10/2023 20:43:28 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:43:28 : Test Start!
+04/10/2023 20:43:29 : TC7: Add products in cart and complete the checkout process
+04/10/2023 20:43:29 : Login is Successful!
+04/10/2023 20:43:29 : Current page is Home page.
+04/10/2023 20:43:30 : Current page is Cart page.
+04/10/2023 20:43:30 : Cart contains items.
+04/10/2023 20:43:30 : Current page is Checkout User Information page.
+04/10/2023 20:43:31 : Current page is Checkout Overview page.
+04/10/2023 20:43:31 : Cart contains items.
+04/10/2023 20:43:31 : Current page is Checkout Success page.
+04/10/2023 20:43:31 : Current page is Home page.
+04/10/2023 20:43:31 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:43:31 : Test Start!
+04/10/2023 20:43:32 : TC14: Verify products sorting work correctly
+04/10/2023 20:43:33 : Login is Successful!
+04/10/2023 20:43:33 : Current page is Home page.
+04/10/2023 20:43:33 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:43:33 : Test Start!
+04/10/2023 20:43:34 : TC8.4.2: Test menu link reset app state product page
+04/10/2023 20:43:34 : Login is Successful!
+04/10/2023 20:43:34 : Current page is Home page.
+04/10/2023 20:43:35 : Current page is Product page.
+04/10/2023 20:43:41 : Code error: the 'Add to Cart' button you interact with does not exist!
+04/10/2023 20:43:41 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:43:41 : Test Start!
+04/10/2023 20:43:42 : TC8.1: Test menu link All Items
+04/10/2023 20:43:42 : Login is Successful!
+04/10/2023 20:43:42 : Current page is Home page.
+04/10/2023 20:43:42 : Current page is Product page.
+04/10/2023 20:43:43 : Current page is Home page.
+04/10/2023 20:43:43 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:43:43 : Test Start!
+04/10/2023 20:43:44 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+04/10/2023 20:43:50 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:43:50 : Test Start!
+04/10/2023 20:43:51 : TC8.2: Test menu link about
+04/10/2023 20:43:51 : Login is Successful!
+04/10/2023 20:43:51 : Current page is Home page.
+04/10/2023 20:43:54 : Redirect is successful!
+04/10/2023 20:43:54 : Test End!
+_________________________________________________________________________________________
+04/10/2023 20:43:54 : Test Start!
+04/10/2023 20:43:55 : TC8.3: Test menu link logout
+04/10/2023 20:43:56 : Login is Successful!
+04/10/2023 20:43:56 : Current page is Home page.
+04/10/2023 20:43:57 : Logout is Successful!
+04/10/2023 20:43:57 : Current page is Login page.
+04/10/2023 20:43:57 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:22:27 : Test Start!
+04/10/2023 21:22:30 : Parallel_TC1: Login in website with valid data
+04/10/2023 21:22:30 : Login is Successful!
+04/10/2023 21:22:30 : Current page is Home page.
+04/10/2023 21:22:30 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:22:30 : Test Start!
+04/10/2023 21:22:32 : Parallel_TC2: Login in website with invalid data
+04/10/2023 21:22:32 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 21:22:32 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:22:32 : Test Start!
+04/10/2023 21:22:33 : Parallel_TC3: Verify locked user cant login in website
+04/10/2023 21:22:34 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 21:22:34 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:22:34 : Test Start!
+04/10/2023 21:22:35 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+04/10/2023 21:22:36 : Login is Successful!
+04/10/2023 21:22:36 : Current page is Home page.
+04/10/2023 21:22:36 : Current page is Product page.
+04/10/2023 21:22:37 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:22:37 : Test Start!
+04/10/2023 21:22:38 : TC11: Verify that footer external links are valid
+04/10/2023 21:22:38 : Login is Successful!
+04/10/2023 21:22:38 : Current page is Home page.
+04/10/2023 21:22:41 : Redirect failed!
+04/10/2023 21:22:42 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:22:42 : Test Start!
+04/10/2023 21:22:43 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+04/10/2023 21:22:43 : Login is Successful!
+04/10/2023 21:22:43 : Current page is Home page.
+04/10/2023 21:22:48 : Code error: the 'Remove' button you interact with does not exist!
+04/10/2023 21:22:49 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:22:49 : Test Start!
+04/10/2023 21:22:50 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+04/10/2023 21:22:50 : Login is Successful!
+04/10/2023 21:22:50 : Current page is Home page.
+04/10/2023 21:22:50 : Current page is Product page.
+04/10/2023 21:22:51 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:22:51 : Test Start!
+04/10/2023 21:22:52 : TC14: Verify products sorting work correctly
+04/10/2023 21:22:52 : Login is Successful!
+04/10/2023 21:22:52 : Current page is Home page.
+04/10/2023 21:22:53 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:22:53 : Test Start!
+04/10/2023 21:22:54 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+04/10/2023 21:22:59 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:22:59 : Test Start!
+04/10/2023 21:23:00 : TC6: Complete checkout process with empty cart
+04/10/2023 21:23:01 : Login is Successful!
+04/10/2023 21:23:01 : Current page is Home page.
+04/10/2023 21:23:01 : Current page is Cart page.
+04/10/2023 21:23:06 : Cart is empty.
+04/10/2023 21:23:06 : Current page is Checkout User Information page.
+04/10/2023 21:23:07 : Current page is Checkout Overview page.
+04/10/2023 21:23:12 : Cart is empty.
+04/10/2023 21:23:12 : Current page is Checkout Success page.
+04/10/2023 21:23:12 : Current page is Home page.
+04/10/2023 21:23:12 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:12 : Test Start!
+04/10/2023 21:23:13 : TC1: Login in website with valid data
+04/10/2023 21:23:14 : Login is Successful!
+04/10/2023 21:23:14 : Current page is Home page.
+04/10/2023 21:23:14 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:14 : Test Start!
+04/10/2023 21:23:15 : TC2: Login in website with invalid data
+04/10/2023 21:23:15 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 21:23:16 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:16 : Test Start!
+04/10/2023 21:23:17 : TC3: Verify locked user cant login in website
+04/10/2023 21:23:17 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 21:23:17 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:17 : Test Start!
+04/10/2023 21:23:18 : TC4: Login in website via csv data file
+04/10/2023 21:23:19 : Login is Successful!
+04/10/2023 21:23:19 : Current page is Home page.
+04/10/2023 21:23:19 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:19 : Test Start!
+04/10/2023 21:23:20 : TC4: Login in website via csv data file
+04/10/2023 21:23:20 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 21:23:20 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:20 : Test Start!
+04/10/2023 21:23:21 : TC4: Login in website via csv data file
+04/10/2023 21:23:22 : Login is Successful!
+04/10/2023 21:23:22 : Current page is Home page.
+04/10/2023 21:23:22 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:22 : Test Start!
+04/10/2023 21:23:23 : TC4: Login in website via csv data file
+04/10/2023 21:23:28 : Login is Successful!
+04/10/2023 21:23:28 : Current page is Home page.
+04/10/2023 21:23:29 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:29 : Test Start!
+04/10/2023 21:23:30 : TC4: Login in website via csv data file
+04/10/2023 21:23:30 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 21:23:30 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:30 : Test Start!
+04/10/2023 21:23:31 : TC4: Login in website via csv data file
+04/10/2023 21:23:32 : Login Failed! - Epic sadface: Username is required
+04/10/2023 21:23:32 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:32 : Test Start!
+04/10/2023 21:23:33 : TC4: Login in website via csv data file
+04/10/2023 21:23:33 : Login Failed! - Epic sadface: Password is required
+04/10/2023 21:23:33 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:33 : Test Start!
+04/10/2023 21:23:34 : TC4: Login in website via csv data file
+04/10/2023 21:23:35 : Login Failed! - Epic sadface: Username is required
+04/10/2023 21:23:35 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:35 : Test Start!
+04/10/2023 21:23:36 : TC4: Login in website via csv data file
+04/10/2023 21:23:36 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 21:23:36 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:36 : Test Start!
+04/10/2023 21:23:37 : TC4: Login in website via csv data file
+04/10/2023 21:23:38 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 21:23:38 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:38 : Test Start!
+04/10/2023 21:23:39 : TC5: Add products in the cart
+04/10/2023 21:23:39 : Login is Successful!
+04/10/2023 21:23:39 : Current page is Home page.
+04/10/2023 21:23:40 : Current page is Cart page.
+04/10/2023 21:23:40 : Cart contains items.
+04/10/2023 21:23:40 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:40 : Test Start!
+04/10/2023 21:23:41 : TC6: Test checkout user information fields validation
+04/10/2023 21:23:42 : Login is Successful!
+04/10/2023 21:23:42 : Current page is Home page.
+04/10/2023 21:23:42 : Current page is Cart page.
+04/10/2023 21:23:42 : Cart contains items.
+04/10/2023 21:23:42 : Current page is Checkout User Information page.
+04/10/2023 21:23:43 : Current page is Checkout Overview page.
+04/10/2023 21:23:43 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:43 : Test Start!
+04/10/2023 21:23:44 : TC7: Add products in cart and complete the checkout process
+04/10/2023 21:23:45 : Login is Successful!
+04/10/2023 21:23:45 : Current page is Home page.
+04/10/2023 21:23:45 : Current page is Cart page.
+04/10/2023 21:23:45 : Cart contains items.
+04/10/2023 21:23:46 : Current page is Checkout User Information page.
+04/10/2023 21:23:46 : Current page is Checkout Overview page.
+04/10/2023 21:23:46 : Cart contains items.
+04/10/2023 21:23:46 : Current page is Checkout Success page.
+04/10/2023 21:23:47 : Current page is Home page.
+04/10/2023 21:23:47 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:47 : Test Start!
+04/10/2023 21:23:48 : TC8.1: Test menu link All Items
+04/10/2023 21:23:48 : Login is Successful!
+04/10/2023 21:23:48 : Current page is Home page.
+04/10/2023 21:23:48 : Current page is Product page.
+04/10/2023 21:23:49 : Current page is Home page.
+04/10/2023 21:23:50 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:50 : Test Start!
+04/10/2023 21:23:50 : TC8.2: Test menu link about
+04/10/2023 21:23:51 : Login is Successful!
+04/10/2023 21:23:51 : Current page is Home page.
+04/10/2023 21:23:54 : Redirect is successful!
+04/10/2023 21:23:54 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:54 : Test Start!
+04/10/2023 21:23:55 : TC8.3: Test menu link logout
+04/10/2023 21:23:56 : Login is Successful!
+04/10/2023 21:23:56 : Current page is Home page.
+04/10/2023 21:23:57 : Logout is Successful!
+04/10/2023 21:23:57 : Current page is Login page.
+04/10/2023 21:23:57 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:23:57 : Test Start!
+04/10/2023 21:23:58 : TC8.4.1: Test menu link reset app state home page
+04/10/2023 21:23:58 : Login is Successful!
+04/10/2023 21:23:58 : Current page is Home page.
+04/10/2023 21:24:05 : Code error: the 'Add to Cart' button you interact with does not exist!
+04/10/2023 21:24:05 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:24:05 : Test Start!
+04/10/2023 21:24:06 : TC8.4.2: Test menu link reset app state product page
+04/10/2023 21:24:06 : Login is Successful!
+04/10/2023 21:24:06 : Current page is Home page.
+04/10/2023 21:24:07 : Current page is Product page.
+04/10/2023 21:24:13 : Code error: the 'Add to Cart' button you interact with does not exist!
+04/10/2023 21:24:13 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:26:09 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:10 : Test Start!
+04/10/2023 21:26:12 : Parallel_TC1: Login in website with valid data
+04/10/2023 21:26:13 : Login is Successful!
+04/10/2023 21:26:13 : Current page is Home page.
+04/10/2023 21:26:13 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:26:13 : Test Start!
+04/10/2023 21:26:14 : Parallel_TC2: Login in website with invalid data
+04/10/2023 21:26:15 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 21:26:15 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:26:15 : Test Start!
+04/10/2023 21:26:16 : Parallel_TC3: Verify locked user cant login in website
+04/10/2023 21:26:16 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 21:26:16 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:26:37 : Test Start!
+04/10/2023 21:27:17 : Test Start!
+04/10/2023 21:27:21 : TC1: Login in website with valid data
+04/10/2023 21:27:22 : Login is Successful!
+04/10/2023 21:27:22 : Current page is Home page.
+04/10/2023 21:27:23 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:27:29 : Test Start!
+04/10/2023 21:27:33 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+04/10/2023 21:27:34 : Login is Successful!
+04/10/2023 21:27:34 : Current page is Home page.
+04/10/2023 21:27:34 : Current page is Product page.
+04/10/2023 21:27:35 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:27:35 : Test Start!
+04/10/2023 21:27:38 : TC11: Verify that footer external links are valid
+04/10/2023 21:27:39 : Login is Successful!
+04/10/2023 21:27:39 : Current page is Home page.
+04/10/2023 21:27:42 : Redirect is successful!
+04/10/2023 21:27:42 : Redirect is successful!
+04/10/2023 21:27:43 : Redirect is successful!
+04/10/2023 21:27:44 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:27:44 : Test Start!
+04/10/2023 21:27:48 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+04/10/2023 21:27:49 : Login is Successful!
+04/10/2023 21:27:49 : Current page is Home page.
+04/10/2023 21:27:55 : Code error: the 'Remove' button you interact with does not exist!
+04/10/2023 21:27:55 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:27:55 : Test Start!
+04/10/2023 21:27:58 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+04/10/2023 21:27:59 : Login is Successful!
+04/10/2023 21:27:59 : Current page is Home page.
+04/10/2023 21:28:00 : Current page is Product page.
+04/10/2023 21:28:01 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:28:01 : Test Start!
+04/10/2023 21:28:03 : TC14: Verify products sorting work correctly
+04/10/2023 21:28:04 : Login is Successful!
+04/10/2023 21:28:04 : Current page is Home page.
+04/10/2023 21:28:06 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:28:06 : Test Start!
+04/10/2023 21:28:09 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+04/10/2023 21:28:16 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:28:16 : Test Start!
+04/10/2023 21:28:19 : TC6: Complete checkout process with empty cart
+04/10/2023 21:28:19 : Login is Successful!
+04/10/2023 21:28:19 : Current page is Home page.
+04/10/2023 21:28:20 : Current page is Cart page.
+04/10/2023 21:28:25 : Cart is empty.
+04/10/2023 21:28:25 : Current page is Checkout User Information page.
+04/10/2023 21:28:26 : Current page is Checkout Overview page.
+04/10/2023 21:28:31 : Cart is empty.
+04/10/2023 21:28:31 : Current page is Checkout Success page.
+04/10/2023 21:28:32 : Current page is Home page.
+04/10/2023 21:28:32 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:28:32 : Test Start!
+04/10/2023 21:28:35 : TC1: Login in website with valid data
+04/10/2023 21:28:36 : Login is Successful!
+04/10/2023 21:28:36 : Current page is Home page.
+04/10/2023 21:28:37 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:28:37 : Test Start!
+04/10/2023 21:28:40 : TC2: Login in website with invalid data
+04/10/2023 21:28:41 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 21:28:42 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:28:42 : Test Start!
+04/10/2023 21:28:45 : TC3: Verify locked user cant login in website
+04/10/2023 21:28:45 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 21:28:46 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:28:46 : Test Start!
+04/10/2023 21:28:49 : TC4: Login in website via csv data file
+04/10/2023 21:28:50 : Login is Successful!
+04/10/2023 21:28:50 : Current page is Home page.
+04/10/2023 21:28:51 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:28:51 : Test Start!
+04/10/2023 21:28:54 : TC4: Login in website via csv data file
+04/10/2023 21:28:55 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 21:28:55 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:28:55 : Test Start!
+04/10/2023 21:28:58 : TC4: Login in website via csv data file
+04/10/2023 21:28:59 : Login is Successful!
+04/10/2023 21:28:59 : Current page is Home page.
+04/10/2023 21:29:00 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:29:00 : Test Start!
+04/10/2023 21:29:03 : TC4: Login in website via csv data file
+04/10/2023 21:29:09 : Login is Successful!
+04/10/2023 21:29:09 : Current page is Home page.
+04/10/2023 21:29:10 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:29:10 : Test Start!
+04/10/2023 21:29:13 : TC4: Login in website via csv data file
+04/10/2023 21:29:14 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 21:29:15 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:29:15 : Test Start!
+04/10/2023 21:29:18 : TC4: Login in website via csv data file
+04/10/2023 21:29:18 : Login Failed! - Epic sadface: Username is required
+04/10/2023 21:29:20 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:29:20 : Test Start!
+04/10/2023 21:29:22 : TC4: Login in website via csv data file
+04/10/2023 21:29:23 : Login Failed! - Epic sadface: Password is required
+04/10/2023 21:29:24 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:29:24 : Test Start!
+04/10/2023 21:29:27 : TC4: Login in website via csv data file
+04/10/2023 21:29:28 : Login Failed! - Epic sadface: Username is required
+04/10/2023 21:29:29 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:29:29 : Test Start!
+04/10/2023 21:29:32 : TC4: Login in website via csv data file
+04/10/2023 21:29:32 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 21:29:33 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:29:33 : Test Start!
+04/10/2023 21:29:36 : TC4: Login in website via csv data file
+04/10/2023 21:29:37 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 21:29:38 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:29:38 : Test Start!
+04/10/2023 21:29:41 : TC5: Add products in the cart
+04/10/2023 21:29:42 : Login is Successful!
+04/10/2023 21:29:42 : Current page is Home page.
+04/10/2023 21:29:42 : Current page is Cart page.
+04/10/2023 21:29:42 : Cart contains items.
+04/10/2023 21:29:44 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:29:44 : Test Start!
+04/10/2023 21:29:46 : TC6: Test checkout user information fields validation
+04/10/2023 21:29:47 : Login is Successful!
+04/10/2023 21:29:47 : Current page is Home page.
+04/10/2023 21:29:48 : Current page is Cart page.
+04/10/2023 21:29:48 : Cart contains items.
+04/10/2023 21:29:49 : Current page is Checkout User Information page.
+04/10/2023 21:29:50 : Current page is Checkout Overview page.
+04/10/2023 21:29:51 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:29:51 : Test Start!
+04/10/2023 21:29:54 : TC7: Add products in cart and complete the checkout process
+04/10/2023 21:29:55 : Login is Successful!
+04/10/2023 21:29:55 : Current page is Home page.
+04/10/2023 21:29:56 : Current page is Cart page.
+04/10/2023 21:29:56 : Cart contains items.
+04/10/2023 21:29:56 : Current page is Checkout User Information page.
+04/10/2023 21:29:57 : Current page is Checkout Overview page.
+04/10/2023 21:29:57 : Cart contains items.
+04/10/2023 21:29:58 : Current page is Checkout Success page.
+04/10/2023 21:29:58 : Current page is Home page.
+04/10/2023 21:29:59 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:29:59 : Test Start!
+04/10/2023 21:30:02 : TC8.1: Test menu link All Items
+04/10/2023 21:30:03 : Login is Successful!
+04/10/2023 21:30:03 : Current page is Home page.
+04/10/2023 21:30:03 : Current page is Product page.
+04/10/2023 21:30:04 : Current page is Home page.
+04/10/2023 21:30:05 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:30:05 : Test Start!
+04/10/2023 21:30:07 : TC8.2: Test menu link about
+04/10/2023 21:30:08 : Login is Successful!
+04/10/2023 21:30:08 : Current page is Home page.
+04/10/2023 21:30:15 : Redirect is successful!
+04/10/2023 21:30:16 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:30:16 : Test Start!
+04/10/2023 21:30:19 : TC8.3: Test menu link logout
+04/10/2023 21:30:20 : Login is Successful!
+04/10/2023 21:30:20 : Current page is Home page.
+04/10/2023 21:30:20 : Logout is Successful!
+04/10/2023 21:30:20 : Current page is Login page.
+04/10/2023 21:30:21 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:30:21 : Test Start!
+04/10/2023 21:30:24 : TC8.4.1: Test menu link reset app state home page
+04/10/2023 21:30:25 : Login is Successful!
+04/10/2023 21:30:25 : Current page is Home page.
+04/10/2023 21:30:31 : Code error: the 'Add to Cart' button you interact with does not exist!
+04/10/2023 21:30:32 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:30:32 : Test Start!
+04/10/2023 21:30:35 : TC8.4.2: Test menu link reset app state product page
+04/10/2023 21:30:36 : Login is Successful!
+04/10/2023 21:30:36 : Current page is Home page.
+04/10/2023 21:30:36 : Current page is Product page.
+04/10/2023 21:30:42 : Code error: the 'Add to Cart' button you interact with does not exist!
+04/10/2023 21:30:43 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:30:43 : Test Start!
+04/10/2023 21:30:45 : Parallel_TC2: Login in website with invalid data
+04/10/2023 21:30:45 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+04/10/2023 21:30:45 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:30:45 : Test Start!
+04/10/2023 21:30:46 : Parallel_TC3: Verify locked user cant login in website
+04/10/2023 21:30:47 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+04/10/2023 21:30:47 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:30:47 : Test Start!
+04/10/2023 21:30:48 : Parallel_TC1: Login in website with valid data
+04/10/2023 21:30:48 : Login is Successful!
+04/10/2023 21:30:48 : Current page is Home page.
+04/10/2023 21:30:49 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:33:49 : Test Start!
+04/10/2023 21:33:53 : TC11: Verify that footer external links are valid
+04/10/2023 21:33:54 : Login is Successful!
+04/10/2023 21:33:54 : Current page is Home page.
+04/10/2023 21:33:57 : Redirect failed!
+04/10/2023 21:33:59 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:34:24 : Test Start!
+04/10/2023 21:34:26 : TC11: Verify that footer external links are valid
+04/10/2023 21:34:26 : Login is Successful!
+04/10/2023 21:34:26 : Current page is Home page.
+04/10/2023 21:34:30 : Redirect failed!
+04/10/2023 21:34:30 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:35:07 : Test Start!
+04/10/2023 21:35:09 : TC11: Verify that footer external links are valid
+04/10/2023 21:35:10 : Login is Successful!
+04/10/2023 21:35:10 : Current page is Home page.
+04/10/2023 21:35:13 : Redirect failed!
+04/10/2023 21:35:14 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:35:34 : Test Start!
+04/10/2023 21:35:36 : TC11: Verify that footer external links are valid
+04/10/2023 21:35:36 : Login is Successful!
+04/10/2023 21:35:36 : Current page is Home page.
+04/10/2023 21:35:40 : Redirect is successful!
+04/10/2023 21:35:40 : Redirect failed!
+04/10/2023 21:35:41 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:36:01 : Test Start!
+04/10/2023 21:36:02 : TC11: Verify that footer external links are valid
+04/10/2023 21:36:03 : Login is Successful!
+04/10/2023 21:36:03 : Current page is Home page.
+04/10/2023 21:36:06 : Redirect failed!
+04/10/2023 21:36:07 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:36:38 : Test Start!
+04/10/2023 21:36:40 : TC11: Verify that footer external links are valid
+04/10/2023 21:36:41 : Login is Successful!
+04/10/2023 21:36:41 : Current page is Home page.
+04/10/2023 21:36:44 : Redirect failed!
+04/10/2023 21:36:44 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:37:03 : Test Start!
+04/10/2023 21:37:05 : TC11: Verify that footer external links are valid
+04/10/2023 21:37:05 : Login is Successful!
+04/10/2023 21:37:05 : Current page is Home page.
+04/10/2023 21:37:09 : Redirect failed!
+04/10/2023 21:37:09 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:37:32 : Test Start!
+04/10/2023 21:37:34 : TC11: Verify that footer external links are valid
+04/10/2023 21:37:35 : Login is Successful!
+04/10/2023 21:37:35 : Current page is Home page.
+04/10/2023 21:37:38 : Redirect is successful!
+04/10/2023 21:37:39 : Redirect is successful!
+04/10/2023 21:37:39 : Redirect is successful!
+04/10/2023 21:37:40 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:37:53 : Test Start!
+04/10/2023 21:37:55 : TC11: Verify that footer external links are valid
+04/10/2023 21:37:56 : Login is Successful!
+04/10/2023 21:37:56 : Current page is Home page.
+04/10/2023 21:37:59 : Redirect is successful!
+04/10/2023 21:38:00 : Redirect failed!
+04/10/2023 21:38:00 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:38:17 : Test Start!
+04/10/2023 21:38:21 : TC11: Verify that footer external links are valid
+04/10/2023 21:38:22 : Login is Successful!
+04/10/2023 21:38:22 : Current page is Home page.
+04/10/2023 21:38:25 : Redirect failed!
+04/10/2023 21:38:26 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:38:45 : Test Start!
+04/10/2023 21:38:46 : TC11: Verify that footer external links are valid
+04/10/2023 21:38:47 : Login is Successful!
+04/10/2023 21:38:47 : Current page is Home page.
+04/10/2023 21:38:50 : Redirect failed!
+04/10/2023 21:38:50 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:40:09 : Test Start!
+04/10/2023 21:40:11 : TC11: Verify that footer external links are valid
+04/10/2023 21:40:12 : Login is Successful!
+04/10/2023 21:40:12 : Current page is Home page.
+04/10/2023 21:40:15 : Redirect failed!
+04/10/2023 21:40:15 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:40:55 : Test Start!
+04/10/2023 21:40:58 : TC11: Verify that footer external links are valid
+04/10/2023 21:40:58 : Login is Successful!
+04/10/2023 21:40:58 : Current page is Home page.
+04/10/2023 21:41:01 : Redirect is successful!
+04/10/2023 21:41:02 : Redirect is successful!
+04/10/2023 21:41:03 : Redirect is successful!
+04/10/2023 21:41:03 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:42:05 : Test Start!
+04/10/2023 21:42:07 : TC11: Verify that footer external links are valid
+04/10/2023 21:42:07 : Login is Successful!
+04/10/2023 21:42:07 : Current page is Home page.
+04/10/2023 21:42:10 : Redirect failed!
+04/10/2023 21:42:11 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:42:23 : Test Start!
+04/10/2023 21:42:25 : TC11: Verify that footer external links are valid
+04/10/2023 21:42:25 : Login is Successful!
+04/10/2023 21:42:25 : Current page is Home page.
+04/10/2023 21:42:29 : Redirect failed!
+04/10/2023 21:42:29 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:42:44 : Test Start!
+04/10/2023 21:42:46 : TC11: Verify that footer external links are valid
+04/10/2023 21:42:47 : Login is Successful!
+04/10/2023 21:42:47 : Current page is Home page.
+04/10/2023 21:42:50 : Redirect failed!
+04/10/2023 21:42:50 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:43:03 : Test Start!
+04/10/2023 21:43:05 : TC11: Verify that footer external links are valid
+04/10/2023 21:43:06 : Login is Successful!
+04/10/2023 21:43:06 : Current page is Home page.
+04/10/2023 21:43:09 : Redirect failed!
+04/10/2023 21:43:09 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:43:22 : Test Start!
+04/10/2023 21:43:24 : TC11: Verify that footer external links are valid
+04/10/2023 21:43:24 : Login is Successful!
+04/10/2023 21:43:24 : Current page is Home page.
+04/10/2023 21:43:28 : Redirect failed!
+04/10/2023 21:43:28 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:43:55 : Test Start!
+04/10/2023 21:43:57 : TC11: Verify that footer external links are valid
+04/10/2023 21:43:58 : Login is Successful!
+04/10/2023 21:43:58 : Current page is Home page.
+04/10/2023 21:44:01 : Redirect failed!
+04/10/2023 21:44:02 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:44:16 : Test Start!
+04/10/2023 21:44:18 : TC11: Verify that footer external links are valid
+04/10/2023 21:44:19 : Login is Successful!
+04/10/2023 21:44:19 : Current page is Home page.
+04/10/2023 21:44:22 : Redirect failed!
+04/10/2023 21:44:23 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:44:41 : Test Start!
+04/10/2023 21:44:42 : TC11: Verify that footer external links are valid
+04/10/2023 21:44:43 : Login is Successful!
+04/10/2023 21:44:43 : Current page is Home page.
+04/10/2023 21:44:46 : Redirect is successful!
+04/10/2023 21:44:47 : Redirect failed!
+04/10/2023 21:44:48 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:45:04 : Test Start!
+04/10/2023 21:45:06 : TC11: Verify that footer external links are valid
+04/10/2023 21:45:07 : Login is Successful!
+04/10/2023 21:45:07 : Current page is Home page.
+04/10/2023 21:45:10 : Redirect is successful!
+04/10/2023 21:45:11 : Redirect failed!
+04/10/2023 21:45:11 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:45:25 : Test Start!
+04/10/2023 21:45:26 : TC11: Verify that footer external links are valid
+04/10/2023 21:45:27 : Login is Successful!
+04/10/2023 21:45:27 : Current page is Home page.
+04/10/2023 21:45:30 : Redirect is successful!
+04/10/2023 21:45:31 : Redirect is successful!
+04/10/2023 21:45:31 : Redirect failed!
+04/10/2023 21:45:32 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:45:45 : Test Start!
+04/10/2023 21:45:47 : TC11: Verify that footer external links are valid
+04/10/2023 21:45:48 : Login is Successful!
+04/10/2023 21:45:48 : Current page is Home page.
+04/10/2023 21:45:51 : Redirect is successful!
+04/10/2023 21:45:52 : Redirect is successful!
+04/10/2023 21:45:53 : Redirect is successful!
+04/10/2023 21:45:53 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:45:59 : Test Start!
+04/10/2023 21:46:01 : TC11: Verify that footer external links are valid
+04/10/2023 21:46:01 : Login is Successful!
+04/10/2023 21:46:01 : Current page is Home page.
+04/10/2023 21:46:04 : Redirect is successful!
+04/10/2023 21:46:05 : Redirect is successful!
+04/10/2023 21:46:06 : Redirect is successful!
+04/10/2023 21:46:06 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:46:39 : Test Start!
+04/10/2023 21:46:41 : TC11: Verify that footer external links are valid
+04/10/2023 21:46:41 : Login is Successful!
+04/10/2023 21:46:41 : Current page is Home page.
+04/10/2023 21:46:44 : Redirect is successful!
+04/10/2023 21:46:45 : Redirect is successful!
+04/10/2023 21:46:45 : Redirect is successful!
+04/10/2023 21:46:46 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:47:38 : Test Start!
+04/10/2023 21:47:42 : TC11: Verify that footer external links are valid
+04/10/2023 21:47:43 : Login is Successful!
+04/10/2023 21:47:43 : Current page is Home page.
+04/10/2023 21:47:46 : Redirect is successful!
+04/10/2023 21:47:47 : Redirect is successful!
+04/10/2023 21:47:47 : Redirect is successful!
+04/10/2023 21:47:49 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:48:18 : Test Start!
+04/10/2023 21:48:22 : TC11: Verify that footer external links are valid
+04/10/2023 21:48:22 : Login is Successful!
+04/10/2023 21:48:22 : Current page is Home page.
+04/10/2023 21:48:25 : Redirect is successful!
+04/10/2023 21:48:26 : Redirect is successful!
+04/10/2023 21:48:27 : Redirect is successful!
+04/10/2023 21:48:28 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:51:17 : Test Start!
+04/10/2023 21:51:21 : TC11: Verify that footer external links are valid
+04/10/2023 21:51:22 : Login is Successful!
+04/10/2023 21:51:22 : Current page is Home page.
+04/10/2023 21:51:25 : Redirect failed!
+04/10/2023 21:51:27 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:56:56 : Test Start!
+04/10/2023 21:57:00 : TC11: Verify that footer external links are valid
+04/10/2023 21:57:01 : Login is Successful!
+04/10/2023 21:57:01 : Current page is Home page.
+04/10/2023 21:57:04 : Redirect is successful!
+04/10/2023 21:57:04 : Redirect is successful!
+04/10/2023 21:57:05 : Redirect is successful!
+04/10/2023 21:57:07 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:57:33 : Test Start!
+04/10/2023 21:57:35 : TC11: Verify that footer external links are valid
+04/10/2023 21:57:35 : Login is Successful!
+04/10/2023 21:57:35 : Current page is Home page.
+04/10/2023 21:57:38 : Redirect failed!
+04/10/2023 21:57:39 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:58:19 : Test Start!
+04/10/2023 21:58:20 : TC11: Verify that footer external links are valid
+04/10/2023 21:58:21 : Login is Successful!
+04/10/2023 21:58:21 : Current page is Home page.
+04/10/2023 21:58:24 : Redirect is successful!
+04/10/2023 21:58:25 : Redirect is successful!
+04/10/2023 21:58:26 : Redirect is successful!
+04/10/2023 21:58:26 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:58:43 : Test Start!
+04/10/2023 21:58:44 : TC11: Verify that footer external links are valid
+04/10/2023 21:58:45 : Login is Successful!
+04/10/2023 21:58:45 : Current page is Home page.
+04/10/2023 21:58:48 : Redirect is successful!
+04/10/2023 21:58:49 : Redirect is successful!
+04/10/2023 21:58:49 : Redirect is successful!
+04/10/2023 21:58:50 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:59:12 : Test Start!
+04/10/2023 21:59:13 : TC11: Verify that footer external links are valid
+04/10/2023 21:59:14 : Login is Successful!
+04/10/2023 21:59:14 : Current page is Home page.
+04/10/2023 21:59:17 : Redirect failed!
+04/10/2023 21:59:17 : Test End!
+_________________________________________________________________________________________
+04/10/2023 21:59:45 : Test Start!
+04/10/2023 21:59:47 : TC11: Verify that footer external links are valid
+04/10/2023 21:59:48 : Login is Successful!
+04/10/2023 21:59:48 : Current page is Home page.
+04/10/2023 21:59:51 : Redirect failed!
+04/10/2023 21:59:51 : Test End!
+_________________________________________________________________________________________
+04/10/2023 22:00:13 : Test Start!
+04/10/2023 22:00:14 : TC11: Verify that footer external links are valid
+04/10/2023 22:00:15 : Login is Successful!
+04/10/2023 22:00:15 : Current page is Home page.
+04/10/2023 22:00:18 : Redirect is successful!
+04/10/2023 22:00:19 : Redirect failed!
+04/10/2023 22:00:19 : Test End!
+_________________________________________________________________________________________
+04/10/2023 22:00:32 : Test Start!
+04/10/2023 22:00:36 : TC11: Verify that footer external links are valid
+04/10/2023 22:00:37 : Login is Successful!
+04/10/2023 22:00:37 : Current page is Home page.
+04/10/2023 22:00:40 : Redirect is successful!
+04/10/2023 22:00:40 : Redirect is successful!
+04/10/2023 22:00:41 : Redirect is successful!
+04/10/2023 22:00:43 : Test End!
+_________________________________________________________________________________________
+04/10/2023 22:01:07 : Test Start!
+04/10/2023 22:01:11 : TC11: Verify that footer external links are valid
+04/10/2023 22:01:12 : Login is Successful!
+04/10/2023 22:01:12 : Current page is Home page.
+04/10/2023 22:01:15 : Redirect is successful!
+04/10/2023 22:01:16 : Redirect is successful!
+04/10/2023 22:01:16 : Redirect is successful!
+04/10/2023 22:01:18 : Test End!
+_________________________________________________________________________________________
+04/10/2023 22:01:46 : Test Start!
+04/10/2023 22:01:47 : TC11: Verify that footer external links are valid
+04/10/2023 22:01:48 : Login is Successful!
+04/10/2023 22:01:48 : Current page is Home page.
+04/10/2023 22:01:51 : Redirect is successful!
+04/10/2023 22:01:52 : Redirect is successful!
+04/10/2023 22:01:52 : Redirect is successful!
+04/10/2023 22:01:53 : Test End!
+_________________________________________________________________________________________
+04/10/2023 22:02:00 : Test Start!
+04/10/2023 22:02:02 : TC11: Verify that footer external links are valid
+04/10/2023 22:02:03 : Login is Successful!
+04/10/2023 22:02:03 : Current page is Home page.
+04/10/2023 22:02:06 : Redirect is successful!
+04/10/2023 22:02:07 : Redirect is successful!
+04/10/2023 22:02:07 : Redirect is successful!
+04/10/2023 22:02:08 : Test End!
+_________________________________________________________________________________________
+04/10/2023 22:02:28 : Test Start!
+04/10/2023 22:02:30 : TC11: Verify that footer external links are valid
+04/10/2023 22:02:30 : Login is Successful!
+04/10/2023 22:02:31 : Current page is Home page.
+04/10/2023 22:02:34 : Redirect is successful!
+04/10/2023 22:02:34 : Redirect is successful!
+04/10/2023 22:02:35 : Redirect is successful!
+04/10/2023 22:02:35 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:26:33 : Test Start!
+05/10/2023 16:26:36 : TC1: Login in website with valid data
+05/10/2023 16:26:36 : Login is Successful!
+05/10/2023 16:26:36 : Current page is Home page.
+05/10/2023 16:26:36 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:26:46 : Test Start!
+05/10/2023 16:26:48 : TC11: Verify that footer external links are valid
+05/10/2023 16:26:48 : Login is Successful!
+05/10/2023 16:26:48 : Current page is Home page.
+05/10/2023 16:26:51 : Redirect failed!
+05/10/2023 16:26:52 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:27:14 : Test Start!
+05/10/2023 16:27:16 : TC11: Verify that footer external links are valid
+05/10/2023 16:27:17 : Login is Successful!
+05/10/2023 16:27:17 : Current page is Home page.
+05/10/2023 16:27:20 : Redirect failed!
+05/10/2023 16:27:20 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:27:42 : Test Start!
+05/10/2023 16:27:44 : TC11: Verify that footer external links are valid
+05/10/2023 16:27:45 : Login is Successful!
+05/10/2023 16:27:45 : Current page is Home page.
+05/10/2023 16:27:48 : Redirect is successful!
+05/10/2023 16:27:49 : Redirect is successful!
+05/10/2023 16:27:50 : Redirect is successful!
+05/10/2023 16:27:50 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:27:57 : Test Start!
+05/10/2023 16:27:59 : TC11: Verify that footer external links are valid
+05/10/2023 16:28:00 : Login is Successful!
+05/10/2023 16:28:00 : Current page is Home page.
+05/10/2023 16:28:03 : Redirect is successful!
+05/10/2023 16:28:04 : Redirect is successful!
+05/10/2023 16:28:05 : Redirect is successful!
+05/10/2023 16:28:05 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:28:17 : Test Start!
+05/10/2023 16:28:19 : TC11: Verify that footer external links are valid
+05/10/2023 16:28:20 : Login is Successful!
+05/10/2023 16:28:20 : Current page is Home page.
+05/10/2023 16:28:23 : Redirect is successful!
+05/10/2023 16:28:24 : Redirect is successful!
+05/10/2023 16:28:24 : Redirect is successful!
+05/10/2023 16:28:25 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:28:40 : Test Start!
+05/10/2023 16:28:42 : TC11: Verify that footer external links are valid
+05/10/2023 16:28:42 : Login is Successful!
+05/10/2023 16:28:42 : Current page is Home page.
+05/10/2023 16:28:45 : Redirect is successful!
+05/10/2023 16:28:46 : Redirect failed!
+05/10/2023 16:28:46 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:29:05 : Test Start!
+05/10/2023 16:29:07 : TC11: Verify that footer external links are valid
+05/10/2023 16:29:08 : Login is Successful!
+05/10/2023 16:29:08 : Current page is Home page.
+05/10/2023 16:29:11 : Redirect failed!
+05/10/2023 16:29:12 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:29:17 : Test Start!
+05/10/2023 16:29:19 : TC11: Verify that footer external links are valid
+05/10/2023 16:29:20 : Login is Successful!
+05/10/2023 16:29:20 : Current page is Home page.
+05/10/2023 16:29:23 : Redirect is successful!
+05/10/2023 16:29:24 : Redirect is successful!
+05/10/2023 16:29:25 : Redirect is successful!
+05/10/2023 16:29:25 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:29:46 : Test Start!
+05/10/2023 16:29:48 : TC11: Verify that footer external links are valid
+05/10/2023 16:29:49 : Login is Successful!
+05/10/2023 16:29:49 : Current page is Home page.
+05/10/2023 16:29:52 : Redirect is successful!
+05/10/2023 16:29:53 : Redirect is successful!
+05/10/2023 16:29:54 : Redirect is successful!
+05/10/2023 16:29:54 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:30:42 : Test Start!
+05/10/2023 16:30:44 : TC11: Verify that footer external links are valid
+05/10/2023 16:30:44 : Login is Successful!
+05/10/2023 16:30:44 : Current page is Home page.
+05/10/2023 16:30:48 : Redirect failed!
+05/10/2023 16:30:48 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:31:00 : Test Start!
+05/10/2023 16:31:02 : TC11: Verify that footer external links are valid
+05/10/2023 16:31:02 : Login is Successful!
+05/10/2023 16:31:02 : Current page is Home page.
+05/10/2023 16:31:07 : Redirect failed!
+05/10/2023 16:31:07 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:31:24 : Test Start!
+05/10/2023 16:31:26 : TC11: Verify that footer external links are valid
+05/10/2023 16:31:27 : Login is Successful!
+05/10/2023 16:31:27 : Current page is Home page.
+05/10/2023 16:31:31 : Redirect failed!
+05/10/2023 16:31:31 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:31:48 : Test Start!
+05/10/2023 16:31:50 : TC11: Verify that footer external links are valid
+05/10/2023 16:31:51 : Login is Successful!
+05/10/2023 16:31:51 : Current page is Home page.
+05/10/2023 16:31:55 : Redirect failed!
+05/10/2023 16:31:55 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:32:23 : Test Start!
+05/10/2023 16:32:27 : TC11: Verify that footer external links are valid
+05/10/2023 16:32:28 : Login is Successful!
+05/10/2023 16:32:28 : Current page is Home page.
+05/10/2023 16:32:32 : Redirect failed!
+05/10/2023 16:32:33 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:32:40 : Test Start!
+05/10/2023 16:32:43 : TC11: Verify that footer external links are valid
+05/10/2023 16:32:44 : Login is Successful!
+05/10/2023 16:32:44 : Current page is Home page.
+05/10/2023 16:32:48 : Redirect failed!
+05/10/2023 16:32:50 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:33:05 : Test Start!
+05/10/2023 16:33:09 : TC11: Verify that footer external links are valid
+05/10/2023 16:33:10 : Login is Successful!
+05/10/2023 16:33:10 : Current page is Home page.
+05/10/2023 16:33:14 : Redirect failed!
+05/10/2023 16:33:16 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:33:30 : Test Start!
+05/10/2023 16:33:34 : TC11: Verify that footer external links are valid
+05/10/2023 16:33:35 : Login is Successful!
+05/10/2023 16:33:35 : Current page is Home page.
+05/10/2023 16:33:39 : Redirect is successful!
+05/10/2023 16:33:40 : Redirect is successful!
+05/10/2023 16:33:40 : Redirect is successful!
+05/10/2023 16:33:42 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:34:04 : Test Start!
+05/10/2023 16:34:08 : TC11: Verify that footer external links are valid
+05/10/2023 16:34:09 : Login is Successful!
+05/10/2023 16:34:09 : Current page is Home page.
+05/10/2023 16:34:13 : Redirect is successful!
+05/10/2023 16:34:14 : Redirect is successful!
+05/10/2023 16:34:14 : Redirect is successful!
+05/10/2023 16:34:16 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:34:27 : Test Start!
+05/10/2023 16:34:31 : TC11: Verify that footer external links are valid
+05/10/2023 16:34:32 : Login is Successful!
+05/10/2023 16:34:32 : Current page is Home page.
+05/10/2023 16:34:35 : Redirect is successful!
+05/10/2023 16:34:35 : Redirect is successful!
+05/10/2023 16:34:36 : Redirect is successful!
+05/10/2023 16:34:38 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:34:44 : Test Start!
+05/10/2023 16:34:48 : TC11: Verify that footer external links are valid
+05/10/2023 16:34:49 : Login is Successful!
+05/10/2023 16:34:49 : Current page is Home page.
+05/10/2023 16:34:52 : Redirect is successful!
+05/10/2023 16:34:52 : Redirect is successful!
+05/10/2023 16:34:53 : Redirect is successful!
+05/10/2023 16:34:54 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:35:27 : Test Start!
+05/10/2023 16:35:29 : TC11: Verify that footer external links are valid
+05/10/2023 16:35:30 : Login is Successful!
+05/10/2023 16:35:30 : Current page is Home page.
+05/10/2023 16:35:33 : Redirect is successful!
+05/10/2023 16:35:34 : Redirect is successful!
+05/10/2023 16:35:34 : Redirect is successful!
+05/10/2023 16:35:35 : Test End!
+_________________________________________________________________________________________
+05/10/2023 16:35:39 : Test Start!
+05/10/2023 16:35:41 : TC11: Verify that footer external links are valid
+05/10/2023 16:35:42 : Login is Successful!
+05/10/2023 16:35:42 : Current page is Home page.
+05/10/2023 16:35:45 : Redirect is successful!
+05/10/2023 16:35:46 : Redirect is successful!
+05/10/2023 16:35:46 : Redirect is successful!
+05/10/2023 16:35:47 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:28:26 : Test Start!
+05/10/2023 18:28:29 : TC11: Verify that footer external links are valid
+05/10/2023 18:28:29 : Login is Successful!
+05/10/2023 18:28:29 : Current page is Home page.
+05/10/2023 18:28:32 : Redirect is successful!
+05/10/2023 18:28:33 : Redirect is successful!
+05/10/2023 18:28:34 : Redirect is successful!
+05/10/2023 18:28:34 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:28:55 : Test Start!
+05/10/2023 18:28:58 : TC11: Verify that footer external links are valid
+05/10/2023 18:28:58 : Login is Successful!
+05/10/2023 18:28:58 : Current page is Home page.
+05/10/2023 18:29:02 : Redirect failed!
+05/10/2023 18:29:02 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:29:43 : Test Start!
+05/10/2023 18:29:47 : TC11: Verify that footer external links are valid
+05/10/2023 18:29:47 : Login is Successful!
+05/10/2023 18:29:48 : Current page is Home page.
+05/10/2023 18:29:51 : Redirect failed!
+05/10/2023 18:29:52 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:31:54 : Test Start!
+05/10/2023 18:31:56 : TC11: Verify that footer external links are valid
+05/10/2023 18:31:57 : Login is Successful!
+05/10/2023 18:31:57 : Current page is Home page.
+05/10/2023 18:32:00 : Redirect is successful!
+05/10/2023 18:32:01 : Redirect is successful!
+05/10/2023 18:32:02 : Redirect is successful!
+05/10/2023 18:32:02 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:33:58 : Test Start!
+05/10/2023 18:34:00 : TC11: Verify that footer external links are valid
+05/10/2023 18:34:00 : Login is Successful!
+05/10/2023 18:34:00 : Current page is Home page.
+05/10/2023 18:34:04 : Redirect failed!
+05/10/2023 18:34:04 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:36:59 : Test Start!
+05/10/2023 18:37:01 : TC11: Verify that footer external links are valid
+05/10/2023 18:37:02 : Login is Successful!
+05/10/2023 18:37:02 : Current page is Home page.
+05/10/2023 18:37:05 : Redirect is successful!
+05/10/2023 18:37:06 : Redirect is successful!
+05/10/2023 18:37:06 : Redirect is successful!
+05/10/2023 18:37:07 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:37:23 : Test Start!
+05/10/2023 18:37:25 : TC11: Verify that footer external links are valid
+05/10/2023 18:37:26 : Login is Successful!
+05/10/2023 18:37:26 : Current page is Home page.
+05/10/2023 18:37:29 : Redirect is successful!
+05/10/2023 18:37:30 : Redirect is successful!
+05/10/2023 18:37:31 : Redirect is successful!
+05/10/2023 18:37:31 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:37:47 : Test Start!
+05/10/2023 18:37:49 : TC11: Verify that footer external links are valid
+05/10/2023 18:37:49 : Login is Successful!
+05/10/2023 18:37:49 : Current page is Home page.
+05/10/2023 18:37:53 : Redirect is successful!
+05/10/2023 18:37:54 : Redirect is successful!
+05/10/2023 18:37:55 : Redirect is successful!
+05/10/2023 18:37:55 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:38:13 : Test Start!
+05/10/2023 18:38:17 : TC11: Verify that footer external links are valid
+05/10/2023 18:38:18 : Login is Successful!
+05/10/2023 18:38:18 : Current page is Home page.
+05/10/2023 18:38:21 : Redirect failed!
+05/10/2023 18:38:23 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:41:10 : Test Start!
+05/10/2023 18:41:14 : TC11: Verify that footer external links are valid
+05/10/2023 18:41:15 : Login is Successful!
+05/10/2023 18:41:15 : Current page is Home page.
+05/10/2023 18:41:18 : Redirect failed!
+05/10/2023 18:41:20 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:42:01 : Test Start!
+05/10/2023 18:42:03 : TC11: Verify that footer external links are valid
+05/10/2023 18:42:03 : Login is Successful!
+05/10/2023 18:42:03 : Current page is Home page.
+05/10/2023 18:42:07 : Redirect is successful!
+05/10/2023 18:42:08 : Redirect is successful!
+05/10/2023 18:42:08 : Redirect is successful!
+05/10/2023 18:42:09 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:44:47 : Test Start!
+05/10/2023 18:44:49 : TC11: Verify that footer external links are valid
+05/10/2023 18:44:49 : Login is Successful!
+05/10/2023 18:44:49 : Current page is Home page.
+05/10/2023 18:44:53 : Redirect is successful!
+05/10/2023 18:44:53 : Redirect is successful!
+05/10/2023 18:44:54 : Redirect is successful!
+05/10/2023 18:44:54 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:45:09 : Test Start!
+05/10/2023 18:45:12 : TC11: Verify that footer external links are valid
+05/10/2023 18:45:12 : Login is Successful!
+05/10/2023 18:45:12 : Current page is Home page.
+05/10/2023 18:45:16 : Redirect is successful!
+05/10/2023 18:45:16 : Redirect is successful!
+05/10/2023 18:45:17 : Redirect is successful!
+05/10/2023 18:45:17 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:45:25 : Test Start!
+05/10/2023 18:45:27 : TC11: Verify that footer external links are valid
+05/10/2023 18:45:27 : Login is Successful!
+05/10/2023 18:45:27 : Current page is Home page.
+05/10/2023 18:45:31 : Redirect is successful!
+05/10/2023 18:45:31 : Redirect is successful!
+05/10/2023 18:45:32 : Redirect is successful!
+05/10/2023 18:45:32 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:48:57 : Test Start!
+05/10/2023 18:48:59 : TC11: Verify that footer external links are valid
+05/10/2023 18:48:59 : Login is Successful!
+05/10/2023 18:48:59 : Current page is Home page.
+05/10/2023 18:49:03 : Redirect is successful!
+05/10/2023 18:49:04 : Redirect is successful!
+05/10/2023 18:49:04 : Redirect is successful!
+05/10/2023 18:49:05 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:50:08 : Test Start!
+05/10/2023 18:50:10 : TC11: Verify that footer external links are valid
+05/10/2023 18:50:11 : Login is Successful!
+05/10/2023 18:50:11 : Current page is Home page.
+05/10/2023 18:50:14 : Redirect is successful!
+05/10/2023 18:50:15 : Redirect is successful!
+05/10/2023 18:50:16 : Redirect is successful!
+05/10/2023 18:50:16 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:50:31 : Test Start!
+05/10/2023 18:50:35 : TC11: Verify that footer external links are valid
+05/10/2023 18:50:36 : Login is Successful!
+05/10/2023 18:50:36 : Current page is Home page.
+05/10/2023 18:50:39 : Redirect failed!
+05/10/2023 18:50:40 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:56:49 : Test Start!
+05/10/2023 18:56:52 : TC11: Verify that footer external links are valid
+05/10/2023 18:56:53 : Login is Successful!
+05/10/2023 18:56:53 : Current page is Home page.
+05/10/2023 18:56:56 : Redirect failed!
+05/10/2023 18:56:58 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:57:12 : Test Start!
+05/10/2023 18:57:14 : TC11: Verify that footer external links are valid
+05/10/2023 18:57:15 : Login is Successful!
+05/10/2023 18:57:15 : Current page is Home page.
+05/10/2023 18:57:18 : Redirect is successful!
+05/10/2023 18:57:19 : Redirect is successful!
+05/10/2023 18:57:19 : Redirect is successful!
+05/10/2023 18:57:20 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:58:04 : Test Start!
+05/10/2023 18:58:06 : TC11: Verify that footer external links are valid
+05/10/2023 18:58:07 : Login is Successful!
+05/10/2023 18:58:07 : Current page is Home page.
+05/10/2023 18:58:10 : Redirect is successful!
+05/10/2023 18:58:11 : Redirect is successful!
+05/10/2023 18:58:12 : Redirect is successful!
+05/10/2023 18:58:12 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:58:38 : Test Start!
+05/10/2023 18:58:40 : TC11: Verify that footer external links are valid
+05/10/2023 18:58:40 : Login is Successful!
+05/10/2023 18:58:40 : Current page is Home page.
+05/10/2023 18:58:44 : Redirect failed!
+05/10/2023 18:58:44 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:58:55 : Test Start!
+05/10/2023 18:58:57 : TC11: Verify that footer external links are valid
+05/10/2023 18:58:58 : Login is Successful!
+05/10/2023 18:58:58 : Current page is Home page.
+05/10/2023 18:59:01 : Redirect failed!
+05/10/2023 18:59:01 : Test End!
+_________________________________________________________________________________________
+05/10/2023 18:59:41 : Test Start!
+05/10/2023 18:59:43 : TC11: Verify that footer external links are valid
+05/10/2023 18:59:43 : Login is Successful!
+05/10/2023 18:59:43 : Current page is Home page.
+05/10/2023 18:59:47 : Redirect failed!
+05/10/2023 18:59:47 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:00:20 : Test Start!
+05/10/2023 19:00:21 : TC11: Verify that footer external links are valid
+05/10/2023 19:00:22 : Login is Successful!
+05/10/2023 19:00:22 : Current page is Home page.
+05/10/2023 19:00:25 : Redirect is successful!
+05/10/2023 19:00:26 : Redirect is successful!
+05/10/2023 19:00:27 : Redirect is successful!
+05/10/2023 19:00:27 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:00:46 : Test Start!
+05/10/2023 19:00:48 : TC11: Verify that footer external links are valid
+05/10/2023 19:00:49 : Login is Successful!
+05/10/2023 19:00:49 : Current page is Home page.
+05/10/2023 19:00:52 : Redirect is successful!
+05/10/2023 19:00:53 : Redirect is successful!
+05/10/2023 19:00:54 : Redirect is successful!
+05/10/2023 19:00:54 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:01:11 : Test Start!
+05/10/2023 19:01:12 : TC11: Verify that footer external links are valid
+05/10/2023 19:01:13 : Login is Successful!
+05/10/2023 19:01:13 : Current page is Home page.
+05/10/2023 19:01:16 : Redirect is successful!
+05/10/2023 19:01:17 : Redirect is successful!
+05/10/2023 19:01:18 : Redirect is successful!
+05/10/2023 19:01:18 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:01:34 : Test Start!
+05/10/2023 19:01:36 : TC11: Verify that footer external links are valid
+05/10/2023 19:01:36 : Login is Successful!
+05/10/2023 19:01:36 : Current page is Home page.
+05/10/2023 19:01:40 : Redirect failed!
+05/10/2023 19:01:40 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:01:55 : Test Start!
+05/10/2023 19:01:56 : TC11: Verify that footer external links are valid
+05/10/2023 19:01:57 : Login is Successful!
+05/10/2023 19:01:57 : Current page is Home page.
+05/10/2023 19:02:00 : Redirect is successful!
+05/10/2023 19:02:01 : Redirect is successful!
+05/10/2023 19:02:02 : Redirect is successful!
+05/10/2023 19:02:02 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:02:15 : Test Start!
+05/10/2023 19:02:19 : TC11: Verify that footer external links are valid
+05/10/2023 19:02:20 : Login is Successful!
+05/10/2023 19:02:20 : Current page is Home page.
+05/10/2023 19:02:23 : Redirect failed!
+05/10/2023 19:02:25 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:11:05 : Test Start!
+05/10/2023 19:11:09 : TC11: Verify that footer external links are valid
+05/10/2023 19:11:10 : Login is Successful!
+05/10/2023 19:11:10 : Current page is Home page.
+05/10/2023 19:11:23 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:11:40 : Test Start!
+05/10/2023 19:11:44 : TC11: Verify that footer external links are valid
+05/10/2023 19:11:45 : Login is Successful!
+05/10/2023 19:11:45 : Current page is Home page.
+05/10/2023 19:11:48 : Redirect is successful!
+05/10/2023 19:11:50 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:13:35 : Test Start!
+05/10/2023 19:13:39 : TC11: Verify that footer external links are valid
+05/10/2023 19:13:40 : Login is Successful!
+05/10/2023 19:13:40 : Current page is Home page.
+05/10/2023 19:13:43 : Redirect failed!
+05/10/2023 19:13:45 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:14:16 : Test Start!
+05/10/2023 19:14:18 : TC11: Verify that footer external links are valid
+05/10/2023 19:14:18 : Login is Successful!
+05/10/2023 19:14:18 : Current page is Home page.
+05/10/2023 19:14:21 : Redirect is successful!
+05/10/2023 19:14:22 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:14:54 : Test Start!
+05/10/2023 19:14:55 : TC11: Verify that footer external links are valid
+05/10/2023 19:14:56 : Login is Successful!
+05/10/2023 19:14:56 : Current page is Home page.
+05/10/2023 19:14:59 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:15:40 : Test Start!
+05/10/2023 19:15:42 : TC11: Verify that footer external links are valid
+05/10/2023 19:15:42 : Login is Successful!
+05/10/2023 19:15:42 : Current page is Home page.
+05/10/2023 19:15:45 : Redirect failed!
+05/10/2023 19:15:45 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:18:35 : Test Start!
+05/10/2023 19:18:37 : TC11: Verify that footer external links are valid
+05/10/2023 19:18:37 : Login is Successful!
+05/10/2023 19:18:37 : Current page is Home page.
+05/10/2023 19:18:41 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:21:50 : Test Start!
+05/10/2023 19:21:52 : TC11: Verify that footer external links are valid
+05/10/2023 19:21:52 : Login is Successful!
+05/10/2023 19:21:52 : Current page is Home page.
+05/10/2023 19:21:56 : Redirect failed!
+05/10/2023 19:21:56 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:22:49 : Test Start!
+05/10/2023 19:22:51 : TC11: Verify that footer external links are valid
+05/10/2023 19:22:51 : Login is Successful!
+05/10/2023 19:22:51 : Current page is Home page.
+05/10/2023 19:22:55 : Redirect is successful!
+05/10/2023 19:22:55 : Redirect is successful!
+05/10/2023 19:22:56 : Redirect is successful!
+05/10/2023 19:22:56 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:23:09 : Test Start!
+05/10/2023 19:23:11 : TC11: Verify that footer external links are valid
+05/10/2023 19:23:11 : Login is Successful!
+05/10/2023 19:23:11 : Current page is Home page.
+05/10/2023 19:23:14 : Redirect is successful!
+05/10/2023 19:23:15 : Redirect is successful!
+05/10/2023 19:23:16 : Redirect is successful!
+05/10/2023 19:23:16 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:23:31 : Test Start!
+05/10/2023 19:23:33 : TC11: Verify that footer external links are valid
+05/10/2023 19:23:33 : Login is Successful!
+05/10/2023 19:23:33 : Current page is Home page.
+05/10/2023 19:23:37 : Redirect is successful!
+05/10/2023 19:23:37 : Redirect is successful!
+05/10/2023 19:23:38 : Redirect is successful!
+05/10/2023 19:23:38 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:23:58 : Test Start!
+05/10/2023 19:24:00 : TC11: Verify that footer external links are valid
+05/10/2023 19:24:01 : Login is Successful!
+05/10/2023 19:24:01 : Current page is Home page.
+05/10/2023 19:24:04 : Redirect is successful!
+05/10/2023 19:24:05 : Redirect is successful!
+05/10/2023 19:24:05 : Redirect is successful!
+05/10/2023 19:24:06 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:24:20 : Test Start!
+05/10/2023 19:24:22 : TC11: Verify that footer external links are valid
+05/10/2023 19:24:23 : Login is Successful!
+05/10/2023 19:24:23 : Current page is Home page.
+05/10/2023 19:24:26 : Redirect is successful!
+05/10/2023 19:24:27 : Redirect is successful!
+05/10/2023 19:24:27 : Redirect is successful!
+05/10/2023 19:24:28 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:24:47 : Test Start!
+05/10/2023 19:24:49 : TC11: Verify that footer external links are valid
+05/10/2023 19:24:49 : Login is Successful!
+05/10/2023 19:24:49 : Current page is Home page.
+05/10/2023 19:24:53 : Redirect is successful!
+05/10/2023 19:24:53 : Redirect is successful!
+05/10/2023 19:24:54 : Redirect is successful!
+05/10/2023 19:24:54 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:25:06 : Test Start!
+05/10/2023 19:25:10 : TC11: Verify that footer external links are valid
+05/10/2023 19:25:11 : Login is Successful!
+05/10/2023 19:25:11 : Current page is Home page.
+05/10/2023 19:25:14 : Redirect is successful!
+05/10/2023 19:25:15 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:25:34 : Test Start!
+05/10/2023 19:25:38 : TC11: Verify that footer external links are valid
+05/10/2023 19:25:39 : Login is Successful!
+05/10/2023 19:25:39 : Current page is Home page.
+05/10/2023 19:25:42 : Redirect is successful!
+05/10/2023 19:25:43 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:29:48 : Test Start!
+05/10/2023 19:29:52 : TC11: Verify that footer external links are valid
+05/10/2023 19:29:53 : Login is Successful!
+05/10/2023 19:29:53 : Current page is Home page.
+05/10/2023 19:29:56 : Redirect is successful!
+05/10/2023 19:29:57 : Redirect is successful!
+05/10/2023 19:29:58 : Redirect is successful!
+05/10/2023 19:29:59 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:30:52 : Test Start!
+05/10/2023 19:30:56 : TC11: Verify that footer external links are valid
+05/10/2023 19:30:57 : Login is Successful!
+05/10/2023 19:30:57 : Current page is Home page.
+05/10/2023 19:31:00 : Redirect is successful!
+05/10/2023 19:31:01 : Redirect is successful!
+05/10/2023 19:31:02 : Redirect is successful!
+05/10/2023 19:31:03 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:31:17 : Test Start!
+05/10/2023 19:31:19 : TC11: Verify that footer external links are valid
+05/10/2023 19:31:20 : Login is Successful!
+05/10/2023 19:31:20 : Current page is Home page.
+05/10/2023 19:31:23 : Redirect is successful!
+05/10/2023 19:31:24 : Redirect is successful!
+05/10/2023 19:31:25 : Redirect is successful!
+05/10/2023 19:31:25 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:31:37 : Test Start!
+05/10/2023 19:31:39 : TC11: Verify that footer external links are valid
+05/10/2023 19:31:40 : Login is Successful!
+05/10/2023 19:31:40 : Current page is Home page.
+05/10/2023 19:31:43 : Redirect is successful!
+05/10/2023 19:31:44 : Redirect is successful!
+05/10/2023 19:31:45 : Redirect is successful!
+05/10/2023 19:31:45 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:32:07 : Test Start!
+05/10/2023 19:32:11 : TC11: Verify that footer external links are valid
+05/10/2023 19:32:12 : Login is Successful!
+05/10/2023 19:32:12 : Current page is Home page.
+05/10/2023 19:32:15 : Redirect is successful!
+05/10/2023 19:32:16 : Redirect is successful!
+05/10/2023 19:32:16 : Redirect is successful!
+05/10/2023 19:32:18 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:32:53 : Test Start!
+05/10/2023 19:32:57 : TC11: Verify that footer external links are valid
+05/10/2023 19:32:58 : Login is Successful!
+05/10/2023 19:32:58 : Current page is Home page.
+05/10/2023 19:33:01 : Redirect is successful!
+05/10/2023 19:33:01 : Redirect is successful!
+05/10/2023 19:33:02 : Redirect is successful!
+05/10/2023 19:33:04 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:33:22 : Test Start!
+05/10/2023 19:33:26 : TC11: Verify that footer external links are valid
+05/10/2023 19:33:27 : Login is Successful!
+05/10/2023 19:33:27 : Current page is Home page.
+05/10/2023 19:33:30 : Redirect is successful!
+05/10/2023 19:33:30 : Redirect is successful!
+05/10/2023 19:33:31 : Redirect is successful!
+05/10/2023 19:33:33 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:33:50 : Test Start!
+05/10/2023 19:33:52 : TC11: Verify that footer external links are valid
+05/10/2023 19:33:52 : Login is Successful!
+05/10/2023 19:33:52 : Current page is Home page.
+05/10/2023 19:33:56 : Redirect is successful!
+05/10/2023 19:33:56 : Redirect is successful!
+05/10/2023 19:33:57 : Redirect is successful!
+05/10/2023 19:33:57 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:34:04 : Test Start!
+05/10/2023 19:34:06 : TC11: Verify that footer external links are valid
+05/10/2023 19:34:07 : Login is Successful!
+05/10/2023 19:34:07 : Current page is Home page.
+05/10/2023 19:34:10 : Redirect is successful!
+05/10/2023 19:34:11 : Redirect is successful!
+05/10/2023 19:34:11 : Redirect is successful!
+05/10/2023 19:34:12 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:34:22 : Test Start!
+05/10/2023 19:34:24 : TC11: Verify that footer external links are valid
+05/10/2023 19:34:24 : Login is Successful!
+05/10/2023 19:34:24 : Current page is Home page.
+05/10/2023 19:34:28 : Redirect is successful!
+05/10/2023 19:34:29 : Redirect is successful!
+05/10/2023 19:34:29 : Redirect is successful!
+05/10/2023 19:34:30 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:35:50 : Test Start!
+05/10/2023 19:35:52 : TC11: Verify that footer external links are valid
+05/10/2023 19:35:52 : Login is Successful!
+05/10/2023 19:35:52 : Current page is Home page.
+05/10/2023 19:35:56 : Redirect is successful!
+05/10/2023 19:35:56 : Redirect is successful!
+05/10/2023 19:35:57 : Redirect is successful!
+05/10/2023 19:35:57 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:36:11 : Test Start!
+05/10/2023 19:36:13 : TC11: Verify that footer external links are valid
+05/10/2023 19:36:14 : Login is Successful!
+05/10/2023 19:36:14 : Current page is Home page.
+05/10/2023 19:36:17 : Redirect is successful!
+05/10/2023 19:36:18 : Redirect is successful!
+05/10/2023 19:36:19 : Redirect is successful!
+05/10/2023 19:36:19 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:36:29 : Test Start!
+05/10/2023 19:36:33 : TC11: Verify that footer external links are valid
+05/10/2023 19:36:34 : Login is Successful!
+05/10/2023 19:36:34 : Current page is Home page.
+05/10/2023 19:36:37 : Redirect is successful!
+05/10/2023 19:36:38 : Redirect is successful!
+05/10/2023 19:36:38 : Redirect is successful!
+05/10/2023 19:36:40 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:37:08 : Test Start!
+05/10/2023 19:37:12 : TC11: Verify that footer external links are valid
+05/10/2023 19:37:13 : Login is Successful!
+05/10/2023 19:37:13 : Current page is Home page.
+05/10/2023 19:37:16 : Redirect is successful!
+05/10/2023 19:37:16 : Redirect is successful!
+05/10/2023 19:37:17 : Redirect is successful!
+05/10/2023 19:37:18 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:37:27 : Test Start!
+05/10/2023 19:37:30 : TC11: Verify that footer external links are valid
+05/10/2023 19:37:31 : Login is Successful!
+05/10/2023 19:37:31 : Current page is Home page.
+05/10/2023 19:37:34 : Redirect is successful!
+05/10/2023 19:37:35 : Redirect is successful!
+05/10/2023 19:37:35 : Redirect is successful!
+05/10/2023 19:37:37 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:37:46 : Test Start!
+05/10/2023 19:37:48 : TC11: Verify that footer external links are valid
+05/10/2023 19:37:48 : Login is Successful!
+05/10/2023 19:37:48 : Current page is Home page.
+05/10/2023 19:37:51 : Redirect is successful!
+05/10/2023 19:37:52 : Redirect is successful!
+05/10/2023 19:37:53 : Redirect is successful!
+05/10/2023 19:37:53 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:38:02 : Test Start!
+05/10/2023 19:38:04 : TC11: Verify that footer external links are valid
+05/10/2023 19:38:04 : Login is Successful!
+05/10/2023 19:38:04 : Current page is Home page.
+05/10/2023 19:38:07 : Redirect is successful!
+05/10/2023 19:38:08 : Redirect is successful!
+05/10/2023 19:38:09 : Redirect is successful!
+05/10/2023 19:38:09 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:38:13 : Test Start!
+05/10/2023 19:38:15 : TC11: Verify that footer external links are valid
+05/10/2023 19:38:16 : Login is Successful!
+05/10/2023 19:38:16 : Current page is Home page.
+05/10/2023 19:38:19 : Redirect is successful!
+05/10/2023 19:38:21 : Redirect is successful!
+05/10/2023 19:38:22 : Redirect is successful!
+05/10/2023 19:38:22 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:38:27 : Test Start!
+05/10/2023 19:38:29 : TC11: Verify that footer external links are valid
+05/10/2023 19:38:29 : Login is Successful!
+05/10/2023 19:38:29 : Current page is Home page.
+05/10/2023 19:38:32 : Redirect is successful!
+05/10/2023 19:38:33 : Redirect is successful!
+05/10/2023 19:38:34 : Redirect is successful!
+05/10/2023 19:38:34 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:52:48 : Test Start!
+05/10/2023 19:52:50 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+05/10/2023 19:52:51 : Login is Successful!
+05/10/2023 19:52:51 : Current page is Home page.
+05/10/2023 19:52:51 : Current page is Product page.
+05/10/2023 19:52:51 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:52:51 : Test Start!
+05/10/2023 19:52:52 : TC11: Verify that footer external links are valid
+05/10/2023 19:52:53 : Login is Successful!
+05/10/2023 19:52:53 : Current page is Home page.
+05/10/2023 19:52:56 : Redirect is successful!
+05/10/2023 19:52:57 : Redirect is successful!
+05/10/2023 19:52:58 : Redirect is successful!
+05/10/2023 19:52:58 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:52:58 : Test Start!
+05/10/2023 19:52:59 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+05/10/2023 19:53:00 : Login is Successful!
+05/10/2023 19:53:00 : Current page is Home page.
+05/10/2023 19:53:05 : Code error: the 'Remove' button you interact with does not exist!
+05/10/2023 19:53:06 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:06 : Test Start!
+05/10/2023 19:53:07 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+05/10/2023 19:53:08 : Login is Successful!
+05/10/2023 19:53:08 : Current page is Home page.
+05/10/2023 19:53:08 : Current page is Product page.
+05/10/2023 19:53:09 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:09 : Test Start!
+05/10/2023 19:53:10 : TC14: Verify products sorting work correctly
+05/10/2023 19:53:10 : Login is Successful!
+05/10/2023 19:53:10 : Current page is Home page.
+05/10/2023 19:53:11 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:11 : Test Start!
+05/10/2023 19:53:12 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+05/10/2023 19:53:18 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:18 : Test Start!
+05/10/2023 19:53:18 : TC6: Complete checkout process with empty cart
+05/10/2023 19:53:19 : Login is Successful!
+05/10/2023 19:53:19 : Current page is Home page.
+05/10/2023 19:53:19 : Current page is Cart page.
+05/10/2023 19:53:24 : Cart is empty.
+05/10/2023 19:53:24 : Current page is Checkout User Information page.
+05/10/2023 19:53:25 : Current page is Checkout Overview page.
+05/10/2023 19:53:30 : Cart is empty.
+05/10/2023 19:53:30 : Current page is Checkout Success page.
+05/10/2023 19:53:30 : Current page is Home page.
+05/10/2023 19:53:30 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:30 : Test Start!
+05/10/2023 19:53:31 : TC1: Login in website with valid data
+05/10/2023 19:53:32 : Login is Successful!
+05/10/2023 19:53:32 : Current page is Home page.
+05/10/2023 19:53:32 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:32 : Test Start!
+05/10/2023 19:53:33 : TC2: Login in website with invalid data
+05/10/2023 19:53:33 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 19:53:33 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:33 : Test Start!
+05/10/2023 19:53:34 : TC3: Verify locked user cant login in website
+05/10/2023 19:53:35 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 19:53:35 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:35 : Test Start!
+05/10/2023 19:53:36 : TC4: Login in website via csv data file
+05/10/2023 19:53:36 : Login is Successful!
+05/10/2023 19:53:36 : Current page is Home page.
+05/10/2023 19:53:36 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:36 : Test Start!
+05/10/2023 19:53:37 : TC4: Login in website via csv data file
+05/10/2023 19:53:38 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 19:53:38 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:38 : Test Start!
+05/10/2023 19:53:39 : TC4: Login in website via csv data file
+05/10/2023 19:53:39 : Login is Successful!
+05/10/2023 19:53:39 : Current page is Home page.
+05/10/2023 19:53:39 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:39 : Test Start!
+05/10/2023 19:53:40 : TC4: Login in website via csv data file
+05/10/2023 19:53:46 : Login is Successful!
+05/10/2023 19:53:46 : Current page is Home page.
+05/10/2023 19:53:46 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:46 : Test Start!
+05/10/2023 19:53:47 : TC4: Login in website via csv data file
+05/10/2023 19:53:47 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 19:53:48 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:48 : Test Start!
+05/10/2023 19:53:49 : TC4: Login in website via csv data file
+05/10/2023 19:53:49 : Login Failed! - Epic sadface: Username is required
+05/10/2023 19:53:49 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:49 : Test Start!
+05/10/2023 19:53:50 : TC4: Login in website via csv data file
+05/10/2023 19:53:51 : Login Failed! - Epic sadface: Password is required
+05/10/2023 19:53:51 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:51 : Test Start!
+05/10/2023 19:53:52 : TC4: Login in website via csv data file
+05/10/2023 19:53:52 : Login Failed! - Epic sadface: Username is required
+05/10/2023 19:53:52 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:52 : Test Start!
+05/10/2023 19:53:53 : TC4: Login in website via csv data file
+05/10/2023 19:53:54 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 19:53:54 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:54 : Test Start!
+05/10/2023 19:53:55 : TC4: Login in website via csv data file
+05/10/2023 19:53:55 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 19:53:55 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:55 : Test Start!
+05/10/2023 19:53:56 : TC5: Add products in the cart
+05/10/2023 19:53:57 : Login is Successful!
+05/10/2023 19:53:57 : Current page is Home page.
+05/10/2023 19:53:57 : Current page is Cart page.
+05/10/2023 19:53:57 : Cart contains items.
+05/10/2023 19:53:58 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:53:58 : Test Start!
+05/10/2023 19:53:59 : TC6: Test checkout user information fields validation
+05/10/2023 19:53:59 : Login is Successful!
+05/10/2023 19:53:59 : Current page is Home page.
+05/10/2023 19:54:00 : Current page is Cart page.
+05/10/2023 19:54:00 : Cart contains items.
+05/10/2023 19:54:00 : Current page is Checkout User Information page.
+05/10/2023 19:54:01 : Current page is Checkout Overview page.
+05/10/2023 19:54:01 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:54:01 : Test Start!
+05/10/2023 19:54:02 : TC7: Add products in cart and complete the checkout process
+05/10/2023 19:54:02 : Login is Successful!
+05/10/2023 19:54:02 : Current page is Home page.
+05/10/2023 19:54:03 : Current page is Cart page.
+05/10/2023 19:54:03 : Cart contains items.
+05/10/2023 19:54:03 : Current page is Checkout User Information page.
+05/10/2023 19:54:04 : Current page is Checkout Overview page.
+05/10/2023 19:54:04 : Cart contains items.
+05/10/2023 19:54:04 : Current page is Checkout Success page.
+05/10/2023 19:54:04 : Current page is Home page.
+05/10/2023 19:54:04 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:54:04 : Test Start!
+05/10/2023 19:54:05 : TC8.1: Test menu link All Items
+05/10/2023 19:54:06 : Login is Successful!
+05/10/2023 19:54:06 : Current page is Home page.
+05/10/2023 19:54:06 : Current page is Product page.
+05/10/2023 19:54:07 : Current page is Home page.
+05/10/2023 19:54:07 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:54:07 : Test Start!
+05/10/2023 19:54:08 : TC8.2: Test menu link about
+05/10/2023 19:54:09 : Login is Successful!
+05/10/2023 19:54:09 : Current page is Home page.
+05/10/2023 19:54:12 : Redirect is successful!
+05/10/2023 19:54:12 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:54:12 : Test Start!
+05/10/2023 19:54:13 : TC8.3: Test menu link logout
+05/10/2023 19:54:14 : Login is Successful!
+05/10/2023 19:54:14 : Current page is Home page.
+05/10/2023 19:54:15 : Logout is Successful!
+05/10/2023 19:54:15 : Current page is Login page.
+05/10/2023 19:54:15 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:54:15 : Test Start!
+05/10/2023 19:54:16 : TC8.4.1: Test menu link reset app state home page
+05/10/2023 19:54:17 : Login is Successful!
+05/10/2023 19:54:17 : Current page is Home page.
+05/10/2023 19:54:24 : Code error: the 'Add to Cart' button you interact with does not exist!
+05/10/2023 19:54:24 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:54:24 : Test Start!
+05/10/2023 19:54:25 : TC8.4.2: Test menu link reset app state product page
+05/10/2023 19:54:25 : Login is Successful!
+05/10/2023 19:54:25 : Current page is Home page.
+05/10/2023 19:54:25 : Current page is Product page.
+05/10/2023 19:54:32 : Code error: the 'Add to Cart' button you interact with does not exist!
+05/10/2023 19:54:32 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:54:32 : Test Start!
+05/10/2023 19:54:33 : Parallel_TC2: Login in website with invalid data
+05/10/2023 19:54:33 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 19:54:33 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:54:33 : Test Start!
+05/10/2023 19:54:34 : Parallel_TC3: Verify locked user cant login in website
+05/10/2023 19:54:35 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 19:54:35 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:54:35 : Test Start!
+05/10/2023 19:54:36 : Parallel_TC1: Login in website with valid data
+05/10/2023 19:54:36 : Login is Successful!
+05/10/2023 19:54:36 : Current page is Home page.
+05/10/2023 19:54:36 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:57:04 : Test Start!
+05/10/2023 19:57:04 : Test Start!
+05/10/2023 19:57:04 : Test Start!
+05/10/2023 19:57:10 : Parallel_TC2: Login in website with invalid data
+05/10/2023 19:57:10 : Parallel_TC1: Login in website with valid data
+05/10/2023 19:57:11 : Login is Successful!
+05/10/2023 19:57:11 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 19:57:11 : Current page is Home page.
+05/10/2023 19:57:11 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:57:11 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:57:33 : Test Start!
+05/10/2023 19:57:33 : Test Start!
+05/10/2023 19:57:33 : Test Start!
+05/10/2023 19:57:35 : Parallel_TC2: Login in website with invalid data
+05/10/2023 19:57:35 : Parallel_TC1: Login in website with valid data
+05/10/2023 19:57:35 : Parallel_TC3: Verify locked user cant login in website
+05/10/2023 19:57:36 : Login is Successful!
+05/10/2023 19:57:36 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 19:57:36 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 19:57:36 : Current page is Home page.
+05/10/2023 19:57:36 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:57:36 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:57:36 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:58:07 : Test Start!
+05/10/2023 19:58:12 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+05/10/2023 19:58:12 : Login is Successful!
+05/10/2023 19:58:12 : Current page is Home page.
+05/10/2023 19:58:13 : Current page is Product page.
+05/10/2023 19:58:13 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:58:13 : Test Start!
+05/10/2023 19:58:14 : TC11: Verify that footer external links are valid
+05/10/2023 19:58:15 : Login is Successful!
+05/10/2023 19:58:15 : Current page is Home page.
+05/10/2023 19:58:18 : Redirect is successful!
+05/10/2023 19:58:19 : Redirect is successful!
+05/10/2023 19:58:19 : Redirect is successful!
+05/10/2023 19:58:20 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:58:20 : Test Start!
+05/10/2023 19:58:21 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+05/10/2023 19:58:21 : Login is Successful!
+05/10/2023 19:58:21 : Current page is Home page.
+05/10/2023 19:58:27 : Code error: the 'Remove' button you interact with does not exist!
+05/10/2023 19:58:27 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:58:27 : Test Start!
+05/10/2023 19:58:30 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+05/10/2023 19:58:30 : Login is Successful!
+05/10/2023 19:58:30 : Current page is Home page.
+05/10/2023 19:58:30 : Current page is Product page.
+05/10/2023 19:58:31 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:58:31 : Test Start!
+05/10/2023 19:58:32 : TC14: Verify products sorting work correctly
+05/10/2023 19:58:32 : Login is Successful!
+05/10/2023 19:58:32 : Current page is Home page.
+05/10/2023 19:58:33 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:58:33 : Test Start!
+05/10/2023 19:58:34 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+05/10/2023 19:58:40 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:58:40 : Test Start!
+05/10/2023 19:58:41 : TC6: Complete checkout process with empty cart
+05/10/2023 19:58:41 : Login is Successful!
+05/10/2023 19:58:41 : Current page is Home page.
+05/10/2023 19:58:41 : Current page is Cart page.
+05/10/2023 19:58:46 : Cart is empty.
+05/10/2023 19:58:46 : Current page is Checkout User Information page.
+05/10/2023 19:58:47 : Current page is Checkout Overview page.
+05/10/2023 19:58:52 : Cart is empty.
+05/10/2023 19:58:52 : Current page is Checkout Success page.
+05/10/2023 19:58:52 : Current page is Home page.
+05/10/2023 19:58:53 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:58:53 : Test Start!
+05/10/2023 19:58:54 : TC1: Login in website with valid data
+05/10/2023 19:58:54 : Login is Successful!
+05/10/2023 19:58:54 : Current page is Home page.
+05/10/2023 19:58:54 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:58:54 : Test Start!
+05/10/2023 19:58:55 : TC2: Login in website with invalid data
+05/10/2023 19:58:56 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 19:58:56 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:58:56 : Test Start!
+05/10/2023 19:58:57 : TC3: Verify locked user cant login in website
+05/10/2023 19:58:58 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 19:58:58 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:58:58 : Test Start!
+05/10/2023 19:58:59 : TC4: Login in website via csv data file
+05/10/2023 19:59:00 : Login is Successful!
+05/10/2023 19:59:00 : Current page is Home page.
+05/10/2023 19:59:00 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:00 : Test Start!
+05/10/2023 19:59:01 : TC4: Login in website via csv data file
+05/10/2023 19:59:02 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 19:59:02 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:02 : Test Start!
+05/10/2023 19:59:03 : TC4: Login in website via csv data file
+05/10/2023 19:59:04 : Login is Successful!
+05/10/2023 19:59:04 : Current page is Home page.
+05/10/2023 19:59:04 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:04 : Test Start!
+05/10/2023 19:59:05 : TC4: Login in website via csv data file
+05/10/2023 19:59:11 : Login is Successful!
+05/10/2023 19:59:11 : Current page is Home page.
+05/10/2023 19:59:11 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:11 : Test Start!
+05/10/2023 19:59:12 : TC4: Login in website via csv data file
+05/10/2023 19:59:13 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 19:59:13 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:13 : Test Start!
+05/10/2023 19:59:14 : TC4: Login in website via csv data file
+05/10/2023 19:59:14 : Login Failed! - Epic sadface: Username is required
+05/10/2023 19:59:14 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:14 : Test Start!
+05/10/2023 19:59:15 : TC4: Login in website via csv data file
+05/10/2023 19:59:16 : Login Failed! - Epic sadface: Password is required
+05/10/2023 19:59:16 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:16 : Test Start!
+05/10/2023 19:59:17 : TC4: Login in website via csv data file
+05/10/2023 19:59:17 : Login Failed! - Epic sadface: Username is required
+05/10/2023 19:59:18 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:18 : Test Start!
+05/10/2023 19:59:19 : TC4: Login in website via csv data file
+05/10/2023 19:59:19 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 19:59:19 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:19 : Test Start!
+05/10/2023 19:59:20 : TC4: Login in website via csv data file
+05/10/2023 19:59:21 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 19:59:21 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:21 : Test Start!
+05/10/2023 19:59:22 : TC5: Add products in the cart
+05/10/2023 19:59:22 : Login is Successful!
+05/10/2023 19:59:22 : Current page is Home page.
+05/10/2023 19:59:23 : Current page is Cart page.
+05/10/2023 19:59:23 : Cart contains items.
+05/10/2023 19:59:23 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:23 : Test Start!
+05/10/2023 19:59:24 : TC6: Test checkout user information fields validation
+05/10/2023 19:59:25 : Login is Successful!
+05/10/2023 19:59:25 : Current page is Home page.
+05/10/2023 19:59:25 : Current page is Cart page.
+05/10/2023 19:59:25 : Cart contains items.
+05/10/2023 19:59:26 : Current page is Checkout User Information page.
+05/10/2023 19:59:26 : Current page is Checkout Overview page.
+05/10/2023 19:59:27 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:27 : Test Start!
+05/10/2023 19:59:27 : TC7: Add products in cart and complete the checkout process
+05/10/2023 19:59:28 : Login is Successful!
+05/10/2023 19:59:28 : Current page is Home page.
+05/10/2023 19:59:29 : Current page is Cart page.
+05/10/2023 19:59:29 : Cart contains items.
+05/10/2023 19:59:29 : Current page is Checkout User Information page.
+05/10/2023 19:59:29 : Current page is Checkout Overview page.
+05/10/2023 19:59:30 : Cart contains items.
+05/10/2023 19:59:30 : Current page is Checkout Success page.
+05/10/2023 19:59:30 : Current page is Home page.
+05/10/2023 19:59:30 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:30 : Test Start!
+05/10/2023 19:59:31 : TC8.1: Test menu link All Items
+05/10/2023 19:59:32 : Login is Successful!
+05/10/2023 19:59:32 : Current page is Home page.
+05/10/2023 19:59:32 : Current page is Product page.
+05/10/2023 19:59:33 : Current page is Home page.
+05/10/2023 19:59:33 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:33 : Test Start!
+05/10/2023 19:59:34 : TC8.2: Test menu link about
+05/10/2023 19:59:34 : Login is Successful!
+05/10/2023 19:59:34 : Current page is Home page.
+05/10/2023 19:59:38 : Redirect is successful!
+05/10/2023 19:59:38 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:38 : Test Start!
+05/10/2023 19:59:39 : TC8.3: Test menu link logout
+05/10/2023 19:59:40 : Login is Successful!
+05/10/2023 19:59:40 : Current page is Home page.
+05/10/2023 19:59:40 : Logout is Successful!
+05/10/2023 19:59:40 : Current page is Login page.
+05/10/2023 19:59:41 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:41 : Test Start!
+05/10/2023 19:59:42 : TC8.4.1: Test menu link reset app state home page
+05/10/2023 19:59:42 : Login is Successful!
+05/10/2023 19:59:42 : Current page is Home page.
+05/10/2023 19:59:49 : Code error: the 'Add to Cart' button you interact with does not exist!
+05/10/2023 19:59:49 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:49 : Test Start!
+05/10/2023 19:59:50 : TC8.4.2: Test menu link reset app state product page
+05/10/2023 19:59:50 : Login is Successful!
+05/10/2023 19:59:50 : Current page is Home page.
+05/10/2023 19:59:50 : Current page is Product page.
+05/10/2023 19:59:56 : Code error: the 'Add to Cart' button you interact with does not exist!
+05/10/2023 19:59:57 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:57 : Test Start!
+05/10/2023 19:59:58 : Parallel_TC1: Login in website with valid data
+05/10/2023 19:59:59 : Login is Successful!
+05/10/2023 19:59:59 : Current page is Home page.
+05/10/2023 19:59:59 : Test End!
+_________________________________________________________________________________________
+05/10/2023 19:59:59 : Test Start!
+05/10/2023 20:00:00 : Parallel_TC2: Login in website with invalid data
+05/10/2023 20:00:01 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 20:00:01 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:00:01 : Test Start!
+05/10/2023 20:00:02 : Parallel_TC3: Verify locked user cant login in website
+05/10/2023 20:00:02 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 20:00:02 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:03:45 : Test Start!
+05/10/2023 20:03:45 : Test Start!
+05/10/2023 20:03:45 : Test Start!
+05/10/2023 20:05:01 : Test Start!
+05/10/2023 20:05:01 : Test Start!
+05/10/2023 20:05:01 : Test Start!
+05/10/2023 20:07:01 : Test Start!
+05/10/2023 20:07:01 : Test Start!
+05/10/2023 20:07:01 : Test Start!
+05/10/2023 20:08:03 : Test Start!
+05/10/2023 20:08:03 : Test Start!
+05/10/2023 20:08:03 : Test Start!
+05/10/2023 20:08:56 : Test Start!
+05/10/2023 20:08:56 : Test Start!
+05/10/2023 20:08:56 : Test Start!
+05/10/2023 20:09:01 : Parallel_TC2: Login in website with invalid data
+05/10/2023 20:09:01 : Parallel_TC3: Verify locked user cant login in website
+05/10/2023 20:09:01 : Parallel_TC1: Login in website with valid data
+05/10/2023 20:09:02 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 20:09:02 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 20:09:02 : Login is Successful!
+05/10/2023 20:09:02 : Current page is Home page.
+05/10/2023 20:09:04 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:09:04 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:09:04 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:09:57 : Test Start!
+05/10/2023 20:09:57 : Test Start!
+05/10/2023 20:09:57 : Test Start!
+05/10/2023 20:10:01 : Parallel_TC1: Login in website with valid data
+05/10/2023 20:10:01 : Parallel_TC3: Verify locked user cant login in website
+05/10/2023 20:10:01 : Parallel_TC2: Login in website with invalid data
+05/10/2023 20:10:02 : Login is Successful!
+05/10/2023 20:10:02 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 20:10:02 : Current page is Home page.
+05/10/2023 20:10:02 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 20:10:03 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:10:03 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:10:03 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:10:55 : Test Start!
+05/10/2023 20:10:55 : Test Start!
+05/10/2023 20:10:55 : Test Start!
+05/10/2023 20:10:58 : Parallel_TC3: Verify locked user cant login in website
+05/10/2023 20:10:58 : Parallel_TC2: Login in website with invalid data
+05/10/2023 20:10:58 : Parallel_TC1: Login in website with valid data
+05/10/2023 20:10:59 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 20:10:59 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:10:59 : Login is Successful!
+05/10/2023 20:10:59 : Current page is Home page.
+05/10/2023 20:10:59 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 20:10:59 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:10:59 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:14:07 : Test Start!
+05/10/2023 20:14:12 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+05/10/2023 20:14:12 : Login is Successful!
+05/10/2023 20:14:12 : Current page is Home page.
+05/10/2023 20:14:13 : Current page is Product page.
+05/10/2023 20:14:14 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:14:14 : Test Start!
+05/10/2023 20:14:17 : TC11: Verify that footer external links are valid
+05/10/2023 20:14:18 : Login is Successful!
+05/10/2023 20:14:18 : Current page is Home page.
+05/10/2023 20:14:21 : Redirect is successful!
+05/10/2023 20:14:21 : Redirect is successful!
+05/10/2023 20:14:22 : Redirect is successful!
+05/10/2023 20:14:24 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:14:24 : Test Start!
+05/10/2023 20:14:26 : TC12: Verify add-to-cart buttons work correctly on (problem_user)
+05/10/2023 20:14:27 : Login is Successful!
+05/10/2023 20:14:27 : Current page is Home page.
+05/10/2023 20:14:33 : Code error: the 'Remove' button you interact with does not exist!
+05/10/2023 20:14:34 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:14:34 : Test Start!
+05/10/2023 20:14:37 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+05/10/2023 20:14:38 : Login is Successful!
+05/10/2023 20:14:38 : Current page is Home page.
+05/10/2023 20:14:38 : Current page is Product page.
+05/10/2023 20:14:39 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:14:39 : Test Start!
+05/10/2023 20:14:42 : TC14: Verify products sorting work correctly
+05/10/2023 20:14:43 : Login is Successful!
+05/10/2023 20:14:43 : Current page is Home page.
+05/10/2023 20:14:44 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:14:44 : Test Start!
+05/10/2023 20:14:47 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
+05/10/2023 20:14:54 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:14:54 : Test Start!
+05/10/2023 20:14:57 : TC6: Complete checkout process with empty cart
+05/10/2023 20:14:58 : Login is Successful!
+05/10/2023 20:14:58 : Current page is Home page.
+05/10/2023 20:14:58 : Current page is Cart page.
+05/10/2023 20:15:03 : Cart is empty.
+05/10/2023 20:15:03 : Current page is Checkout User Information page.
+05/10/2023 20:15:04 : Current page is Checkout Overview page.
+05/10/2023 20:15:09 : Cart is empty.
+05/10/2023 20:15:10 : Current page is Checkout Success page.
+05/10/2023 20:15:10 : Current page is Home page.
+05/10/2023 20:15:11 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:15:11 : Test Start!
+05/10/2023 20:15:14 : TC1: Login in website with valid data
+05/10/2023 20:15:15 : Login is Successful!
+05/10/2023 20:15:15 : Current page is Home page.
+05/10/2023 20:15:16 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:15:16 : Test Start!
+05/10/2023 20:15:19 : TC2: Login in website with invalid data
+05/10/2023 20:15:19 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 20:15:20 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:15:20 : Test Start!
+05/10/2023 20:15:23 : TC3: Verify locked user cant login in website
+05/10/2023 20:15:24 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 20:15:25 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:15:25 : Test Start!
+05/10/2023 20:15:28 : TC4: Login in website via csv data file
+05/10/2023 20:15:29 : Login is Successful!
+05/10/2023 20:15:29 : Current page is Home page.
+05/10/2023 20:15:30 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:15:30 : Test Start!
+05/10/2023 20:15:33 : TC4: Login in website via csv data file
+05/10/2023 20:15:34 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 20:15:34 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:15:34 : Test Start!
+05/10/2023 20:15:37 : TC4: Login in website via csv data file
+05/10/2023 20:15:38 : Login is Successful!
+05/10/2023 20:15:38 : Current page is Home page.
+05/10/2023 20:15:39 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:15:39 : Test Start!
+05/10/2023 20:15:42 : TC4: Login in website via csv data file
+05/10/2023 20:15:48 : Login is Successful!
+05/10/2023 20:15:48 : Current page is Home page.
+05/10/2023 20:15:49 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:15:49 : Test Start!
+05/10/2023 20:15:52 : TC4: Login in website via csv data file
+05/10/2023 20:15:52 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 20:15:53 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:15:53 : Test Start!
+05/10/2023 20:15:56 : TC4: Login in website via csv data file
+05/10/2023 20:15:57 : Login Failed! - Epic sadface: Username is required
+05/10/2023 20:15:58 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:15:58 : Test Start!
+05/10/2023 20:16:01 : TC4: Login in website via csv data file
+05/10/2023 20:16:02 : Login Failed! - Epic sadface: Password is required
+05/10/2023 20:16:03 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:16:03 : Test Start!
+05/10/2023 20:16:05 : TC4: Login in website via csv data file
+05/10/2023 20:16:06 : Login Failed! - Epic sadface: Username is required
+05/10/2023 20:16:07 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:16:07 : Test Start!
+05/10/2023 20:16:10 : TC4: Login in website via csv data file
+05/10/2023 20:16:11 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 20:16:12 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:16:12 : Test Start!
+05/10/2023 20:16:15 : TC4: Login in website via csv data file
+05/10/2023 20:16:16 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 20:16:16 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:16:16 : Test Start!
+05/10/2023 20:16:19 : TC5: Add products in the cart
+05/10/2023 20:16:20 : Login is Successful!
+05/10/2023 20:16:20 : Current page is Home page.
+05/10/2023 20:16:21 : Current page is Cart page.
+05/10/2023 20:16:21 : Cart contains items.
+05/10/2023 20:16:22 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:16:22 : Test Start!
+05/10/2023 20:16:25 : TC6: Test checkout user information fields validation
+05/10/2023 20:16:26 : Login is Successful!
+05/10/2023 20:16:26 : Current page is Home page.
+05/10/2023 20:16:27 : Current page is Cart page.
+05/10/2023 20:16:27 : Cart contains items.
+05/10/2023 20:16:27 : Current page is Checkout User Information page.
+05/10/2023 20:16:29 : Current page is Checkout Overview page.
+05/10/2023 20:16:30 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:16:30 : Test Start!
+05/10/2023 20:16:33 : TC7: Add products in cart and complete the checkout process
+05/10/2023 20:16:33 : Login is Successful!
+05/10/2023 20:16:33 : Current page is Home page.
+05/10/2023 20:16:34 : Current page is Cart page.
+05/10/2023 20:16:34 : Cart contains items.
+05/10/2023 20:16:35 : Current page is Checkout User Information page.
+05/10/2023 20:16:36 : Current page is Checkout Overview page.
+05/10/2023 20:16:36 : Cart contains items.
+05/10/2023 20:16:36 : Current page is Checkout Success page.
+05/10/2023 20:16:36 : Current page is Home page.
+05/10/2023 20:16:37 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:16:37 : Test Start!
+05/10/2023 20:16:40 : TC8.1: Test menu link All Items
+05/10/2023 20:16:41 : Login is Successful!
+05/10/2023 20:16:41 : Current page is Home page.
+05/10/2023 20:16:41 : Current page is Product page.
+05/10/2023 20:16:42 : Current page is Home page.
+05/10/2023 20:16:43 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:16:43 : Test Start!
+05/10/2023 20:16:46 : TC8.2: Test menu link about
+05/10/2023 20:16:46 : Login is Successful!
+05/10/2023 20:16:46 : Current page is Home page.
+05/10/2023 20:16:52 : Redirect is successful!
+05/10/2023 20:16:53 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:16:53 : Test Start!
+05/10/2023 20:16:56 : TC8.3: Test menu link logout
+05/10/2023 20:16:57 : Login is Successful!
+05/10/2023 20:16:57 : Current page is Home page.
+05/10/2023 20:16:57 : Logout is Successful!
+05/10/2023 20:16:57 : Current page is Login page.
+05/10/2023 20:16:58 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:16:59 : Test Start!
+05/10/2023 20:17:01 : TC8.4.1: Test menu link reset app state home page
+05/10/2023 20:17:02 : Login is Successful!
+05/10/2023 20:17:02 : Current page is Home page.
+05/10/2023 20:17:08 : Code error: the 'Add to Cart' button you interact with does not exist!
+05/10/2023 20:17:09 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:17:09 : Test Start!
+05/10/2023 20:17:12 : TC8.4.2: Test menu link reset app state product page
+05/10/2023 20:17:13 : Login is Successful!
+05/10/2023 20:17:13 : Current page is Home page.
+05/10/2023 20:17:14 : Current page is Product page.
+05/10/2023 20:17:19 : Code error: the 'Add to Cart' button you interact with does not exist!
+05/10/2023 20:17:20 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:17:20 : Test Start!
+05/10/2023 20:17:22 : Parallel_TC1: Login in website with valid data
+05/10/2023 20:17:22 : Login is Successful!
+05/10/2023 20:17:22 : Current page is Home page.
+05/10/2023 20:17:23 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:17:23 : Test Start!
+05/10/2023 20:17:24 : Parallel_TC2: Login in website with invalid data
+05/10/2023 20:17:24 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 20:17:24 : Test End!
+_________________________________________________________________________________________
+05/10/2023 20:17:24 : Test Start!
+05/10/2023 20:17:25 : Parallel_TC3: Verify locked user cant login in website
+05/10/2023 20:17:26 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 20:17:26 : Test End!
+_________________________________________________________________________________________
+05/10/2023 21:09:27 : Test Start!
+05/10/2023 21:09:27 : Test Start!
+05/10/2023 21:09:27 : Test Start!
+05/10/2023 21:09:30 : Parallel_TC2: Login in website with invalid data
+05/10/2023 21:09:30 : Parallel_TC1: Login in website with valid data
+05/10/2023 21:09:30 : Parallel_TC3: Verify locked user cant login in website
+05/10/2023 21:09:31 : Login is Successful!
+05/10/2023 21:09:31 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 21:09:31 : Login Failed! - Epic sadface: Sorry, this user has been locked out.
+05/10/2023 21:09:31 : Current page is Home page.
+05/10/2023 21:09:31 : Test End!
+_________________________________________________________________________________________
+05/10/2023 21:09:31 : Test End!
+_________________________________________________________________________________________
+05/10/2023 21:09:31 : Test End!
+_________________________________________________________________________________________
+05/10/2023 21:17:06 : Test Start!
+05/10/2023 21:17:09 : TC11: Verify that footer external links are valid
+05/10/2023 21:17:09 : Login is Successful!
+05/10/2023 21:17:09 : Current page is Home page.
+05/10/2023 21:17:13 : Redirect is successful!
+05/10/2023 21:17:13 : Redirect is successful!
+05/10/2023 21:17:14 : Redirect is successful!
+05/10/2023 21:17:14 : Test End!
+_________________________________________________________________________________________
+05/10/2023 21:17:29 : Test Start!
+05/10/2023 21:17:31 : TC2: Login in website with invalid data
+05/10/2023 21:17:31 : Login Failed! - Epic sadface: Username and password do not match any user in this service
+05/10/2023 21:17:31 : Test End!
+_________________________________________________________________________________________

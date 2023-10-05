@@ -1,8 +1,8 @@
 Browsers version:
-    - Chrome: 114.0.5735.199
-    - Mozilla Firefox: 115.0.2
-    - Edge: 114.0.1823.79
+    - Chrome: 117.0.5938.132
+    - Mozilla Firefox: 118.0.1
+    - Edge: 117.0.2045.47
 WebDrivers version:
-    - Chrome - chromedriver: 114.0.5735.90
+    - Chrome - chromedriver: 117.0.5938.132
     - Mozilla Firefox - geckodriver: 0.33.0
-    - Edge - edgedriver: 114.0.1823.79
+    - Edge - edgedriver: 117.0.2045.47

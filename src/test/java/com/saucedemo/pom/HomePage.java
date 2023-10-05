@@ -1,10 +1,7 @@
 package com.saucedemo.pom;
 
 import com.saucedemo.objects.Product;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -370,36 +367,74 @@ public class HomePage extends TestUtilities {
         Assert.assertTrue(footerFacebookLink.isDisplayed(), FACEBOOK_LINK_MISSING_MESSAGE);
         Assert.assertTrue(footerLinkedinLink.isDisplayed(), LINKEDIN_LINK_MISSING_MESSAGE);
 
-        /* Following waits are needed for test execution on firefox and edge */
-        /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab */
-        waitClickable(driver, footerTwitterLink, 5);
-        footerTwitterLink.click();
-        simpleWait(600);
+        /* Array list with tabs(WindowHandles) */
+        ArrayList<String> tabs = new ArrayList<String>();
+        String parentWindow = driver.getWindowHandle();
+        /* Add main tab handle */
+        tabs.add(parentWindow);
 
-        /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab */
-        waitClickable(driver, footerFacebookLink, 5);
-        footerFacebookLink.click();
-        simpleWait(600);
+        /* Print used browser*/
+        System.out.println( "Used Browser: " + usedBrowser);
 
-        /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab */
-        waitClickable(driver, footerLinkedinLink, 5);
-        footerLinkedinLink.click();
-        simpleWait(600);
+        /* Verify browser - Firefox loads browser tabs in a different order compared to Chrome and Edge */
+        if (usedBrowser.equals("firefox")){
 
-        /* Array list with tabs */
-        ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+            /* Following waits are needed for test execution on firefox */
+            /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab */
+            waitClickable(driver, footerTwitterLink, 5);
+            footerTwitterLink.click();
+            simpleWait(600);
+            tabs.add(driver.getWindowHandles().toArray()[1].toString());
+
+            /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab */
+            waitClickable(driver, footerFacebookLink, 5);
+            footerFacebookLink.click();
+            simpleWait(600);
+            tabs.add(driver.getWindowHandles().toArray()[1].toString());
+
+            /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab */
+            waitClickable(driver, footerLinkedinLink, 5);
+            footerLinkedinLink.click();
+            simpleWait(600);
+            tabs.add(driver.getWindowHandles().toArray()[1].toString());
+
+        } else {
+
+            /* Following waits are needed for test execution on edge */
+            /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab */
+            waitClickable(driver, footerTwitterLink, 5);
+            footerTwitterLink.click();
+            simpleWait(600);
+            tabs.add(driver.getWindowHandles().toArray()[1].toString());
+
+            /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab */
+            waitClickable(driver, footerFacebookLink, 5);
+            footerFacebookLink.click();
+            simpleWait(600);
+            tabs.add(driver.getWindowHandles().toArray()[2].toString());
+
+            /* Wait link to be clickable, then click it, and wait web-driver to load it in new tab */
+            waitClickable(driver, footerLinkedinLink, 5);
+            footerLinkedinLink.click();
+            simpleWait(600);
+            tabs.add(driver.getWindowHandles().toArray()[3].toString());
+
+        }
 
         /* Switch to wanted tab, then validate correctness of the external link */
-        driver.switchTo().window(tabs.get(3));
+        driver.switchTo().window(tabs.get(1));
         validateTwitterLink();
+        driver.close();
 
         /* Switch to wanted tab, then validate correctness of the external link */
         driver.switchTo().window(tabs.get(2));
         validateFacebookLink();
+        driver.close();
 
         /* Switch to wanted tab, then validate correctness of the external link */
-        driver.switchTo().window(tabs.get(1));
+        driver.switchTo().window(tabs.get(3));
         validateLinkedInLink();
+        driver.close();
     }
 
     /* Method who validate correctness of the social link and print right messages in console and log file */

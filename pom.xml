@@ -31,7 +31,6 @@
       <version>5.7.0</version>
       <scope>test</scope>
     </dependency>
-
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
@@ -46,43 +45,42 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-api</artifactId>
-      <version>4.10.0</version>
+      <version>4.11.0</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-support</artifactId>
-      <version>4.10.0</version>
+      <version>4.11.0</version>
     </dependency>
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
-      <version>5.3.3</version>
-      <scope>test</scope>
+      <version>5.5.3</version>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-chrome-driver</artifactId>
-      <version>4.10.0</version>
+      <version>4.11.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-edge-driver</artifactId>
-      <version>4.10.0</version>
+      <version>4.11.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-firefox-driver</artifactId>
-      <version>4.10.0</version>
+      <version>4.11.0</version>
       <scope>test</scope>
     </dependency>
-            <dependency>
-                <groupId>org.junit.vintage</groupId>
-                <artifactId>junit-vintage-engine</artifactId>
-                <version>5.7.0</version>
-                <scope>test</scope>
-            </dependency>
+    <dependency>
+      <groupId>org.junit.vintage</groupId>
+      <artifactId>junit-vintage-engine</artifactId>
+      <version>5.7.0</version>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-launcher</artifactId>
@@ -112,19 +110,6 @@
     </dependency>
 
   </dependencies>
-
-<!--  <dependencyManagement>-->
-<!--    <dependencies>-->
-<!--      &lt;!&ndash; https://mvnrepository.com/artifact/org.junit/junit-bom &ndash;&gt;-->
-<!--      <dependency>-->
-<!--        <groupId>org.junit</groupId>-->
-<!--        <artifactId>junit-bom</artifactId>-->
-<!--        <version>5.7.0</version>-->
-<!--        <type>pom</type>-->
-<!--        <scope>import</scope>-->
-<!--      </dependency>-->
-<!--    </dependencies>-->
-<!--  </dependencyManagement>-->
   <build>
     <plugins>
 
@@ -141,12 +126,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M9</version>
-<!--        <configuration>-->
-<!--&lt;!&ndash;          <testFailureIgnore>true</testFailureIgnore>&ndash;&gt;-->
-<!--          <suiteXmlFiles>-->
-<!--            <suiteXmlFile>src/test/suites/suite.xml</suiteXmlFile>-->
-<!--          </suiteXmlFiles>-->
-<!--        </configuration>-->
       </plugin>
     </plugins>
   </build>

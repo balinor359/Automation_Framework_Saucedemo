@@ -22,6 +22,7 @@ import java.util.Properties;
 public class TestUtilities {
     /* Create variables for web-driver / url / browser / implicitlyWait */
     public static WebDriver driver;
+    public static String usedBrowser = "";
     private String url;
     private String browser;
     private int implicitlyWait;
@@ -100,6 +101,7 @@ public class TestUtilities {
         System.setProperty("webdriver.chrome.driver", "saucedemo-webdrivers\\chromedriver\\chromedriver.exe");
         WebDriverManager.chromedriver().setup();
         /* Create new driver */
+        usedBrowser = "chrome";
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
         loadUrl(url);
@@ -124,6 +126,7 @@ public class TestUtilities {
         System.setProperty("webdriver.gecko.driver", "saucedemo-webdrivers\\geckodriver\\geckodriver.exe");
         WebDriverManager.firefoxdriver().setup();
         /* Create new driver */
+        usedBrowser = "firefox";
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
         loadUrl(url);
@@ -148,6 +151,7 @@ public class TestUtilities {
         System.setProperty("webdriver.edge.driver", "saucedemo-webdrivers\\edgedriver\\msedgedriver.exe");
         WebDriverManager.edgedriver().setup();
         /* Create new driver */
+        usedBrowser = "edge";
         driver = new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
         loadUrl(url);
