@@ -2,7 +2,6 @@ package com.saucedemo.pom;
 
 import com.saucedemo.objects.Product;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -11,10 +10,7 @@ import com.saucedemo.utilities.MyFileWriter;
 import com.saucedemo.utilities.TestUtilities;
 import org.openqa.selenium.support.Color;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -118,7 +114,6 @@ public class HomePage extends TestUtilities {
     public void addItemToTheCartAndSaveValues(String productNameUrl) {
         addToCartButtonValidator(productNameUrl);
 
-
         String xpathOfClickedElement = String.format(ADD_TO_CART_LOCATOR, productNameUrl);
         WebElement addToCartButton = driver.findElement(By.xpath(xpathOfClickedElement));
 
@@ -132,15 +127,13 @@ public class HomePage extends TestUtilities {
             /* Check is id contains productNameUrl */
             if (productNameUrlLocal.contains(productNameUrl)) {
                 /* Take child element - Name */
-                WebElement childName = product.findElement(By.cssSelector("div[class='inventory_item_name']"));
+                WebElement childName = product.findElement(By.className("inventory_item_name"));
 
                 /* Take child element - Price */
                 WebElement productPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
 
                 /* Take child element - Image Src*/
                 WebElement productImageSrc = product.findElement(By.cssSelector("img[class='inventory_item_img']"));
-
-
 
                 /* Create new product with name, price and image src, and add it to the product list */
                 Product newProduct = new Product(childName.getText(), productPrice.getText(), productImageSrc.getAttribute("src"));
@@ -171,7 +164,7 @@ public class HomePage extends TestUtilities {
         for (WebElement product : productListLocal) {
 
             /* Take element - Name */
-            WebElement itemName = product.findElement(By.cssSelector("div[class='inventory_item_name']"));
+            WebElement itemName = product.findElement(By.className("inventory_item_name"));
 
             /* Take element - Price */
             WebElement itemPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
@@ -299,7 +292,7 @@ public class HomePage extends TestUtilities {
         for (WebElement product : productListLocal) {
 
             /* Take child element - Name */
-            WebElement productTitle = product.findElement(By.cssSelector("div[class='inventory_item_name']"));
+            WebElement productTitle = product.findElement(By.className("inventory_item_name"));
 
             /* Take element - Link */
             WebElement productTitleParent = product.findElement(By.tagName("a"));
@@ -320,11 +313,7 @@ public class HomePage extends TestUtilities {
                 Product.productList.add(newProduct);
 
                 /* Click on product name */
-//                waitClickable(driver, productTitleParent, 5);
-
-
                 productTitleParent.click();
-//                productTitleParent2.click();
 
                 /* Pass the driver to ProductPage (POM) */
                 return new ProductPage(driver);

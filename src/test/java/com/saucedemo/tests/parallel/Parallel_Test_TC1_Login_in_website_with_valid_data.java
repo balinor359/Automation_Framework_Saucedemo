@@ -65,8 +65,6 @@ public class Parallel_Test_TC1_Login_in_website_with_valid_data {
 
     @AfterMethod
     public void tearDown() {
-        /* Clear saved list with products after each test */
-//        clearProductList();
 
         /* Close the driver*/
         if (driver != null) {

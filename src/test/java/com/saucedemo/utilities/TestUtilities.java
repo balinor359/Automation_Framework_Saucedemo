@@ -46,6 +46,9 @@ public class TestUtilities {
         /* Clear saved list with products after each test */
         clearProductList();
 
+        /* Clear saved list with users after each test */
+        clearUserList();
+
         /* Close the driver*/
         if (driver != null) {
             driver.quit();
@@ -197,8 +200,13 @@ public class TestUtilities {
         }
     }
 
-    /* This method clear productsAfterLoad list data */
+    /* This method clear products list data */
     public void clearProductList() {
         Product.productList.clear();
     }
+    /* This method clear user list data */
+    public void clearUserList() {
+        UserBuilder.fullUsersList.clear();
+    }
+
 }
