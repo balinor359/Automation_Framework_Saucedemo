@@ -162,7 +162,9 @@ public class TestUtilities {
 
         Capabilities capabilities = ((EdgeDriver) driver).getCapabilities();
         String browserVersion = capabilities.getCapability("browserVersion").toString();
-        String webDriverVersion = ((EdgeDriver) driver).getCapabilities().toString();
+//        String webDriverVersion = ((EdgeDriver) driver).getCapabilities().toString();
+        String webDriverVersion = capabilities.getCapability("msedge").toString();
+
 
         System.out.println("Used WebDriver: Edge");
         System.out.println("Browser Version: " + browserVersion);
