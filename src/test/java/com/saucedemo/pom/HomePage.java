@@ -169,7 +169,7 @@ public class HomePage extends TestUtilities {
             /* Take element - Price */
             WebElement itemPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
 
-            /* Take child element - Image Src*/
+            /* Take child element - Image Src */
             WebElement itemImageSrc = product.findElement(By.cssSelector("img[class='inventory_item_img']"));
 
             /* Take element - Add to Cart Button */
@@ -277,7 +277,7 @@ public class HomePage extends TestUtilities {
     }
 
     /* Method who check if cart is empty, and if it`s not return the amount of products in the cart */
-    public int getItemsInTheCart() {
+    public int  getItemsInTheCart() {
         if (shoppingCartLink.getText().isEmpty()) {
             return 0;
         } else {
