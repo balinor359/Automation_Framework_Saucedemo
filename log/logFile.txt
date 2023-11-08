@@ -18863,3 +18863,48 @@ ________________________________________________________________________________
 08/11/2023 16:36:26 : TC15: Verify that page loading speed is under 2 sec (performance_glitch_user)
 08/11/2023 16:36:31 : Test End!
 _________________________________________________________________________________________
+08/11/2023 20:59:54 : Test Start!
+08/11/2023 20:59:56 : TC5: Add products in the cart
+08/11/2023 20:59:57 : Login is Successful!
+08/11/2023 20:59:57 : Current page is Home page.
+08/11/2023 20:59:58 : Current page is Cart page.
+08/11/2023 20:59:58 : Cart contains items.
+08/11/2023 20:59:58 : Test End!
+_________________________________________________________________________________________
+08/11/2023 21:12:39 : Test Start!
+08/11/2023 21:12:41 : TC5: Add products in the cart
+08/11/2023 21:12:41 : Login is Successful!
+08/11/2023 21:12:42 : Current page is Home page.
+08/11/2023 21:12:42 : Current page is Cart page.
+08/11/2023 21:12:42 : Cart contains items.
+08/11/2023 21:12:43 : Test End!
+_________________________________________________________________________________________
+08/11/2023 21:17:08 : Test Start!
+08/11/2023 21:17:10 : TC10.1/10.2/10.3: Verify product name, price and image src are the same on Home and Product pages (problem_user)
+08/11/2023 21:17:10 : Login is Successful!
+08/11/2023 21:17:10 : Current page is Home page.
+08/11/2023 21:17:10 : Current page is Product page.
+08/11/2023 21:17:11 : Test End!
+_________________________________________________________________________________________
+08/11/2023 21:18:46 : Test Start!
+08/11/2023 21:18:48 : TC8.4.1: Test menu link reset app state home page
+08/11/2023 21:18:49 : Login is Successful!
+08/11/2023 21:18:49 : Current page is Home page.
+08/11/2023 21:18:55 : Code error: the 'Add to Cart' button you interact with does not exist!
+08/11/2023 21:18:56 : Test End!
+_________________________________________________________________________________________
+08/11/2023 21:19:20 : Test Start!
+08/11/2023 21:19:22 : TC8.4.2: Test menu link reset app state product page
+08/11/2023 21:19:22 : Login is Successful!
+08/11/2023 21:19:22 : Current page is Home page.
+08/11/2023 21:19:22 : Current page is Product page.
+08/11/2023 21:19:29 : Code error: the 'Add to Cart' button you interact with does not exist!
+08/11/2023 21:19:29 : Test End!
+_________________________________________________________________________________________
+08/11/2023 21:20:52 : Test Start!
+08/11/2023 21:20:54 : TC13: Complete order of Sauce Labs Fleece Jacket (problem_user)
+08/11/2023 21:20:54 : Login is Successful!
+08/11/2023 21:20:54 : Current page is Home page.
+08/11/2023 21:20:54 : Current page is Product page.
+08/11/2023 21:20:55 : Test End!
+_________________________________________________________________________________________

@@ -126,17 +126,17 @@ public class HomePage extends TestUtilities {
 
             /* Check is id contains productNameUrl */
             if (productNameUrlLocal.contains(productNameUrl)) {
-                /* Take child element - Name */
-                WebElement childName = product.findElement(By.className("inventory_item_name"));
+                /* Take element - Name */
+                WebElement productName = product.findElement(By.className("inventory_item_name"));
 
-                /* Take child element - Price */
+                /* Take element - Price */
                 WebElement productPrice = product.findElement(By.cssSelector("div[class='inventory_item_price']"));
 
-                /* Take child element - Image Src*/
+                /* Take element - Image Src*/
                 WebElement productImageSrc = product.findElement(By.cssSelector("img[class='inventory_item_img']"));
 
                 /* Create new product with name, price and image src, and add it to the product list */
-                Product newProduct = new Product(childName.getText(), productPrice.getText(), productImageSrc.getAttribute("src"));
+                Product newProduct = new Product(productName.getText(), productPrice.getText(), productImageSrc.getAttribute("src"));
                 Product.productList.add(newProduct);
 
                 /* Click add to cart button, then validate is remove button is shown */
@@ -173,10 +173,10 @@ public class HomePage extends TestUtilities {
             WebElement itemImageSrc = product.findElement(By.cssSelector("img[class='inventory_item_img']"));
 
             /* Take element - Add to Cart Button */
-            WebElement ItemAddToCartBtn = product.findElement(By.cssSelector("button.btn_primary"));
+            WebElement itemAddToCartBtn = product.findElement(By.cssSelector("button.btn_primary"));
 
             /* Click on add to cart button */
-            ItemAddToCartBtn.click();
+            itemAddToCartBtn.click();
 
             /* Create new product with name, price and image src, and add it to the product list */
             Product newProduct = new Product(itemName.getText(), itemPrice.getText(), itemImageSrc.getAttribute("src"));
