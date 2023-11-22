@@ -1,1 +1,15 @@
-test
+This framework performs automated tests on the website https://www.saucedemo.com/
+
+It includes:
+
+- A "test_cases" folder - which contains written test cases, based on which automated ones are written.
+- Folder "found_bugs" - containing 2 described bugs of the tested website
+- POM folder - which describes the objects needed and used for the tests, as well as various methods, variables and messages for the assert checks, PageFactory etc.
+- Tests folder - which contains other folders with tests, ordered according to the website parts/pages.
+- "config.properties" - from where the desired browser ( Chrome / Edge / Firefox ) can be changed
+- "TestUtilities" - with the necessary before/after methods; switch to select and create a specific browser driver; 
+- Folder "suites" - Containing "suite.xml", for running 3 test cases in parallel.
+- Folder containing Selenium web drivers for Chrome/Edge/Firefox
+- Folder "sausedemo-files" - Containing csv files with users
+- Folder "log" - containing a log of the executed tests
+- JAVA Objects for Products and Users, used in tests.
