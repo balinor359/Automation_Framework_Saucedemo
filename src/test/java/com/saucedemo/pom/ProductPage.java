@@ -35,7 +35,7 @@ public class ProductPage extends TestUtilities {
     private WebElement productPrice;
     @FindBy(xpath = "//img[@class='inventory_details_img']")
     private WebElement productImage;
-    @FindBy(xpath = "//button[contains(@id,'add-to-cart-')]")
+    @FindBy(xpath = "//button[contains(@id,'add-to-cart')]")
     private WebElement productAddToCartButton;
     @FindBy(xpath = "//button[contains(@id,'remove-']")
     private WebElement productRemoveButton;
